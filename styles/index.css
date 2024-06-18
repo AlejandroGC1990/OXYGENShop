@@ -2,12 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
 }
 
 body {
   min-width: 320px;
-  background-color: antiquewhite;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: "Raleway", sans-serif;
+}
+body button {
+  border-radius: 25%;
+  font-family: "Open Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 }
 body nav {
   width: 375px;
@@ -19,7 +33,7 @@ body nav {
 body nav .nav-logo {
   width: 206px;
   height: 37px;
-  font-family: font-primary;
+  font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-weight: 300;
   line-height: 37px;
@@ -47,6 +61,79 @@ body nav .rectangle-menu {
 body nav ul {
   display: none;
 }
+body main {
+  padding-top: 70px;
+  position: relative;
+}
+body main header {
+  width: 310px;
+  height: 213px;
+  margin: 70px auto;
+  text-align: center;
+}
+body main header h1 {
+  width: 162px;
+  height: 41px;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41.09px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+body main header p {
+  width: 308px;
+  height: 57px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+body main header button {
+  width: 310px;
+  height: 67px;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 37px;
+  background-color: #08a6e4;
+}
+body main header .header-img-container {
+  overflow: hidden;
+  width: 375px;
+  left: -32px;
+  height: 267px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+body main header .header-img-container .header-img {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  width: 375;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main header h3 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+}
+body footer {
+  width: 375px;
+  height: 89px;
+  top: 4590px;
+  background-color: blue;
+}
 
 @media only screen and (min-width: 1000px) {
   body {
@@ -57,12 +144,11 @@ body nav ul {
     height: 70px;
     width: 100%;
     display: inline-block;
-    direction: initial;
   }
   body nav .nav-logo {
     width: 206px;
     height: 37px;
-    font-family: font-primary;
+    font-family: "Raleway", sans-serif;
     font-size: 32px;
     font-weight: 300;
     line-height: 37px;

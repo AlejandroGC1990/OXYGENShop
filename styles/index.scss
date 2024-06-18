@@ -2,23 +2,42 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
 }
 
 $font-primary: "Raleway", sans-serif;
 $font-secondary: "Open Sans", sans-serif;
+$color-principal: #08a6e4;
+$color-secondary: #a5a5a5;
+$color-tertiary: #55dfb4;
+$color-quaternary: #eb476e;
 
 body {
   min-width: 320px;
 
-  background-color: antiquewhite;
+  h1,
+  h2,
+  h3 {
+    font-family: $font-primary;
+  }
+
+  button {
+    border-radius: 25%;
+    font-family: $font-secondary;
+    border-color: transparent;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+  }
 
   nav {
     width: 375px;
     height: 70px;
 
     box-shadow: 0px 3px 6px 0px #0000004a;
-
     position: fixed;
     z-index: 1;
 
@@ -26,12 +45,12 @@ body {
       width: 206px;
       height: 37px;
 
-      font-family: font-primary;
+      font-family: $font-primary;
       font-size: 32px;
       font-weight: 300;
       line-height: 37px;
       text-align: left;
-      color: #08a6e4;
+      color: $color-principal;
 
       display: inline-block;
       margin-top: 17px;
@@ -61,6 +80,89 @@ body {
       display: none;
     }
   }
+
+  main {
+    padding-top: 70px;
+    position: relative;
+
+    header {
+      width: 310px;
+      height: 213px;
+
+      margin: 70px auto;
+      text-align: center;
+
+      h1 {
+        width: 162px;
+        height: 41px;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 41.09px;
+        text-align: center;
+
+        display: inline-block;
+        margin-top: 45px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        width: 308px;
+        height: 57px;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      button {
+        width: 310px;
+        height: 67px;
+        box-shadow: 5px 10px 14px 0px #07ace64a;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 37px;
+        background-color: $color-principal;
+      }
+
+      .header-img-container {
+        overflow: hidden;
+        width: 375px;
+        left: -32px;
+        height: 267px;
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 5px;
+        .header-img {
+          position: absolute;
+          top: 50%;
+          left: 52%;
+          width: 375;
+          height: 100%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 35px;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    width: 375px;
+    height: 89px;
+    top: 4590px;
+
+    background-color: blue;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -73,18 +175,16 @@ body {
 
       width: 100%;
       display: inline-block;
-      direction: ;
-
       .nav-logo {
         width: 206px;
         height: 37px;
 
-        font-family: font-primary;
+        font-family: $font-primary;
         font-size: 32px;
         font-weight: 300;
         line-height: 37px;
         text-align: left;
-        color: #08a6e4;
+        color: $color-principal;
 
         background-color: aqua;
         display: inline-block;
