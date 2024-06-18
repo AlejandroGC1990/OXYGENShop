@@ -160,7 +160,7 @@ body main header .card_header .container_icons .green {
   background: #55dfb4;
 }
 body main header .card_header .container_icons .container_vectors {
-  display: block;
+  display: inline-block;
   height: 51px;
   width: 44.02px;
   position: relative;
@@ -178,13 +178,13 @@ body main header .card_header .container_icons .container_vectors .eye1 {
   position: absolute;
   height: 33px;
   top: 13px;
-  left: 22.22px;
+  left: 15.22px;
 }
 body main header .card_header .container_icons .container_vectors .eye2 {
   z-index: 1;
   position: absolute;
   top: 16.5px;
-  left: 41.22px;
+  left: 32.22px;
   width: 25px;
   height: 25px;
 }
@@ -194,7 +194,36 @@ body main header .card_header .container_icons .container_vectors .eye3 {
   width: 12px;
   height: 12px;
   top: 23.64px;
-  left: 46.84px;
+  left: 39.84px;
+}
+body main header .card_header .container_icons .container_vectors .box1 {
+  position: absolute;
+  left: 26.22px;
+  width: 37px;
+  height: 3px;
+  top: 5px;
+}
+body main header .card_header .container_icons .container_vectors .box2 {
+  position: absolute;
+  top: 9px;
+  left: 24.22px;
+  width: 43.15px;
+  height: 3px;
+}
+body main header .card_header .container_icons .container_vectors .box3 {
+  position: absolute;
+  top: 9px;
+  left: 21.22px;
+  width: 48.17px;
+  height: 3px;
+  top: 13px;
+}
+body main header .card_header .container_icons .container_vectors .box4 {
+  position: absolute;
+  top: 17px;
+  left: 20.22px;
+  width: 52px;
+  height: 36px;
 }
 body main header .card_header p {
   display: inline-block;
@@ -217,7 +246,7 @@ body main header .card_header .text {
   line-height: 20px;
   text-align: center;
   left: 11.15px;
-  width: 90%;
+  width: 75%;
 }
 body main footer {
   width: 375px;
