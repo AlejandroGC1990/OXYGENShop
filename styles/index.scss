@@ -83,7 +83,7 @@ body {
     }
   }
 
-//MAIN_____________________________
+  //MAIN_____________________________
 
   main {
     position: relative;
@@ -161,7 +161,7 @@ body {
         height: 168px;
         width: 176px;
         position: relative;
-
+        justify-content: center;
 
         .container_icons {
           display: inline-block;
@@ -178,9 +178,12 @@ body {
 
           .blue {
             @extend .circle;
+            display: inline-block;
+            position: relative;
             width: 63px;
             height: 63px;
-            left: 17px;
+            // left: 17px;
+            width: 61px;
             background: $color-principal;
           }
 
@@ -189,7 +192,6 @@ body {
             width: 62.71px;
             height: 62.71px;
             left: 50.66px;
-
             background: $color-tertiary;
           }
 
@@ -209,13 +211,36 @@ body {
               top: 29px;
               left: 0px;
             }
+
+            .eye1 {
+              position: absolute;
+              height: 33px;
+              top: 13px;
+              left: 22.22px;
+            }
+            .eye2 {
+              z-index: 1;
+              position: absolute;
+              top: 16.5px;
+              left: 41.22px;
+
+              width: 25px;
+              height: 25px;
+            }
+            .eye3 {
+              z-index: 2;
+              position: absolute;
+              width: 12px;
+              height: 12px;
+              top: 23.64px;
+              left: 46.84px;
+            }
           }
         }
 
         p {
           display: inline-block;
           padding-bottom: 20px;
-          padding-left: 10px;
         }
 
         .title {
@@ -227,7 +252,6 @@ body {
           line-height: 24px;
           letter-spacing: 5.960000038146973px;
           margin: 10px auto;
-          padding-bottom: 0px;
         }
 
         .text {
@@ -237,7 +261,7 @@ body {
           line-height: 20px;
           text-align: center;
           left: 11.15px;
-          width: 100%;
+          width: 90%;
         }
       }
     }

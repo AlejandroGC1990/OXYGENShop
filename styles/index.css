@@ -132,6 +132,7 @@ body main header .card_header {
   height: 168px;
   width: 176px;
   position: relative;
+  justify-content: center;
 }
 body main header .card_header .container_icons {
   display: inline-block;
@@ -145,9 +146,11 @@ body main header .card_header .container_icons .pink {
   padding-left: 30px;
 }
 body main header .card_header .container_icons .blue {
+  display: inline-block;
+  position: relative;
   width: 63px;
   height: 63px;
-  left: 17px;
+  width: 61px;
   background: #08a6e4;
 }
 body main header .card_header .container_icons .green {
@@ -171,10 +174,31 @@ body main header .card_header .container_icons .container_vectors .body {
   top: 29px;
   left: 0px;
 }
+body main header .card_header .container_icons .container_vectors .eye1 {
+  position: absolute;
+  height: 33px;
+  top: 13px;
+  left: 22.22px;
+}
+body main header .card_header .container_icons .container_vectors .eye2 {
+  z-index: 1;
+  position: absolute;
+  top: 16.5px;
+  left: 41.22px;
+  width: 25px;
+  height: 25px;
+}
+body main header .card_header .container_icons .container_vectors .eye3 {
+  z-index: 2;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 23.64px;
+  left: 46.84px;
+}
 body main header .card_header p {
   display: inline-block;
   padding-bottom: 20px;
-  padding-left: 10px;
 }
 body main header .card_header .title {
   width: 117px;
@@ -185,7 +209,6 @@ body main header .card_header .title {
   line-height: 24px;
   letter-spacing: 5.9600000381px;
   margin: 10px auto;
-  padding-bottom: 0px;
 }
 body main header .card_header .text {
   font-family: "Raleway", sans-serif;
@@ -194,7 +217,7 @@ body main header .card_header .text {
   line-height: 20px;
   text-align: center;
   left: 11.15px;
-  width: 100%;
+  width: 90%;
 }
 body main footer {
   width: 375px;
