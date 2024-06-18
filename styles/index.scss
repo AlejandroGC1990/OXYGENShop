@@ -33,13 +33,17 @@ body {
     align-items: center;
   }
 
+  .circle {
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    display: block;
+  }
+
   nav {
     width: 375px;
     height: 70px;
-
     box-shadow: 0px 3px 6px 0px #0000004a;
-    position: fixed;
-    z-index: 1;
 
     .nav-logo {
       width: 206px;
@@ -60,12 +64,10 @@ body {
     .menu {
       width: 20px;
       height: 12px;
-      top: 29px;
-      left: 325px;
 
       display: inline-block;
-      direction: column;
-      position: absolute;
+      margin-bottom: 5px;
+      margin-left: 95px;
     }
 
     .rectangle-menu {
@@ -81,15 +83,17 @@ body {
     }
   }
 
+//MAIN_____________________________
+
   main {
-    padding-top: 70px;
     position: relative;
 
     header {
       width: 310px;
       height: 213px;
 
-      margin: 70px auto;
+      direction: column;
+      margin: 50px auto;
       text-align: center;
 
       h1 {
@@ -101,8 +105,8 @@ body {
         text-align: center;
 
         display: inline-block;
-        margin-top: 45px;
-        margin-bottom: 15px;
+        margin-top: 47px;
+        margin-bottom: 30px;
       }
 
       p {
@@ -122,27 +126,24 @@ body {
         box-shadow: 5px 10px 14px 0px #07ace64a;
         font-size: 16px;
         font-weight: 700;
-        margin-bottom: 37px;
+        margin-bottom: 45px;
         background-color: $color-principal;
       }
 
       .header-img-container {
         overflow: hidden;
         width: 375px;
-        left: -32px;
+        right: 32px;
         height: 267px;
         position: relative;
         margin-top: 25px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+
         .header-img {
-          position: absolute;
-          top: 50%;
-          left: 52%;
-          width: 375;
-          height: 100%;
-          transform: translate(-50%, -50%);
-          max-width: 100%;
-          max-height: 100%;
+          display: block;
+          margin: 0 0 35px 0;
+          width: 375px;
+          height: 267px;
           object-fit: cover;
         }
       }
@@ -152,52 +153,135 @@ body {
         font-weight: 300;
         line-height: 35px;
         text-align: center;
+        margin-bottom: 35px;
       }
+
+      .card_header {
+        display: inline-block;
+        height: 168px;
+        width: 176px;
+        position: relative;
+
+
+        .container_icons {
+          display: inline-block;
+
+          .pink {
+            @extend .circle;
+            display: inline-block;
+            position: relative;
+            width: 62.71px;
+            height: 62.71px;
+            background-color: $color-quaternary;
+            padding-left: 30px;
+          }
+
+          .blue {
+            @extend .circle;
+            width: 63px;
+            height: 63px;
+            left: 17px;
+            background: $color-principal;
+          }
+
+          .green {
+            @extend .circle;
+            width: 62.71px;
+            height: 62.71px;
+            left: 50.66px;
+
+            background: $color-tertiary;
+          }
+
+          .container_vectors {
+            display: block;
+            height: 51px;
+            width: 44.02px;
+            position: relative;
+
+            .head {
+              position: absolute;
+              left: 10px;
+            }
+
+            .body {
+              position: absolute;
+              top: 29px;
+              left: 0px;
+            }
+          }
+        }
+
+        p {
+          display: inline-block;
+          padding-bottom: 20px;
+          padding-left: 10px;
+        }
+
+        .title {
+          width: 117px;
+          height: 24px;
+          font-family: $font-primary;
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: 5.960000038146973px;
+          margin: 10px auto;
+          padding-bottom: 0px;
+        }
+
+        .text {
+          font-family: $font-primary;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: center;
+          left: 11.15px;
+          width: 100%;
+        }
+      }
+    }
+
+    footer {
+      width: 375px;
+      height: 89px;
+      top: 4590px;
     }
   }
 
-  footer {
-    width: 375px;
-    height: 89px;
-    top: 4590px;
-
-    background-color: blue;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  body {
-    max-width: 1626px;
-    height: 70px;
-
-    nav {
+  @media only screen and (min-width: 1000px) {
+    body {
+      max-width: 1626px;
       height: 70px;
 
-      width: 100%;
-      display: inline-block;
-      .nav-logo {
-        width: 206px;
-        height: 37px;
+      nav {
+        height: 70px;
+        width: 100%;
 
-        font-family: $font-primary;
-        font-size: 32px;
-        font-weight: 300;
-        line-height: 37px;
-        text-align: left;
-        color: $color-principal;
+        .nav-logo {
+          width: 206px;
+          height: 37px;
 
-        background-color: aqua;
-        display: inline-block;
-        margin-top: 17px;
-        margin-left: 25px;
-      }
+          font-family: $font-primary;
+          font-size: 32px;
+          font-weight: 300;
+          line-height: 37px;
+          text-align: left;
+          color: $color-principal;
 
-      .menu {
-        display: none;
-      }
+          background-color: aqua;
+          display: inline-block;
+          margin-top: 17px;
+          margin-left: 25px;
+        }
 
-      ul {
-        display: inline-block;
+        .menu {
+          display: none;
+        }
+
+        ul {
+          display: inline-block;
+        }
       }
     }
   }

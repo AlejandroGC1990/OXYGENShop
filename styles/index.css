@@ -23,12 +23,16 @@ body button {
   justify-content: center;
   align-items: center;
 }
+body .circle, body main header .card_header .container_icons .green, body main header .card_header .container_icons .blue, body main header .card_header .container_icons .pink {
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  display: block;
+}
 body nav {
   width: 375px;
   height: 70px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
-  position: fixed;
-  z-index: 1;
 }
 body nav .nav-logo {
   width: 206px;
@@ -46,11 +50,9 @@ body nav .nav-logo {
 body nav .menu {
   width: 20px;
   height: 12px;
-  top: 29px;
-  left: 325px;
   display: inline-block;
-  direction: column;
-  position: absolute;
+  margin-bottom: 5px;
+  margin-left: 95px;
 }
 body nav .rectangle-menu {
   width: 20px;
@@ -62,13 +64,13 @@ body nav ul {
   display: none;
 }
 body main {
-  padding-top: 70px;
   position: relative;
 }
 body main header {
   width: 310px;
   height: 213px;
-  margin: 70px auto;
+  direction: column;
+  margin: 50px auto;
   text-align: center;
 }
 body main header h1 {
@@ -79,8 +81,8 @@ body main header h1 {
   line-height: 41.09px;
   text-align: center;
   display: inline-block;
-  margin-top: 45px;
-  margin-bottom: 15px;
+  margin-top: 47px;
+  margin-bottom: 30px;
 }
 body main header p {
   width: 308px;
@@ -98,27 +100,23 @@ body main header button {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 37px;
+  margin-bottom: 45px;
   background-color: #08a6e4;
 }
 body main header .header-img-container {
   overflow: hidden;
   width: 375px;
-  left: -32px;
+  right: 32px;
   height: 267px;
   position: relative;
   margin-top: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 body main header .header-img-container .header-img {
-  position: absolute;
-  top: 50%;
-  left: 52%;
-  width: 375;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  margin: 0 0 35px 0;
+  width: 375px;
+  height: 267px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -127,25 +125,92 @@ body main header h3 {
   font-weight: 300;
   line-height: 35px;
   text-align: center;
+  margin-bottom: 35px;
 }
-body footer {
+body main header .card_header {
+  display: inline-block;
+  height: 168px;
+  width: 176px;
+  position: relative;
+}
+body main header .card_header .container_icons {
+  display: inline-block;
+}
+body main header .card_header .container_icons .pink {
+  display: inline-block;
+  position: relative;
+  width: 62.71px;
+  height: 62.71px;
+  background-color: #eb476e;
+  padding-left: 30px;
+}
+body main header .card_header .container_icons .blue {
+  width: 63px;
+  height: 63px;
+  left: 17px;
+  background: #08a6e4;
+}
+body main header .card_header .container_icons .green {
+  width: 62.71px;
+  height: 62.71px;
+  left: 50.66px;
+  background: #55dfb4;
+}
+body main header .card_header .container_icons .container_vectors {
+  display: block;
+  height: 51px;
+  width: 44.02px;
+  position: relative;
+}
+body main header .card_header .container_icons .container_vectors .head {
+  position: absolute;
+  left: 10px;
+}
+body main header .card_header .container_icons .container_vectors .body {
+  position: absolute;
+  top: 29px;
+  left: 0px;
+}
+body main header .card_header p {
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+body main header .card_header .title {
+  width: 117px;
+  height: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 5.9600000381px;
+  margin: 10px auto;
+  padding-bottom: 0px;
+}
+body main header .card_header .text {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  left: 11.15px;
+  width: 100%;
+}
+body main footer {
   width: 375px;
   height: 89px;
   top: 4590px;
-  background-color: blue;
 }
-
 @media only screen and (min-width: 1000px) {
-  body {
+  body body {
     max-width: 1626px;
     height: 70px;
   }
-  body nav {
+  body body nav {
     height: 70px;
     width: 100%;
-    display: inline-block;
   }
-  body nav .nav-logo {
+  body body nav .nav-logo {
     width: 206px;
     height: 37px;
     font-family: "Raleway", sans-serif;
@@ -159,10 +224,10 @@ body footer {
     margin-top: 17px;
     margin-left: 25px;
   }
-  body nav .menu {
+  body body nav .menu {
     display: none;
   }
-  body nav ul {
+  body body nav ul {
     display: inline-block;
   }
 }/*# sourceMappingURL=index.css.map */
