@@ -1,0 +1,51 @@
+@import "../variables";
+@import "../index.css";
+
+.card {
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+
+  .pink,
+  .blue,
+  .green {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    width: 63px;
+    height: 63px;
+  }
+
+  .pink {
+    background-color: $color-quaternary;
+  }
+
+  .blue {
+    background: $color-primary;
+  }
+
+  .green {
+    background: $color-tertiary;
+  }
+
+  .container_vectors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .head,
+  .body,
+  .eye1,
+  .eye2,
+  .eye3,
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    position: absolute;
+  }
+}

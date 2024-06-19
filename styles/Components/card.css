@@ -1,0 +1,43 @@
+@import "../index.css";
+.card {
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+}
+.card .pink,
+.card .blue,
+.card .green {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  width: 63px;
+  height: 63px;
+}
+.card .pink {
+  background-color: #eb476e;
+}
+.card .blue {
+  background: #08a6e4;
+}
+.card .green {
+  background: #55dfb4;
+}
+.card .container_vectors {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .head,
+.card .body,
+.card .eye1,
+.card .eye2,
+.card .eye3,
+.card .box1,
+.card .box2,
+.card .box3,
+.card .box4 {
+  position: absolute;
+}/*# sourceMappingURL=card.css.map */

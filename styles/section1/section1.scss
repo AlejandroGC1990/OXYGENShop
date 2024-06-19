@@ -1,120 +1,91 @@
 @import "../variables";
 @import "../index.scss";
+@import '../Components/card.scss';
 
 .section1 {
   display: block;
+  text-align: center;
+  background-color: red;
 
   h3 {
     font-size: 30px;
     font-weight: 300;
     line-height: 35px;
-    text-align: center;
     margin-bottom: 35px;
   }
 
-  .card_header {
+  .card_section1 {
+    @extend .card;
+    display: inline-block;
+    text-align: center;
     height: 168px;
     width: 176px;
-    position: relative;
-    justify-content: center;
-    margin: 0px auto;
+    margin: 0 20px;
 
     .container_icons {
+      margin: 0 auto;
       width: 63px;
       height: 63px;
-      margin: 0 auto;
-
-      .pink {
-        @extend .circle;
-        display: inline-block;
-        position: relative;
-        background-color: $color-quaternary;
-        padding-left: 30px;
-      }
-
-      .blue {
-        @extend .circle;
-        display: inline-block;
-        position: relative;
-        background: $color-primary;
-      }
-
-      .green {
-        @extend .circle;
-        display: inline-block;
-        position: relative;
-        background: $color-tertiary;
-      }
+      position: relative;
 
       .container_vectors {
-        display: inline-block;
         height: 51px;
         width: 44.02px;
-        position: relative;
+        top: 28px;
 
         .head {
-          position: absolute;
-          top: 2px;
           left: 11px;
+          padding-left: 20px;
         }
 
         .body {
-          position: absolute;
-          top: 29px;
+          padding-left: 21px;
+          top: 27px;
           left: 0px;
         }
 
         .eye1 {
-          position: absolute;
           height: 33px;
           top: 12px;
-          left: 25.22px;
+          left: 16px;
         }
         .eye2 {
-          z-index: 1;
-          position: absolute;
           top: 15.5px;
-          left: 43px;
+          left: 33px;
           width: 25px;
           height: 25px;
         }
         .eye3 {
-          z-index: 2;
-          position: absolute;
           width: 12px;
           height: 12px;
           top: 22.64px;
-          left: 50px;
+          left: 40px;
         }
 
         .box1 {
-          position: absolute;
-          left: 39px;
+          left: 32px;
           width: 37px;
           height: 3px;
           top: 2px;
         }
 
         .box2 {
-          position: absolute;
           top: 6px;
-          left: 37px;
+          left: 29px;
           width: 43.15px;
           height: 3px;
         }
 
         .box3 {
-          position: absolute;
           top: 10px;
-          left: 34px;
+          left: 26px;
           width: 48.17px;
           height: 3px;
         }
 
         .box4 {
-          position: absolute;
           top: 14px;
-          left: 33px;
+          left: 25px;
 
           width: 52px;
           height: 36px;

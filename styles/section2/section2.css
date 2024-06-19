@@ -1,1 +1,144 @@
-/*# sourceMappingURL=section2.css.map */
+@import "../index.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: "Raleway", sans-serif;
+}
+body button {
+  border-radius: 25%;
+  font-family: "Open Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+body .logo_Oxygen {
+  width: 206px;
+  height: 37px;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 37px;
+  text-align: left;
+  color: #08a6e4;
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 25px;
+}
+body main {
+  margin-top: 375px;
+  display: block;
+}
+
+.card, .section2 .card_section2 {
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+}
+.card .pink, .section2 .card_section2 .pink,
+.card .blue,
+.section2 .card_section2 .blue,
+.card .green,
+.section2 .card_section2 .green {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  width: 63px;
+  height: 63px;
+}
+.card .pink, .section2 .card_section2 .pink {
+  background-color: #eb476e;
+}
+.card .blue, .section2 .card_section2 .blue {
+  background: #08a6e4;
+}
+.card .green, .section2 .card_section2 .green {
+  background: #55dfb4;
+}
+.card .container_vectors, .section2 .card_section2 .container_vectors {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .head, .section2 .card_section2 .head,
+.card .body,
+.section2 .card_section2 .body,
+.card .eye1,
+.section2 .card_section2 .eye1,
+.card .eye2,
+.section2 .card_section2 .eye2,
+.card .eye3,
+.section2 .card_section2 .eye3,
+.card .box1,
+.section2 .card_section2 .box1,
+.card .box2,
+.section2 .card_section2 .box2,
+.card .box3,
+.section2 .card_section2 .box3,
+.card .box4,
+.section2 .card_section2 .box4 {
+  position: absolute;
+}
+
+.section2 {
+  display: block;
+  text-align: center;
+  width: 375px;
+  background-color: green;
+}
+.section2 .card_section2 {
+  background-color: #e8e9ed;
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  width: 314px;
+  height: 370px;
+}
+.section2 .card_section2 .container_img {
+  margin: 0 auto;
+  width: 314px;
+  height: 370px;
+}
+.section2 .card_section2 .container_img .circle {
+  width: 100%;
+  position: relative;
+}
+.section2 .card_section2 .container_img .img_pc {
+  width: 192.76px;
+  height: 109.93px;
+  top: 37.11px;
+  left: 55.27px;
+}
+.section2 .card_section2 p {
+  margin: 20px auto;
+  font-family: "Raleway", sans-serif;
+}
+.section2 .card_section2 .title_section2 {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.22px;
+  text-align: left;
+}
+.section2 .card_section2 .text_section2 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}/*# sourceMappingURL=section2.css.map */

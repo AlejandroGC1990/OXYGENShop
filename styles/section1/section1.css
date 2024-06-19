@@ -1,3 +1,4 @@
+@import "../index.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,140 +37,148 @@ body .logo_Oxygen {
   margin-top: 17px;
   margin-left: 25px;
 }
-body .circle, body .section1 .card_header .container_icons .green, .section1 .card_header .container_icons body .green, body .section1 .card_header .container_icons .blue, .section1 .card_header .container_icons body .blue, body .section1 .card_header .container_icons .pink, .section1 .card_header .container_icons body .pink {
+body main {
+  margin-top: 375px;
+  display: block;
+}
+
+.card, .section1 .card_section1 {
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+}
+.card .pink, .section1 .card_section1 .pink,
+.card .blue,
+.section1 .card_section1 .blue,
+.card .green,
+.section1 .card_section1 .green {
+  display: inline-block;
+  position: relative;
   border-radius: 50%;
   height: auto;
   width: auto;
-  display: block;
+  width: 63px;
+  height: 63px;
 }
-body main {
-  margin-top: 375px;
+.card .pink, .section1 .card_section1 .pink {
+  background-color: #eb476e;
 }
-body footer {
-  width: 100%;
-  height: 89px;
+.card .blue, .section1 .card_section1 .blue {
+  background: #08a6e4;
 }
-body footer .copyright {
-  width: 187px;
-  height: 15px;
-  top: 53px;
-  left: 17px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 14.98px;
-  text-align: left;
+.card .green, .section1 .card_section1 .green {
+  background: #55dfb4;
+}
+.card .container_vectors, .section1 .card_section1 .container_vectors {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .head, .section1 .card_section1 .head,
+.card .body,
+.section1 .card_section1 .body,
+.card .eye1,
+.section1 .card_section1 .eye1,
+.card .eye2,
+.section1 .card_section1 .eye2,
+.card .eye3,
+.section1 .card_section1 .eye3,
+.card .box1,
+.section1 .card_section1 .box1,
+.card .box2,
+.section1 .card_section1 .box2,
+.card .box3,
+.section1 .card_section1 .box3,
+.card .box4,
+.section1 .card_section1 .box4 {
+  position: absolute;
 }
 
 .section1 {
   display: block;
+  text-align: center;
+  background-color: red;
 }
 .section1 h3 {
   font-size: 30px;
   font-weight: 300;
   line-height: 35px;
-  text-align: center;
   margin-bottom: 35px;
 }
-.section1 .card_header {
+.section1 .card_section1 {
+  display: inline-block;
+  text-align: center;
   height: 168px;
   width: 176px;
-  position: relative;
-  justify-content: center;
-  margin: 0px auto;
+  margin: 0 20px;
 }
-.section1 .card_header .container_icons {
+.section1 .card_section1 .container_icons {
+  margin: 0 auto;
   width: 63px;
   height: 63px;
-  margin: 0 auto;
-}
-.section1 .card_header .container_icons .pink {
-  display: inline-block;
   position: relative;
-  background-color: #eb476e;
-  padding-left: 30px;
 }
-.section1 .card_header .container_icons .blue {
-  display: inline-block;
-  position: relative;
-  background: #08a6e4;
-}
-.section1 .card_header .container_icons .green {
-  display: inline-block;
-  position: relative;
-  background: #55dfb4;
-}
-.section1 .card_header .container_icons .container_vectors {
-  display: inline-block;
+.section1 .card_section1 .container_icons .container_vectors {
   height: 51px;
   width: 44.02px;
-  position: relative;
+  top: 28px;
 }
-.section1 .card_header .container_icons .container_vectors .head {
-  position: absolute;
-  top: 2px;
+.section1 .card_section1 .container_icons .container_vectors .head {
   left: 11px;
+  padding-left: 20px;
 }
-.section1 .card_header .container_icons .container_vectors .body {
-  position: absolute;
-  top: 29px;
+.section1 .card_section1 .container_icons .container_vectors .body {
+  padding-left: 21px;
+  top: 27px;
   left: 0px;
 }
-.section1 .card_header .container_icons .container_vectors .eye1 {
-  position: absolute;
+.section1 .card_section1 .container_icons .container_vectors .eye1 {
   height: 33px;
   top: 12px;
-  left: 25.22px;
+  left: 16px;
 }
-.section1 .card_header .container_icons .container_vectors .eye2 {
-  z-index: 1;
-  position: absolute;
+.section1 .card_section1 .container_icons .container_vectors .eye2 {
   top: 15.5px;
-  left: 43px;
+  left: 33px;
   width: 25px;
   height: 25px;
 }
-.section1 .card_header .container_icons .container_vectors .eye3 {
-  z-index: 2;
-  position: absolute;
+.section1 .card_section1 .container_icons .container_vectors .eye3 {
   width: 12px;
   height: 12px;
   top: 22.64px;
-  left: 50px;
+  left: 40px;
 }
-.section1 .card_header .container_icons .container_vectors .box1 {
-  position: absolute;
-  left: 39px;
+.section1 .card_section1 .container_icons .container_vectors .box1 {
+  left: 32px;
   width: 37px;
   height: 3px;
   top: 2px;
 }
-.section1 .card_header .container_icons .container_vectors .box2 {
-  position: absolute;
+.section1 .card_section1 .container_icons .container_vectors .box2 {
   top: 6px;
-  left: 37px;
+  left: 29px;
   width: 43.15px;
   height: 3px;
 }
-.section1 .card_header .container_icons .container_vectors .box3 {
-  position: absolute;
+.section1 .card_section1 .container_icons .container_vectors .box3 {
   top: 10px;
-  left: 34px;
+  left: 26px;
   width: 48.17px;
   height: 3px;
 }
-.section1 .card_header .container_icons .container_vectors .box4 {
-  position: absolute;
+.section1 .card_section1 .container_icons .container_vectors .box4 {
   top: 14px;
-  left: 33px;
+  left: 25px;
   width: 52px;
   height: 36px;
 }
-.section1 .card_header p {
+.section1 .card_section1 p {
   margin: 20px auto;
   font-family: "Raleway", sans-serif;
 }
-.section1 .card_header .title {
+.section1 .card_section1 .title {
   font-size: 20px;
   font-weight: 800;
   line-height: 24px;
@@ -178,7 +187,7 @@ body footer .copyright {
   height: 24px;
   margin: 10px auto;
 }
-.section1 .card_header .text {
+.section1 .card_section1 .text {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
