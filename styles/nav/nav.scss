@@ -1,0 +1,27 @@
+nav {
+  width: 375px;
+  height: 70px;
+  // box-shadow: 0px 3px 6px 0px #0000004a;
+  box-shadow: 0px 3px 6px 0px $color-shadow;
+
+  .menu {
+    width: 20px;
+    height: 12px;
+
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 95px;
+  }
+
+  .rectangle-menu {
+    width: 20px;
+    height: 2px;
+
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  ul {
+    display: none;
+  }
+}

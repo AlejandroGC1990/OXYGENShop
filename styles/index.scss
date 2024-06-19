@@ -1,15 +1,10 @@
+@import './variables';
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-$font-primary: "Raleway", sans-serif;
-$font-secondary: "Open Sans", sans-serif;
-$color-principal: #08a6e4;
-$color-secondary: #a5a5a5;
-$color-tertiary: #55dfb4;
-$color-quaternary: #eb476e;
 
 body {
   min-width: 320px;
@@ -31,8 +26,8 @@ body {
     cursor: pointer;
     color: #fff;
 
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
   }
 
   .logo_Oxygen {
@@ -44,7 +39,7 @@ body {
     font-weight: 300;
     line-height: 37px;
     text-align: left;
-    color: $color-principal;
+    color: $color-primary;
 
     display: inline-block;
     margin-top: 17px;
@@ -57,259 +52,12 @@ body {
     width: auto;
     display: block;
   }
-  //  _____________________________________________________________________
-  //NAV_____________________________________________________________
-  //___________________________________________________________________
-
-  nav {
-    width: 375px;
-    height: 70px;
-    box-shadow: 0px 3px 6px 0px #0000004a;
-
-    .menu {
-      width: 20px;
-      height: 12px;
-
-      display: inline-block;
-      margin-bottom: 5px;
-      margin-left: 95px;
-    }
-
-    .rectangle-menu {
-      width: 20px;
-      height: 2px;
-
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    ul {
-      display: none;
-    }
-  }
-  //_______________________________________________________
-  //MAIN_____________________________
-  //______________________________________________________________________________
 
   main {
-    // position: relative;
-
-    header {
-      width: 310px;
-      height: 213px;
-
-      direction: column;
-      margin: 50px auto;
-      text-align: center;
-
-      h1 {
-        width: 162px;
-        height: 41px;
-        font-size: 35px;
-        font-weight: 400;
-        line-height: 41.09px;
-        text-align: center;
-
-        display: inline-block;
-        margin-top: 47px;
-        margin-bottom: 30px;
-      }
-
-      p {
-        width: 308px;
-        height: 57px;
-        font-family: $font-secondary;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 23px;
-        text-align: center;
-        margin-bottom: 25px;
-      }
-
-      button {
-        width: 310px;
-        height: 67px;
-        box-shadow: 5px 10px 14px 0px #07ace64a;
-        font-size: 16px;
-        font-weight: 700;
-        margin-bottom: 45px;
-        background-color: $color-principal;
-      }
-
-      .header-img-container {
-        overflow: hidden;
-        width: 375px;
-        right: 32px;
-        height: 267px;
-        position: relative;
-        margin-top: 25px;
-        margin-bottom: 10px;
-
-        .header-img {
-          display: block;
-          margin: 0 0 35px 0;
-          width: 375px;
-          height: 267px;
-          object-fit: cover;
-        }
-      }
-
-      h3 {
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 35px;
-        text-align: center;
-        margin-bottom: 35px;
-      }
-
-      .card_header {
-        display: inline-block;
-        height: 168px;
-        width: 176px;
-        position: relative;
-        justify-content: center;
-
-        .container_icons {
-          display: inline-block;
-
-          .pink {
-            @extend .circle;
-            display: inline-block;
-            position: relative;
-            width: 62.71px;
-            height: 62.71px;
-            background-color: $color-quaternary;
-            padding-left: 30px;
-          }
-
-          .blue {
-            @extend .circle;
-            display: inline-block;
-            position: relative;
-            width: 63px;
-            height: 63px;
-            // left: 17px;
-            width: 61px;
-            background: $color-principal;
-          }
-
-          .green {
-            @extend .circle;
-            width: 62.71px;
-            height: 62.71px;
-            left: 50.66px;
-            background: $color-tertiary;
-          }
-
-          .container_vectors {
-            display: inline-block;
-            height: 51px;
-            width: 44.02px;
-            position: relative;
-
-            .head {
-              position: absolute;
-              top: 2px;
-              left: 11px;
-            }
-
-            .body {
-              position: absolute;
-              top: 29px;
-              left: 0px;
-            }
-
-            .eye1 {
-              position: absolute;
-              height: 33px;
-              top: 13px;
-              left: 15.22px;
-            }
-            .eye2 {
-              z-index: 1;
-              position: absolute;
-              top: 16.5px;
-              left: 32.22px;
-              width: 25px;
-              height: 25px;
-            }
-            .eye3 {
-              z-index: 2;
-              position: absolute;
-              width: 12px;
-              height: 12px;
-              top: 23.64px;
-              left: 39.84px;
-            }
-
-            .box1 {
-              position: absolute;
-              left: 26.22px;
-              width: 37px;
-              height: 3px;
-              top: 5px;
-            }
-
-            .box2 {
-              position: absolute;
-              top: 9px;
-              left: 24.22px;
-              width: 43.15px;
-              height: 3px;
-            }
-
-            .box3 {
-              position: absolute;
-              top: 9px;
-              left: 21.22px;
-              width: 48.17px;
-              height: 3px;
-              top: 13px;
-            }
-
-            .box4 {
-              position: absolute;
-              top: 17px;
-              left: 20.22px;
-
-              width: 52px;
-              height: 36px;
-            }
-          }
-        }
-
-        p {
-          display: inline-block;
-          padding-bottom: 20px;
-        }
-
-        .title {
-          width: 117px;
-          height: 24px;
-          font-family: $font-primary;
-          font-size: 20px;
-          font-weight: 800;
-          line-height: 24px;
-          letter-spacing: 5.960000038146973px;
-          margin: 10px auto;
-        }
-
-        .text {
-          font-family: $font-primary;
-          font-size: 17px;
-          font-weight: 400;
-          line-height: 20px;
-          text-align: center;
-          left: 11.15px;
-          width: 75%;
-        }
-      }
-    }
+    margin-top: 375px;
+    
+    
   }
-
-  //_____________________________________________________________________________
-  //FOOTER_____________________________________________________________________
-  //_____________________________________________________________________________
 
   footer {
     width: 100%;
@@ -348,7 +96,7 @@ body {
   //         font-weight: 300;
   //         line-height: 37px;
   //         text-align: left;
-  //         color: $color-principal;
+  //         color: $color-primary;
 
   //         background-color: aqua;
   //         display: inline-block;

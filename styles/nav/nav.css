@@ -1,0 +1,22 @@
+nav {
+  width: 375px;
+  height: 70px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
+}
+nav .menu {
+  width: 20px;
+  height: 12px;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 95px;
+}
+nav .rectangle-menu {
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+}
+nav ul {
+  display: none;
+}/*# sourceMappingURL=nav.css.map */
