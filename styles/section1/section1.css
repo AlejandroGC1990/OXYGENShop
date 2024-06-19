@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: "Raleway", sans-serif;
+}
+body button {
+  border-radius: 25%;
+  font-family: "Open Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+body .logo_Oxygen {
+  width: 206px;
+  height: 37px;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 37px;
+  text-align: left;
+  color: #08a6e4;
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 25px;
+}
+body .circle, body .section1 .card_header .container_icons .green, .section1 .card_header .container_icons body .green, body .section1 .card_header .container_icons .blue, .section1 .card_header .container_icons body .blue, body .section1 .card_header .container_icons .pink, .section1 .card_header .container_icons body .pink {
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  display: block;
+}
+body main {
+  margin-top: 375px;
+}
+body footer {
+  width: 100%;
+  height: 89px;
+}
+body footer .copyright {
+  width: 187px;
+  height: 15px;
+  top: 53px;
+  left: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14.98px;
+  text-align: left;
+}
+
+.section1 {
+  display: block;
+}
+.section1 h3 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.section1 .card_header {
+  height: 168px;
+  width: 176px;
+  position: relative;
+  justify-content: center;
+  margin: 0px auto;
+}
+.section1 .card_header .container_icons {
+  width: 63px;
+  height: 63px;
+  margin: 0 auto;
+}
+.section1 .card_header .container_icons .pink {
+  display: inline-block;
+  position: relative;
+  background-color: #eb476e;
+  padding-left: 30px;
+}
+.section1 .card_header .container_icons .blue {
+  display: inline-block;
+  position: relative;
+  background: #08a6e4;
+}
+.section1 .card_header .container_icons .green {
+  display: inline-block;
+  position: relative;
+  background: #55dfb4;
+}
+.section1 .card_header .container_icons .container_vectors {
+  display: inline-block;
+  height: 51px;
+  width: 44.02px;
+  position: relative;
+}
+.section1 .card_header .container_icons .container_vectors .head {
+  position: absolute;
+  top: 2px;
+  left: 11px;
+}
+.section1 .card_header .container_icons .container_vectors .body {
+  position: absolute;
+  top: 29px;
+  left: 0px;
+}
+.section1 .card_header .container_icons .container_vectors .eye1 {
+  position: absolute;
+  height: 33px;
+  top: 12px;
+  left: 25.22px;
+}
+.section1 .card_header .container_icons .container_vectors .eye2 {
+  z-index: 1;
+  position: absolute;
+  top: 15.5px;
+  left: 43px;
+  width: 25px;
+  height: 25px;
+}
+.section1 .card_header .container_icons .container_vectors .eye3 {
+  z-index: 2;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 22.64px;
+  left: 50px;
+}
+.section1 .card_header .container_icons .container_vectors .box1 {
+  position: absolute;
+  left: 39px;
+  width: 37px;
+  height: 3px;
+  top: 2px;
+}
+.section1 .card_header .container_icons .container_vectors .box2 {
+  position: absolute;
+  top: 6px;
+  left: 37px;
+  width: 43.15px;
+  height: 3px;
+}
+.section1 .card_header .container_icons .container_vectors .box3 {
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  width: 48.17px;
+  height: 3px;
+}
+.section1 .card_header .container_icons .container_vectors .box4 {
+  position: absolute;
+  top: 14px;
+  left: 33px;
+  width: 52px;
+  height: 36px;
+}
+.section1 .card_header p {
+  margin: 20px auto;
+  font-family: "Raleway", sans-serif;
+}
+.section1 .card_header .title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 5.9600000381px;
+  width: 117px;
+  height: 24px;
+  margin: 10px auto;
+}
+.section1 .card_header .text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  left: 11.15px;
+  width: 75%;
+  padding: 0px;
+}/*# sourceMappingURL=section1.css.map */
