@@ -1,4 +1,13 @@
-@import './variables';
+$font-primary: "Raleway", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+$color-primary: #08a6e4;
+$color-secondary: #a5a5a5;
+$color-tertiary: #55dfb4;
+$color-quaternary: #eb476e;
+
+$color-shadow: #00000033;
+$color-shadow-blue: #07ACE64A;
 
 * {
   box-sizing: border-box;
@@ -25,9 +34,6 @@ body {
     display: inline-block;
     cursor: pointer;
     color: #fff;
-
-    // justify-content: center;
-    // align-items: center;
   }
 
   .logo_Oxygen {
@@ -48,7 +54,7 @@ body {
 
   main {
     margin-top: 375px;
-    display: block;
+    display: inline;
   }
 
   // footer {
@@ -107,3 +113,9 @@ body {
   //   }
   // }
 }
+
+@import './nav.scss';
+@import './header.scss';
+@import './card.scss';
+@import './section1.scss';
+@import './section2.scss';
