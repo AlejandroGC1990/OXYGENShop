@@ -1,39 +1,73 @@
 .section2 {
   display: block;
   text-align: center;
-  // width: 375px;
   background-color: #f7f7f7;
   padding: 25px 0;
 
-  .card_section2 {
-    @extend .card;
-    background-color: #ffffff;
-    margin: 20px auto;
+  @mixin __card {
+    margin: 19px auto;
     width: 315px;
     height: 370px;
     border-radius: 5px;
-    border-color: #e8e9ed;
+    display: inline-block;
+  }
 
-    .container_img {
-      margin: 0 auto;
-      position: relative;
+  @mixin containerImg {
+    margin: 0 auto;
+    position: relative;
+  }
 
-      // .circle {
-      // pos
-      //   width: 100%;
-      //   position: relative;
-      // }
+  @mixin containerText {
+    padding-top: 170px;
+    display: block;
 
-      .pink,
-      .blue,
-      .green {
+    p {
+      margin: 10px 20px;
+      width: 90%;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 35.22px;
+      text-align: left;
+      font-family: $font-primary;
+      width: 100%;
+      height: 72px;
+    }
+
+    &__text {
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+    }
+  }
+
+  &__card1 {
+    @include __card;
+    background-color: #fff;
+    border: 1px solid #e8e9ed;
+
+    &__containerImg1 {
+      @include containerImg;
+      background-color: #fff;
+
+      &__rectangleMobile {
         position: absolute;
-        width: 90px;
-        height: 90px;
-        top: 18px;
+        width: 90.12px;
+        height: 90.12px;
+        top: 15px;
       }
 
-      .img_pc {
+      &__rectanglePc {
+        //!HACER MEDIAQUERY PARA QUE
+        //!APAREZCA EN VISTA PC
+        display: none;
+      }
+
+      &__pc {
         position: absolute;
         width: 192.76px;
         height: 109.93px;
@@ -41,39 +75,68 @@
         left: 55.27px;
       }
 
-      // .img_mobile {
-      // }
-      // .img_megaphone {
-      // }
+      &__circleBlue {
+        position: absolute;
+        width: 131.88px;
+        height: 131.88px;
+        top: 17px;
+        left: 90px;
+      }
+
+      &__mobile {
+        position: absolute;
+        width: 160px;
+        height: 137px;
+        top: 25.01px;
+        left: 90px;
+      }
     }
 
-    .text_card_section2 {
-      // position:absolute;
-      padding-top: 150px;
-      // background-color: red;
-      // top: 1px;
+    &__containerText1 {
+      @include containerText;
+      padding-top: 170px;
+    }
+  }
 
-      p {
-        margin:  0px 20px;
-        width: 90%;
+  &__card2 {
+    @include __card;
+
+    &__containerImg2 {
+      @include containerImg;
+      height: 195px;
+      border: 1px solid #e8e9ed;
+
+      &__backgroundGreen {
+        width: 314px;
+        top: 291px;
+        left: 11.69px;
+        gap: 0px;
+        border-radius: 5px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+
+        position: absolute;
       }
 
-      .title_section2 {
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 35.22px;
-        text-align: left;
-        font-family: $font-primary;
-        width: 198px;
-        height: 72px;
+      &__megaphone {
+        z-index: 1;
+        position: absolute;
+        top: 25px;
+        right: 30px;
       }
+    }
 
-      .text_section2 {
+    &__containerText2 {
+      @include containerText;
+      padding: 10px 0;
+      background-color: #fff;
+      border: 1px solid #e8e9ed;
+
+      &__text {
+        padding-top: 50px;
+        // background-color: red;
         font-family: $font-secondary;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
-        text-align: left;
+        font-size: 16px;
       }
     }
   }

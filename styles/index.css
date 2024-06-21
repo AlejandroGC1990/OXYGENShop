@@ -110,17 +110,15 @@ header .header-img-container .header-img {
   margin: 0px auto;
 }
 
-.card, .section2 .card_section2, .section1 .card_section1 {
+.card, .section1 .card_section1 {
   width: auto;
   height: auto;
   margin: 20px auto;
 }
-.card .pink, .section2 .card_section2 .pink, .section1 .card_section1 .pink,
+.card .pink, .section1 .card_section1 .pink,
 .card .blue,
-.section2 .card_section2 .blue,
 .section1 .card_section1 .blue,
 .card .green,
-.section2 .card_section2 .green,
 .section1 .card_section1 .green {
   display: inline-block;
   position: relative;
@@ -130,45 +128,37 @@ header .header-img-container .header-img {
   width: 63px;
   height: 63px;
 }
-.card .pink, .section2 .card_section2 .pink, .section1 .card_section1 .pink {
+.card .pink, .section1 .card_section1 .pink {
   background-color: #eb476e;
 }
-.card .blue, .section2 .card_section2 .blue, .section1 .card_section1 .blue {
+.card .blue, .section1 .card_section1 .blue {
   background: #08a6e4;
 }
-.card .green, .section2 .card_section2 .green, .section1 .card_section1 .green {
+.card .green, .section1 .card_section1 .green {
   background: #55dfb4;
 }
-.card .container_vectors, .section2 .card_section2 .container_vectors, .section1 .card_section1 .container_vectors {
+.card .container_vectors, .section1 .card_section1 .container_vectors {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card .head, .section2 .card_section2 .head, .section1 .card_section1 .head,
+.card .head, .section1 .card_section1 .head,
 .card .body,
-.section2 .card_section2 .body,
 .section1 .card_section1 .body,
 .card .eye1,
-.section2 .card_section2 .eye1,
 .section1 .card_section1 .eye1,
 .card .eye2,
-.section2 .card_section2 .eye2,
 .section1 .card_section1 .eye2,
 .card .eye3,
-.section2 .card_section2 .eye3,
 .section1 .card_section1 .eye3,
 .card .box1,
-.section2 .card_section2 .box1,
 .section1 .card_section1 .box1,
 .card .box2,
-.section2 .card_section2 .box2,
 .section1 .card_section1 .box2,
 .card .box3,
-.section2 .card_section2 .box3,
 .section1 .card_section1 .box3,
 .card .box4,
-.section2 .card_section2 .box4,
 .section1 .card_section1 .box4 {
   position: absolute;
 }
@@ -176,7 +166,6 @@ header .header-img-container .header-img {
 .section1 {
   display: block;
   text-align: center;
-  background-color: red;
 }
 .section1 h3 {
   font-size: 30px;
@@ -278,53 +267,133 @@ header .header-img-container .header-img {
   background-color: #f7f7f7;
   padding: 25px 0;
 }
-.section2 .card_section2 {
-  background-color: #ffffff;
-  margin: 20px auto;
+.section2__card1 {
+  margin: 19px auto;
   width: 315px;
   height: 370px;
   border-radius: 5px;
-  border-color: #e8e9ed;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #e8e9ed;
 }
-.section2 .card_section2 .container_img {
+.section2__card1__containerImg1 {
   margin: 0 auto;
   position: relative;
+  background-color: #fff;
 }
-.section2 .card_section2 .container_img .pink,
-.section2 .card_section2 .container_img .blue,
-.section2 .card_section2 .container_img .green {
+.section2__card1__containerImg1__rectangleMobile {
   position: absolute;
-  width: 90px;
-  height: 90px;
-  top: 18px;
+  width: 90.12px;
+  height: 90.12px;
+  top: 15px;
 }
-.section2 .card_section2 .container_img .img_pc {
+.section2__card1__containerImg1__rectanglePc {
+  display: none;
+}
+.section2__card1__containerImg1__pc {
   position: absolute;
   width: 192.76px;
   height: 109.93px;
   top: 37.11px;
   left: 55.27px;
 }
-.section2 .card_section2 .text_card_section2 {
-  padding-top: 150px;
+.section2__card1__containerImg1__circleBlue {
+  position: absolute;
+  width: 131.88px;
+  height: 131.88px;
+  top: 17px;
+  left: 90px;
 }
-.section2 .card_section2 .text_card_section2 p {
-  margin: 0px 20px;
+.section2__card1__containerImg1__mobile {
+  position: absolute;
+  width: 160px;
+  height: 137px;
+  top: 25.01px;
+  left: 90px;
+}
+.section2__card1__containerText1 {
+  padding-top: 170px;
+  display: block;
+  padding-top: 170px;
+}
+.section2__card1__containerText1 p {
+  margin: 10px 20px;
   width: 90%;
 }
-.section2 .card_section2 .text_card_section2 .title_section2 {
+.section2__card1__containerText1__title {
   font-size: 30px;
   font-weight: 400;
   line-height: 35.22px;
   text-align: left;
   font-family: "Raleway", sans-serif;
-  width: 198px;
+  width: 100%;
   height: 72px;
 }
-.section2 .card_section2 .text_card_section2 .text_section2 {
+.section2__card1__containerText1__text {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+}
+.section2__card2 {
+  margin: 19px auto;
+  width: 315px;
+  height: 370px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.section2__card2__containerImg2 {
+  margin: 0 auto;
+  position: relative;
+  height: 195px;
+  border: 1px solid #e8e9ed;
+}
+.section2__card2__containerImg2__backgroundGreen {
+  width: 314px;
+  top: 291px;
+  left: 11.69px;
+  gap: 0px;
+  border-radius: 5px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  position: absolute;
+}
+.section2__card2__containerImg2__megaphone {
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+.section2__card2__containerText2 {
+  padding-top: 170px;
+  display: block;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid #e8e9ed;
+}
+.section2__card2__containerText2 p {
+  margin: 10px 20px;
+  width: 90%;
+}
+.section2__card2__containerText2__title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.22px;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  height: 72px;
+}
+.section2__card2__containerText2__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.section2__card2__containerText2__text {
+  padding-top: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */
