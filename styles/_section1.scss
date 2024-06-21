@@ -1,19 +1,21 @@
 .section1 {
   display: block;
   text-align: center;
+  padding-bottom: 50px;
   
   h3 {
     font-size: 30px;
     font-weight: 300;
     line-height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
   
   .card_section1 {
     @extend .card;
     display: inline-block;
-    height: 168px;
+    max-height: 168px;
     width: 370px;
+    padding: 0px 0 25px ;
 
     .container_icons {
       margin: 0 auto;
@@ -87,9 +89,10 @@
       }
     }
 
-    p {
-      margin: 20px auto;
+    p {     
+      margin: 0px auto;
       font-family: $font-primary;
+      color:#A5A5A5;
     }
 
     .title {
@@ -100,11 +103,12 @@
       letter-spacing: 5.960000038146973px;
       width: 117px;
       height: 24px;
+      color: black;
+      margin: 15px auto;
     }
 
     .text {
-      // background-color: red;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 20px;
       text-align: center;

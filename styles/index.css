@@ -113,7 +113,7 @@ header .header-img-container .header-img {
 .card, .section1 .card_section1 {
   width: auto;
   height: auto;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 .card .pink, .section1 .card_section1 .pink,
 .card .blue,
@@ -166,17 +166,19 @@ header .header-img-container .header-img {
 .section1 {
   display: block;
   text-align: center;
+  padding-bottom: 50px;
 }
 .section1 h3 {
   font-size: 30px;
   font-weight: 300;
   line-height: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .section1 .card_section1 {
   display: inline-block;
-  height: 168px;
+  max-height: 168px;
   width: 370px;
+  padding: 0px 0 25px;
 }
 .section1 .card_section1 .container_icons {
   margin: 0 auto;
@@ -240,8 +242,9 @@ header .header-img-container .header-img {
   height: 36px;
 }
 .section1 .card_section1 p {
-  margin: 20px auto;
+  margin: 0px auto;
   font-family: "Raleway", sans-serif;
+  color: #A5A5A5;
 }
 .section1 .card_section1 .title {
   align-items: center;
@@ -251,9 +254,11 @@ header .header-img-container .header-img {
   letter-spacing: 5.9600000381px;
   width: 117px;
   height: 24px;
+  color: black;
+  margin: 15px auto;
 }
 .section1 .card_section1 .text {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
