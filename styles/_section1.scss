@@ -1,0 +1,119 @@
+.section1 {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+  
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+  
+  .card_section1 {
+    @extend .card;
+    display: inline-block;
+    max-height: 168px;
+    width: 370px;
+    padding: 0px 0 25px ;
+
+    .container_icons {
+      margin: 0 auto;
+      width: 63px;
+      height: 63px;
+      position: relative;
+
+      .container_vectors {
+        height: 51px;
+        width: 44.02px;
+        top: 28px;
+
+        .head {
+          left: 11px;
+          padding-left: 20px;
+        }
+
+        .body {
+          padding-left: 21px;
+          top: 27px;
+          left: 0px;
+        }
+
+        .eye1 {
+          height: 33px;
+          top: 12px;
+          left: 16px;
+        }
+
+        .eye2 {
+          top: 15.5px;
+          left: 33px;
+          width: 25px;
+          height: 25px;
+        }
+
+        .eye3 {
+          width: 12px;
+          height: 12px;
+          top: 22.64px;
+          left: 40px;
+        }
+
+        .box1 {
+          left: 32px;
+          width: 37px;
+          height: 3px;
+          top: 2px;
+        }
+
+        .box2 {
+          top: 6px;
+          left: 29px;
+          width: 43.15px;
+          height: 3px;
+        }
+
+        .box3 {
+          top: 10px;
+          left: 26px;
+          width: 48.17px;
+          height: 3px;
+        }
+
+        .box4 {
+          top: 14px;
+          left: 25px;
+          width: 52px;
+          height: 36px;
+        }
+      }
+    }
+
+    p {     
+      margin: 0px auto;
+      font-family: $font-primary;
+      color:#A5A5A5;
+    }
+
+    .title {
+      align-items: center;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24px;
+      letter-spacing: 5.960000038146973px;
+      width: 117px;
+      height: 24px;
+      color: black;
+      margin: 15px auto;
+    }
+
+    .text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+      left: 8px;
+      width: 35%;
+    }
+  }
+}
