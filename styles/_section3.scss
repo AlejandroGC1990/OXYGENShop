@@ -1,0 +1,138 @@
+@import "./card.scss";
+@import "./variables";
+
+.section3 {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  h3 {
+    margin-bottom: 6px;
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.26px;
+
+    height: 42px;
+  }
+
+  &__card3 {
+    width: 293px;
+    height: 251px;
+    border-radius: 18px;
+    display: inline-block;
+    margin: 10px auto 55px;
+    overflow: hidden;
+
+    :hover {
+      // box-shadow: #07ACE6;
+    }
+
+    &:nth-of-type(1) {
+      border: 1px solid $color-quaternary;
+
+      .section3__card3__containerPrice__price {
+        color: $color-quaternary;
+      }
+    }
+
+    &:nth-of-type(2) {
+      transform: scale(110%);
+      border: 1px solid $color-primary;
+
+      .section3__card3__containerPrice__price {
+        color: $color-primary;
+      }
+    }
+
+    &:nth-of-type(3) {
+      border: 1px solid $color-tertiary;
+
+      .section3__card3__containerPrice__price {
+        color: $color-tertiary;
+      }
+    }
+
+    &__containerPrice {
+      position: absolute;
+      display: block;
+      width: 38%;
+      margin: 0 auto;
+      padding: 67px 0;
+      height: 251px;
+
+      &__basic {
+        height: 20px;
+        margin: 0 auto;
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      &__price {
+        width: 59;
+        height: 60px;
+        // background-color: red;
+        padding-top: 0px;
+        font-family: $font-secondary;
+        font-size: 46px;
+        font-weight: 300;
+        line-height: 60px;
+        margin: 0 auto;
+      }
+
+      &__subtitle {
+        width: 74px;
+        height: 14px;
+        margin: 0 auto;
+        font-family: $font-primary;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 10.09px;
+
+        color: #13253b;
+      }
+    }
+
+    &__containerFeature {
+      display: inline-block;
+      height: 248px;
+      width: 45%;
+      position: absolute;
+      right: 40px;
+      padding: 25px 0;
+
+      &__input {
+        width: 10%;
+        height: 90%;
+        display: block;
+        position: absolute;
+
+        &__checkbox {
+          width: 11px;
+          height: 11px;
+        }
+      }
+
+      &__text {
+        display: block;
+        position: absolute;
+        width: 89%;
+        left: 20px;
+
+        &__title {
+          width: 115px;
+          height: 19px;
+          left: 21px;
+          font-family: $font-secondary;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.07px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

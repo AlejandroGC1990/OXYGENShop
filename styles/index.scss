@@ -1,15 +1,10 @@
-$font-primary: "Raleway", sans-serif;
-$font-secondary: "Open Sans", sans-serif;
-
-$color-primary: #08a6e4;
-$color-secondary: #a5a5a5;
-$color-tertiary: #55dfb4;
-$color-quaternary: #eb476e;
-
-$color-shadow: #00000033;
-$color-shadow-blue: #07ACE64A;
-
-$trumpet-top: 50px; 
+@import "./variables.scss";
+@import "./nav.scss";
+@import "./header.scss";
+@import "./card.scss";
+@import "./section1.scss";
+@import "./section2.scss";
+@import "./section3.scss";
 
 * {
   box-sizing: border-box;
@@ -25,7 +20,13 @@ body {
   h1,
   h2,
   h3 {
+    text-align: center;
     font-family: $font-primary;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.26px;
+    margin-bottom: 30px;
+    width: 100%;
   }
 
   button {
@@ -78,46 +79,40 @@ body {
   //   }
   // }
 
-  // @media only screen and (min-width: 1000px) {
-  //   body {
-  //     max-width: 1626px;
-  //     height: 70px;
+//   @media only screen and (min-width: 1000px) {
+//     body {
+//       max-width: 1626px;
+//       height: 70px;
 
-  //     nav {
-  //       height: 70px;
-  //       width: 100%;
+//       nav {
+//         height: 70px;
+//         width: 100%;
 
-  //       .nav-logo {
-  //         width: 206px;
-  //         height: 37px;
+//         .nav-logo {
+//           width: 206px;
+//           height: 37px;
 
-  //         font-family: $font-primary;
-  //         font-size: 32px;
-  //         font-weight: 300;
-  //         line-height: 37px;
-  //         text-align: left;
-  //         color: $color-primary;
+//           font-family: $font-primary;
+//           font-size: 32px;
+//           font-weight: 300;
+//           line-height: 37px;
+//           text-align: left;
+//           color: $color-primary;
 
-  //         background-color: aqua;
-  //         display: inline-block;
-  //         margin-top: 17px;
-  //         margin-left: 25px;
-  //       }
+//           background-color: aqua;
+//           display: inline-block;
+//           margin-top: 17px;
+//           margin-left: 25px;
+//         }
 
-  //       .menu {
-  //         display: none;
-  //       }
+//         .menu {
+//           display: none;
+//         }
 
-  //       ul {
-  //         display: inline-block;
-  //       }
-  //     }
-  //   }
-  // }
+//         ul {
+//           display: inline-block;
+//         }
+//       }
+//     }
+//   }
 }
-
-@import './nav.scss';
-@import './header.scss';
-@import './card.scss';
-@import './section1.scss';
-@import './section2.scss';
