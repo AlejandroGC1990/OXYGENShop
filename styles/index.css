@@ -431,34 +431,70 @@ header .header-img-container .header-img {
   height: 251px;
   border-radius: 18px;
   display: inline-block;
-  margin: 10px auto 55px;
-  overflow: hidden;
+  margin: 5px auto 55px;
+}
+.section3__card3 button {
+  padding: 15px 55px;
+  border-radius: 23px;
+  position: absolute;
+  left: -70px;
+  top: 222px;
+  transition: box-shadow 0.3s ease;
 }
 .section3__card3:nth-of-type(1) {
   border: 1px solid #eb476e;
 }
+.section3__card3:nth-of-type(1) button {
+  background-color: #eb476e;
+}
 .section3__card3:nth-of-type(1) .section3__card3__containerPrice__price {
   color: #eb476e;
 }
-.section3__card3:nth-of-type(2) {
+.section3__card3:nth-of-type(1):nth-of-type(1):hover {
+  box-shadow: 2px 9px 50px -25px #eb476e;
   transform: scale(110%);
+}
+.section3__card3:nth-of-type(1):nth-of-type(1):hover button {
+  box-shadow: 2px 9px 25px -10px #eb476e;
+}
+.section3__card3:nth-of-type(2) {
   border: 1px solid #08a6e4;
+}
+.section3__card3:nth-of-type(2) button {
+  background-color: #08a6e4;
 }
 .section3__card3:nth-of-type(2) .section3__card3__containerPrice__price {
   color: #08a6e4;
 }
+.section3__card3:nth-of-type(2):nth-of-type(2):hover {
+  box-shadow: 2px 9px 50px -25px #08a6e4;
+  transform: scale(110%);
+}
+.section3__card3:nth-of-type(2):nth-of-type(2):hover button {
+  box-shadow: 2px 9px 25px -10px #08a6e4;
+}
 .section3__card3:nth-of-type(3) {
   border: 1px solid #55dfb4;
 }
+.section3__card3:nth-of-type(3) button {
+  background-color: #55dfb4;
+}
 .section3__card3:nth-of-type(3) .section3__card3__containerPrice__price {
   color: #55dfb4;
+}
+.section3__card3:nth-of-type(3):nth-of-type(3):hover {
+  box-shadow: 2px 9px 50px -25px #55dfb4;
+  transform: scale(110%);
+}
+.section3__card3:nth-of-type(3):nth-of-type(3):hover button {
+  box-shadow: 2px 9px 25px -10px #55dfb4;
 }
 .section3__card3__containerPrice {
   position: absolute;
   display: block;
   width: 38%;
   margin: 0 auto;
-  padding: 67px 0;
+  padding: 70px 0;
   height: 251px;
 }
 .section3__card3__containerPrice__basic {
@@ -492,36 +528,48 @@ header .header-img-container .header-img {
 .section3__card3__containerFeature {
   display: inline-block;
   height: 248px;
-  width: 45%;
+  width: 40%;
   position: absolute;
-  right: 40px;
-  padding: 25px 0;
+  left: 185px;
+  padding-top: 15px;
+  right: 0px;
 }
 .section3__card3__containerFeature__input {
   width: 10%;
   height: 90%;
   display: block;
   position: absolute;
+  padding-top: 12px;
 }
 .section3__card3__containerFeature__input__checkbox {
   width: 11px;
   height: 11px;
+  margin: 0px auto 23px;
 }
 .section3__card3__containerFeature__text {
   display: block;
   position: absolute;
   width: 89%;
-  left: 20px;
+  right: 0px;
+  padding-top: 8px;
 }
 .section3__card3__containerFeature__text__title {
   width: 115px;
   height: 19px;
   left: 21px;
+  margin: 0 5px 19px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.07px;
-  text-align: left;
+  text-align: initial;
+}
+.section3__card3:hover .section3__card3__containerPrice {
+  width: 50%;
+}
+.section3__card3:hover .section3__card3__containerFeature {
+  width: 50%;
+  left: 145px;
 }
 
 * {

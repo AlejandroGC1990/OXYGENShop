@@ -13,7 +13,6 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 42.26px;
-
     height: 42px;
   }
 
@@ -22,36 +21,87 @@
     height: 251px;
     border-radius: 18px;
     display: inline-block;
-    margin: 10px auto 55px;
-    overflow: hidden;
+    margin: 5px auto 55px;
+    // overflow: hidden;
 
-    :hover {
-      // box-shadow: #07ACE6;
+    button {
+      // width: 150px;
+      // height: 50px;
+      padding: 15px 55px;
+      border-radius: 23px;
+      position: absolute;
+      left: -70px;
+      top: 222px;
+
+      transition: box-shadow 0.3s ease;
     }
 
-    &:nth-of-type(1) {
+    &:nth-of-type(1) /*basic card*/ {
       border: 1px solid $color-quaternary;
+      button {
+        background-color: $color-quaternary;
+      }
+
+      // button:hover {
+      //   box-shadow: 2px 9px 50px -25px #000;
+      //   // box-shadow: 2px 9px 50px -25px $color-quaternary;
+      //   transform: scale(110%);
+      // }
 
       .section3__card3__containerPrice__price {
         color: $color-quaternary;
       }
+
+      &:nth-of-type(1):hover {
+        box-shadow: 2px 9px 50px -25px $color-quaternary;
+        transform: scale(110%);
+
+        button {
+          box-shadow: 2px 9px 25px -10px $color-quaternary;
+        }
+      }
     }
 
-    &:nth-of-type(2) {
-      transform: scale(110%);
+    &:nth-of-type(2) /*professional card*/ {
       border: 1px solid $color-primary;
+
+      button {
+        background-color: $color-primary;
+      }
 
       .section3__card3__containerPrice__price {
         color: $color-primary;
       }
+
+      &:nth-of-type(2):hover {
+        box-shadow: 2px 9px 50px -25px $color-primary;
+        transform: scale(110%);
+
+        button {
+          box-shadow: 2px 9px 25px -10px $color-primary;
+        }
+      }
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(3) /*premium card*/ {
       border: 1px solid $color-tertiary;
+      button {
+        background-color: $color-tertiary;
+      }
 
       .section3__card3__containerPrice__price {
         color: $color-tertiary;
       }
+
+      &:nth-of-type(3):hover {
+        box-shadow: 2px 9px 50px -25px $color-tertiary;
+        transform: scale(110%);
+        
+        button {
+          box-shadow: 2px 9px 25px -10px $color-tertiary;
+        }
+      }
+
     }
 
     &__containerPrice {
@@ -59,9 +109,8 @@
       display: block;
       width: 38%;
       margin: 0 auto;
-      padding: 67px 0;
+      padding: 70px 0;
       height: 251px;
-
       &__basic {
         height: 20px;
         margin: 0 auto;
@@ -74,7 +123,6 @@
       &__price {
         width: 59;
         height: 60px;
-        // background-color: red;
         padding-top: 0px;
         font-family: $font-secondary;
         font-size: 46px;
@@ -91,7 +139,6 @@
         font-size: 12px;
         font-weight: 700;
         line-height: 10.09px;
-
         color: #13253b;
       }
     }
@@ -99,20 +146,22 @@
     &__containerFeature {
       display: inline-block;
       height: 248px;
-      width: 45%;
+      width: 40%;
       position: absolute;
-      right: 40px;
-      padding: 25px 0;
-
+      left: 185px;
+      padding-top: 15px;
+      right: 0px;
       &__input {
         width: 10%;
         height: 90%;
         display: block;
         position: absolute;
+        padding-top: 12px;
 
         &__checkbox {
           width: 11px;
           height: 11px;
+          margin: 0px auto 23px;
         }
       }
 
@@ -120,19 +169,30 @@
         display: block;
         position: absolute;
         width: 89%;
-        left: 20px;
-
+        right: 0px;
+        padding-top: 8px;
         &__title {
           width: 115px;
           height: 19px;
           left: 21px;
+          margin: 0 5px 19px;
           font-family: $font-secondary;
           font-size: 14px;
           font-weight: 400;
           line-height: 19.07px;
-          text-align: left;
+          text-align: initial;
         }
       }
+    }
+  }
+
+  &__card3:hover {
+    .section3__card3__containerPrice {
+      width: 50%;
+    }
+    .section3__card3__containerFeature {
+      width: 50%;
+      left: 145px;
     }
   }
 }
