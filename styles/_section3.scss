@@ -22,18 +22,18 @@
     border-radius: 18px;
     display: inline-block;
     margin: 5px auto 55px;
-    // overflow: hidden;
 
     button {
-      // width: 150px;
-      // height: 50px;
-      padding: 15px 55px;
+      padding: 13px 53px;
       border-radius: 23px;
       position: absolute;
       left: -70px;
       top: 222px;
 
-      transition: box-shadow 0.3s ease;
+      font-family: $font-secondary;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 17.7px;
     }
 
     &:nth-of-type(1) /*basic card*/ {
@@ -41,12 +41,6 @@
       button {
         background-color: $color-quaternary;
       }
-
-      // button:hover {
-      //   box-shadow: 2px 9px 50px -25px #000;
-      //   // box-shadow: 2px 9px 50px -25px $color-quaternary;
-      //   transform: scale(110%);
-      // }
 
       .section3__card3__containerPrice__price {
         color: $color-quaternary;
@@ -96,12 +90,11 @@
       &:nth-of-type(3):hover {
         box-shadow: 2px 9px 50px -25px $color-tertiary;
         transform: scale(110%);
-        
+
         button {
           box-shadow: 2px 9px 25px -10px $color-tertiary;
         }
       }
-
     }
 
     &__containerPrice {

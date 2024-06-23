@@ -434,12 +434,15 @@ header .header-img-container .header-img {
   margin: 5px auto 55px;
 }
 .section3__card3 button {
-  padding: 15px 55px;
+  padding: 13px 53px;
   border-radius: 23px;
   position: absolute;
   left: -70px;
   top: 222px;
-  transition: box-shadow 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17.7px;
 }
 .section3__card3:nth-of-type(1) {
   border: 1px solid #eb476e;
@@ -570,6 +573,61 @@ header .header-img-container .header-img {
 .section3__card3:hover .section3__card3__containerFeature {
   width: 50%;
   left: 145px;
+}
+
+.section4 {
+  display: inline-block;
+  padding: 20px 30px;
+  width: 375px;
+}
+.section4 p,
+.section4 a,
+.section4 label {
+  font-family: "Open Sans", sans-serif;
+}
+.section4__header {
+  margin: 0 auto;
+}
+.section4__header h1 {
+  margin: 0;
+  width: 280px;
+  height: 47px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46.96px;
+}
+.section4__header__subtitle {
+  margin: 1px;
+}
+.section4__header__contact {
+  display: inline-block;
+  width: 100%;
+  margin: 40px auto;
+}
+.section4__header__contact__pack {
+  margin: 4px;
+  display: inline-block;
+  position: relative;
+  height: 27px;
+  width: 100%;
+}
+.section4__header__contact__pack__icon {
+  width: 20px;
+  height: 17px;
+}
+.section4__header__contact__pack__text {
+  color: #a5a5a5;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  left: 34.59px;
+  height: 27px;
+}
+.section4__form__text {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14.98px;
+  letter-spacing: 3.28px;
 }
 
 * {
