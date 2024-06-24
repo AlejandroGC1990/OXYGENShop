@@ -13,12 +13,12 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 42.26px;
-    height: 42px;
+    // height: 42px;
   }
 
   &__card3 {
     width: 293px;
-    height: 251px;
+    // height: 251px;
     border-radius: 18px;
     display: inline-block;
     margin: 5px auto 55px;
@@ -102,9 +102,9 @@
       width: 38%;
       margin: 0 auto;
       padding: 70px 0;
-      height: 251px;
+      // height: 251px;
       &__basic {
-        height: 20px;
+        // height: 20px;
         margin: 0 auto;
         font-family: $font-primary;
         font-size: 20px;
@@ -114,7 +114,7 @@
 
       &__price {
         width: 59;
-        height: 60px;
+        // height: 60px;
         padding-top: 0px;
         font-family: $font-secondary;
         font-size: 46px;
@@ -125,7 +125,7 @@
 
       &__subtitle {
         width: 74px;
-        height: 14px;
+        // height: 14px;
         margin: 0 auto;
         font-family: $font-primary;
         font-size: 12px;
@@ -137,7 +137,7 @@
 
     &__containerFeature {
       display: inline-block;
-      height: 248px;
+      // height: 248px;
       width: 40%;
       position: absolute;
       left: 185px;
@@ -145,14 +145,14 @@
       right: 0px;
       &__input {
         width: 10%;
-        height: 90%;
+        // height: 90%;
         display: block;
         position: absolute;
         padding-top: 12px;
 
         &__checkbox {
           width: 11px;
-          height: 11px;
+          // height: 11px;
           margin: 0px auto 23px;
         }
       }
@@ -165,7 +165,7 @@
         padding-top: 8px;
         &__title {
           width: 115px;
-          height: 19px;
+          // height: 19px;
           left: 21px;
           margin: 0 5px 19px;
           font-family: $font-secondary;
