@@ -3,11 +3,6 @@
   padding-bottom: 50px;
 
   h3 {
-    width: 303px;
-    height: 112px;
-    top: 714px;
-    left: 36px;
-
     font-family: $font-primary;
     font-size: 30px;
     font-weight: 300;
@@ -18,9 +13,7 @@
   .card_section1 {
     @extend .card;
     display: inline-block;
-    max-height: 168px;
     width: 370px;
-    // background-color: aquamarine;
     padding: 0px 0 25px;
 
     .container_icons {
