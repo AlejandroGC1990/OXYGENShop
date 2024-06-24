@@ -597,12 +597,17 @@ header .header-img-container .header-img {
   line-height: 46.96px;
 }
 .section4__header__subtitle {
-  margin: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
 }
 .section4__header__contact {
   display: inline-block;
   width: 100%;
-  margin: 40px auto;
+  margin: 35px auto 55px;
 }
 .section4__header__contact__pack {
   margin: 4px;
@@ -623,11 +628,69 @@ header .header-img-container .header-img {
   left: 34.59px;
   height: 27px;
 }
-.section4__form__text {
+.section4__form {
+  display: block;
+  position: relative;
+}
+.section4__form__pack__text {
+  width: 100%;
+  color: #08a6e4;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 14.98px;
   letter-spacing: 3.28px;
+}
+.section4__form__pack input {
+  width: 312px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: block;
+  width: 312px;
+  border: none;
+  border-bottom: 2px solid #cfd0d1;
+}
+.section4__form__terms {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  direction: ltr;
+}
+.section4__form__terms__checkbox {
+  appearance: none;
+  border: 1px solid #95989A;
+  border-radius: 3px;
+  height: 24px;
+  width: 24px;
+  font-size: 34;
+  position: relative;
+}
+.section4__form__terms__checkbox:checked {
+  background: no-repeat;
+  background-image: url("../images/check.png");
+  background-size: 20;
+  background-position: center;
+}
+.section4__form__terms__text {
+  width: 90%;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  position: absolute;
+  left: 35px;
+  top: 0px;
+  color: #707070;
+}
+.section4__form__terms button {
+  position: absolute;
+  top: 180px;
+  left: 85px;
+  padding: 20px 100px;
+  background-color: #08a6e4;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17.7px;
 }
 
 * {
