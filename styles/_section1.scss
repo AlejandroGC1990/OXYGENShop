@@ -7,83 +7,94 @@
     font-size: 30px;
     font-weight: 300;
     line-height: 35px;
-    margin: 0 auto 25px;
+    margin-bottom: 26px;
   }
 
-  .card_section1 {
-    @extend .card;
-    display: inline-block;
+  &__card {
+    // background-color: greenyellow;
+    display: block;
     width: 370px;
-    padding: 0px 0 25px;
+    padding: 10px 0px 0px;
+    margin:  10px auto 10px;
 
-    .container_icons {
+    &__container {
       margin: 0 auto;
+      // padding: 5px 0 0px;
       width: 63px;
-      // height: 63px;
       position: relative;
 
-      .container_vectors {
-        // height: 51px;
-        width: 44.02px;
-        top: 28px;
+      &__circle {
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        width: auto;
+        width: 63px;
+      }
 
-        .head {
-          left: 11px;
+      &__vectors {
+        position: absolute;
+        width: 44.02px;
+        top: 0px;
+
+        &__head {
+          position: absolute;
+          left: 19px;
           padding-left: 20px;
         }
 
-        .body {
+        &__body {
+          position: absolute;
           padding-left: 21px;
           top: 27px;
-          left: 0px;
+          left: 8px;
         }
 
-        .eye1 {
-          // height: 33px;
-          top: 12px;
-          left: 16px;
+        &__eye1 {
+          position: absolute;
+          top: 11px;
+          left: 21px;
         }
 
-        .eye2 {
-          top: 15.5px;
-          left: 33px;
+        &__eye2 {
+          position: absolute;
+          top: 17px;
+          left: 43px;
           width: 25px;
-          // height: 25px;
         }
 
-        .eye3 {
-          width: 12px;
-          // height: 12px;
+        &__eye3 {
+          position: absolute;
+          width: 14px;
           top: 22.64px;
-          left: 40px;
+          left: 48px;
         }
 
-        .box1 {
+        &__box1 {
+          position: absolute;
           left: 32px;
           width: 37px;
-          // height: 3px;
-          top: 2px;
+          top: 4px;
         }
 
-        .box2 {
-          top: 6px;
+        &__box2 {
+          position: absolute;
+          top: 8px;
           left: 29px;
           width: 43.15px;
-          // height: 3px;
         }
 
-        .box3 {
+        &__box3 {
+          position: absolute;
           top: 10px;
           left: 26px;
           width: 48.17px;
-          // height: 3px;
         }
 
-        .box4 {
+        &__box4 {
           top: 14px;
           left: 25px;
           width: 52px;
-          // height: 36px;
+          position: absolute;
         }
       }
     }
@@ -91,28 +102,26 @@
     p {
       margin: 0px auto;
       font-family: $font-primary;
-      color: #a5a5a5;
     }
 
-    .title {
-      align-items: center;
+    &__title {
+      text-align: center;
       font-size: 20px;
-      font-weight: 800;
+      font-weight: 1000;
       line-height: 24px;
       letter-spacing: 5.960000038146973px;
-      width: 117px;
-      // height: 24px;
       color: black;
-      margin: 15px auto;
+      padding: 8px 0 22px;
     }
 
-    .text {
+    &__text {
       font-size: 16px;
       font-weight: 400;
       line-height: 20px;
       text-align: center;
       left: 8px;
       width: 35%;
+      color: #a5a5a5;
     }
   }
 }

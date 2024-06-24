@@ -25,18 +25,18 @@ header {
     box-shadow: 5px 10px 14px 0px #07ace64a;
     font-size: 16px;
     font-weight: 700;
-    margin: 20px auto 25px;
+    margin: 23px auto 54px;
     padding: 22px 90px;
     background-color: $color-primary;
   }
 
-  .header-img-container {
-    margin: 35px auto 0px;
+  .header__container {
+    margin: 0px auto 0px;
     display: block;
     overflow: hidden;
     width: 375px;
 
-    .header-img {
+    &__img {
       width: 100%;
       height: 267px;
       display: block;

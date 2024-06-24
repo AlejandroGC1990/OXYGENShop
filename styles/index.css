@@ -41,71 +41,22 @@ header button {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   font-size: 16px;
   font-weight: 700;
-  margin: 20px auto 25px;
+  margin: 23px auto 54px;
   padding: 22px 90px;
   background-color: #08a6e4;
 }
-header .header-img-container {
-  margin: 35px auto 0px;
+header .header__container {
+  margin: 0px auto 0px;
   display: block;
   overflow: hidden;
   width: 375px;
 }
-header .header-img-container .header-img {
+header .header__container__img {
   width: 100%;
   height: 267px;
   display: block;
   object-fit: cover;
   margin: 0px auto;
-}
-
-.card, .section1 .card_section1 {
-  margin: 0px auto;
-}
-.card .pink, .section1 .card_section1 .pink,
-.card .blue,
-.section1 .card_section1 .blue,
-.card .green,
-.section1 .card_section1 .green {
-  display: inline-block;
-  position: relative;
-  border-radius: 50%;
-  width: auto;
-  width: 63px;
-}
-.card .pink, .section1 .card_section1 .pink {
-  background-color: #eb476e;
-}
-.card .blue, .section1 .card_section1 .blue {
-  background: #08a6e4;
-}
-.card .green, .section1 .card_section1 .green {
-  background: #55dfb4;
-}
-.card .container_vectors, .section1 .card_section1 .container_vectors {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.card .head, .section1 .card_section1 .head,
-.card .body,
-.section1 .card_section1 .body,
-.card .eye1,
-.section1 .card_section1 .eye1,
-.card .eye2,
-.section1 .card_section1 .eye2,
-.card .eye3,
-.section1 .card_section1 .eye3,
-.card .box1,
-.section1 .card_section1 .box1,
-.card .box2,
-.section1 .card_section1 .box2,
-.card .box3,
-.section1 .card_section1 .box3,
-.card .box4,
-.section1 .card_section1 .box4 {
-  position: absolute;
 }
 
 .section1 {
@@ -117,87 +68,104 @@ header .header-img-container .header-img {
   font-size: 30px;
   font-weight: 300;
   line-height: 35px;
-  margin: 0 auto 25px;
+  margin-bottom: 26px;
 }
-.section1 .card_section1 {
-  display: inline-block;
+.section1__card {
+  display: block;
   width: 370px;
-  padding: 0px 0 25px;
+  padding: 10px 0px 0px;
+  margin: 10px auto 10px;
 }
-.section1 .card_section1 .container_icons {
+.section1__card__container {
   margin: 0 auto;
   width: 63px;
   position: relative;
 }
-.section1 .card_section1 .container_icons .container_vectors {
-  width: 44.02px;
-  top: 28px;
+.section1__card__container__circle {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  width: auto;
+  width: 63px;
 }
-.section1 .card_section1 .container_icons .container_vectors .head {
-  left: 11px;
+.section1__card__container__vectors {
+  position: absolute;
+  width: 44.02px;
+  top: 0px;
+}
+.section1__card__container__vectors__head {
+  position: absolute;
+  left: 19px;
   padding-left: 20px;
 }
-.section1 .card_section1 .container_icons .container_vectors .body {
+.section1__card__container__vectors__body {
+  position: absolute;
   padding-left: 21px;
   top: 27px;
-  left: 0px;
+  left: 8px;
 }
-.section1 .card_section1 .container_icons .container_vectors .eye1 {
-  top: 12px;
-  left: 16px;
+.section1__card__container__vectors__eye1 {
+  position: absolute;
+  top: 11px;
+  left: 21px;
 }
-.section1 .card_section1 .container_icons .container_vectors .eye2 {
-  top: 15.5px;
-  left: 33px;
+.section1__card__container__vectors__eye2 {
+  position: absolute;
+  top: 17px;
+  left: 43px;
   width: 25px;
 }
-.section1 .card_section1 .container_icons .container_vectors .eye3 {
-  width: 12px;
+.section1__card__container__vectors__eye3 {
+  position: absolute;
+  width: 14px;
   top: 22.64px;
-  left: 40px;
+  left: 48px;
 }
-.section1 .card_section1 .container_icons .container_vectors .box1 {
+.section1__card__container__vectors__box1 {
+  position: absolute;
   left: 32px;
   width: 37px;
-  top: 2px;
+  top: 4px;
 }
-.section1 .card_section1 .container_icons .container_vectors .box2 {
-  top: 6px;
+.section1__card__container__vectors__box2 {
+  position: absolute;
+  top: 8px;
   left: 29px;
   width: 43.15px;
 }
-.section1 .card_section1 .container_icons .container_vectors .box3 {
+.section1__card__container__vectors__box3 {
+  position: absolute;
   top: 10px;
   left: 26px;
   width: 48.17px;
 }
-.section1 .card_section1 .container_icons .container_vectors .box4 {
+.section1__card__container__vectors__box4 {
   top: 14px;
   left: 25px;
   width: 52px;
+  position: absolute;
 }
-.section1 .card_section1 p {
+.section1__card p {
   margin: 0px auto;
   font-family: "Raleway", sans-serif;
-  color: #a5a5a5;
 }
-.section1 .card_section1 .title {
-  align-items: center;
+.section1__card__title {
+  text-align: center;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 1000;
   line-height: 24px;
   letter-spacing: 5.9600000381px;
-  width: 117px;
   color: black;
-  margin: 15px auto;
+  padding: 8px 0 22px;
 }
-.section1 .card_section1 .text {
+.section1__card__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   left: 8px;
   width: 35%;
+  color: #a5a5a5;
 }
 
 .section2 {
@@ -326,55 +294,6 @@ header .header-img-container .header-img {
   padding-top: 50px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-}
-
-.card, .section1 .card_section1 {
-  margin: 0px auto;
-}
-.card .pink, .section1 .card_section1 .pink,
-.card .blue,
-.section1 .card_section1 .blue,
-.card .green,
-.section1 .card_section1 .green {
-  display: inline-block;
-  position: relative;
-  border-radius: 50%;
-  width: auto;
-  width: 63px;
-}
-.card .pink, .section1 .card_section1 .pink {
-  background-color: #eb476e;
-}
-.card .blue, .section1 .card_section1 .blue {
-  background: #08a6e4;
-}
-.card .green, .section1 .card_section1 .green {
-  background: #55dfb4;
-}
-.card .container_vectors, .section1 .card_section1 .container_vectors {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.card .head, .section1 .card_section1 .head,
-.card .body,
-.section1 .card_section1 .body,
-.card .eye1,
-.section1 .card_section1 .eye1,
-.card .eye2,
-.section1 .card_section1 .eye2,
-.card .eye3,
-.section1 .card_section1 .eye3,
-.card .box1,
-.section1 .card_section1 .box1,
-.card .box2,
-.section1 .card_section1 .box2,
-.card .box3,
-.section1 .card_section1 .box3,
-.card .box4,
-.section1 .card_section1 .box4 {
-  position: absolute;
 }
 
 .section3 {
@@ -659,6 +578,7 @@ body h2,
 body h3 {
   font-family: "Raleway", sans-serif;
   width: 100%;
+  text-align: center;
 }
 body button {
   border-radius: 25%;
