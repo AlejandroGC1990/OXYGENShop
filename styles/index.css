@@ -53,7 +53,7 @@ header button {
   background-color: #08a6e4;
 }
 header .header-img-container {
-  margin: 25px auto 10px;
+  margin: 35px auto 0px;
   display: block;
   overflow: hidden;
   width: 375px;
@@ -577,7 +577,7 @@ header .header-img-container .header-img {
 
 .section4 {
   display: inline-block;
-  padding: 20px 30px;
+  padding: 20px 30px 0px;
   width: 375px;
 }
 .section4 p,
@@ -631,6 +631,7 @@ header .header-img-container .header-img {
 .section4__form {
   display: block;
   position: relative;
+  height: auto;
 }
 .section4__form__pack__text {
   width: 100%;
@@ -651,13 +652,14 @@ header .header-img-container .header-img {
 }
 .section4__form__terms {
   width: 100%;
+  height: 144;
   display: inline-block;
   position: relative;
   direction: ltr;
 }
 .section4__form__terms__checkbox {
   appearance: none;
-  border: 1px solid #95989A;
+  border: 1px solid #95989a;
   border-radius: 3px;
   height: 24px;
   width: 24px;
@@ -672,6 +674,7 @@ header .header-img-container .header-img {
 }
 .section4__form__terms__text {
   width: 90%;
+  height: 144;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 400;
@@ -703,6 +706,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 body h1,
 body h2,
@@ -731,13 +735,38 @@ body .logo_Oxygen {
   font-size: 32px;
   font-weight: 300;
   line-height: 37px;
-  text-align: left;
   color: #08a6e4;
   display: inline-block;
-  margin-top: 17px;
-  margin-left: 25px;
+  margin: 17px 0px 0px 25px;
 }
 body main {
-  margin-top: 375px;
-  display: inline;
+  margin-top: 15px;
+  display: block;
+}
+body footer {
+  width: 100%;
+  height: 89px;
+  box-shadow: 0px -5px 40px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 260px 0px 0px;
+}
+body footer .pack {
+  display: block;
+  width: 90%;
+}
+body footer .pack__copyright {
+  width: 187px;
+  height: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14.98px;
+  margin-left: 25px;
+  color: #a5a5a5;
+}
+body footer .pack__logos {
+  position: absolute;
+  top: 25px;
+  left: 80%;
+  display: inline-block;
 }
