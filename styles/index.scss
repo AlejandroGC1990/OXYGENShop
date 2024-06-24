@@ -82,7 +82,7 @@ body {
       }
     }
 
-    .pack__logos{
+    .pack__logos {
       position: absolute;
       top: 25px;
       left: 80%;
@@ -90,40 +90,15 @@ body {
     }
   }
 
-  //   @media only screen and (min-width: 1000px) {
-  //     body {
-  //       max-width: 1626px;
-  //       height: 70px;
+}
 
-  //       nav {
-  //         height: 70px;
-  //         width: 100%;
+@media only screen and (min-width: 1000px) {
+  body {
+    background-color: greenyellow;
+    max-width: 1626px;
+    height: 70px;
 
-  //         .nav-logo {
-  //           width: 206px;
-  //           height: 37px;
-
-  //           font-family: $font-primary;
-  //           font-size: 32px;
-  //           font-weight: 300;
-  //           line-height: 37px;
-  //           text-align: left;
-  //           color: $color-primary;
-
-  //           background-color: aqua;
-  //           display: inline-block;
-  //           margin-top: 17px;
-  //           margin-left: 25px;
-  //         }
-
-  //         .menu {
-  //           display: none;
-  //         }
-
-  //         ul {
-  //           display: inline-block;
-  //         }
-  //       }
-  //     }
-  //   }
+    width: 1626px;
+    height: 4234px;
+  }
 }
