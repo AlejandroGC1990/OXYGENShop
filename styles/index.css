@@ -172,10 +172,10 @@ header .header__container__img {
   display: block;
   text-align: center;
   background-color: #f7f7f7;
-  padding: 25px 0;
+  padding: 25px 0 230px;
 }
 .section2__card1 {
-  margin: 19px auto;
+  margin: 19px auto 18px;
   width: 315px;
   border-radius: 5px;
   display: inline-block;
@@ -185,7 +185,6 @@ header .header__container__img {
 .section2__card1__containerImg1 {
   margin: 0 auto;
   position: relative;
-  background-color: #fff;
 }
 .section2__card1__containerImg1__rectangleMobile {
   position: absolute;
@@ -217,9 +216,9 @@ header .header__container__img {
   padding-top: 170px;
   display: block;
   padding-top: 170px;
+  background-color: #fff;
 }
 .section2__card1__containerText1 p {
-  margin: 10px 20px;
   width: 90%;
 }
 .section2__card1__containerText1__title {
@@ -228,51 +227,51 @@ header .header__container__img {
   line-height: 35.22px;
   text-align: left;
   font-family: "Raleway", sans-serif;
-  width: 100%;
+  width: 90%;
+  margin: 0px 20px 50px;
 }
 .section2__card1__containerText1__text {
+  margin: 0px 20px 35px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 21px;
   text-align: left;
 }
+.section2__card1__containerText1__title2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.22px;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  width: 90%;
+  margin: 7px 17px 15px;
+}
+.section2__card1__containerText1__text2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  margin: 0px 16px 17px;
+}
 .section2__card2 {
-  margin: 19px auto;
+  margin: 19px auto 18px;
   width: 315px;
   border-radius: 5px;
   display: inline-block;
-}
-.section2__card2__containerImg2 {
-  margin: 0 auto;
-  position: relative;
-  border: 1px solid #e8e9ed;
-}
-.section2__card2__containerImg2__backgroundGreen {
-  width: 314px;
-  top: 291px;
-  left: 11.69px;
-  gap: 0px;
-  border-radius: 5px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  position: absolute;
-}
-.section2__card2__containerImg2__megaphone {
-  z-index: 1;
-  position: absolute;
-  top: 25px;
-  right: 30px;
+  background-color: #fff;
+  padding: 0px 0 10px;
+  margin: 20px 0 0px;
 }
 .section2__card2__containerText2 {
   padding-top: 170px;
   display: block;
-  padding: 10px 0;
+  padding-top: 25px;
   background-color: #fff;
   border: 1px solid #e8e9ed;
 }
 .section2__card2__containerText2 p {
-  margin: 10px 20px;
   width: 90%;
 }
 .section2__card2__containerText2__title {
@@ -281,19 +280,43 @@ header .header__container__img {
   line-height: 35.22px;
   text-align: left;
   font-family: "Raleway", sans-serif;
-  width: 100%;
+  width: 90%;
+  margin: 5px auto 17px;
 }
 .section2__card2__containerText2__text {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 21px;
   text-align: left;
-}
-.section2__card2__containerText2__text {
-  padding-top: 50px;
+  margin: 20px 20px 25px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+}
+.section2__card2__containerImg2 {
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+  position: relative;
+}
+.section2__card2__containerImg2__backgroundGreen {
+  border-radius: 5px;
+  border: 1px;
+  position: absolute;
+  padding: 0px;
+  left: 0px;
+  top: -2px;
+}
+.section2__card2__containerImg2__megaphone {
+  z-index: 1;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  padding: 0;
+  margin: 0px;
 }
 
 .section3 {

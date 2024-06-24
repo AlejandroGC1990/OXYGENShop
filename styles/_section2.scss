@@ -2,14 +2,14 @@
   display: block;
   text-align: center;
   background-color: #f7f7f7;
-  padding: 25px 0;
+  padding: 25px 0 230px;
 
   @mixin __card {
-    margin: 19px auto;
+    margin: 19px auto 18px;
     width: 315px;
-    // height: 370px;
     border-radius: 5px;
     display: inline-block;
+    background-color: #fff;
   }
 
   @mixin containerImg {
@@ -22,42 +22,37 @@
     display: block;
 
     p {
-      margin: 10px 20px;
       width: 90%;
     }
+  }
 
-    &__title {
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 35.22px;
-      text-align: left;
-      font-family: $font-primary;
-      width: 100%;
-      // height: 72px;
-    }
+  @mixin title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35.22px;
+    text-align: left;
+    font-family: $font-primary;
+    width: 90%;
+  }
 
-    &__text {
-      font-family: $font-secondary;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: left;
-    }
+  @mixin text {
+    font-family: $font-secondary;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
   }
 
   &__card1 {
     @include __card;
-    background-color: #fff;
     border: 1px solid #e8e9ed;
 
     &__containerImg1 {
       @include containerImg;
-      background-color: #fff;
 
       &__rectangleMobile {
         position: absolute;
         width: 90.12px;
-        // height: 90.12px;
         top: 15px;
       }
 
@@ -70,7 +65,6 @@
       &__pc {
         position: absolute;
         width: 192.76px;
-        // height: 109.93px;
         top: 37.11px;
         left: 55.27px;
       }
@@ -78,7 +72,6 @@
       &__circleBlue {
         position: absolute;
         width: 131.88px;
-        // height: 131.88px;
         top: 17px;
         left: 90px;
       }
@@ -86,7 +79,6 @@
       &__mobile {
         position: absolute;
         width: 160px;
-        // height: 137px;
         top: 25.01px;
         left: 90px;
       }
@@ -95,48 +87,78 @@
     &__containerText1 {
       @include containerText;
       padding-top: 170px;
+      background-color: #fff;
+
+      &__title {
+        @include title;
+        margin: 0px 20px 50px;
+      }
+
+      &__text {
+        margin: 0px 20px 35px;
+        @include text;
+      }
+
+      &__title2 {
+        @include title;
+        margin: 7px 17px 15px;
+      }
+
+      &__text2 {
+        @include text;
+        margin: 0px 16px 17px;
+      }
     }
   }
 
   &__card2 {
     @include __card;
+    padding: 0px 0 10px;
+    margin: 20px 0 0px;
+
+    &__containerText2 {
+      @include containerText;
+      padding-top: 25px;
+      background-color: #fff;
+      border: 1px solid #e8e9ed;
+
+      &__title {
+        @include title;
+        margin: 5px auto 17px;
+      }
+
+      &__text {
+        @include text;
+        margin: 20px 20px 25px;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+      }
+    }
 
     &__containerImg2 {
       @include containerImg;
-      // height: 195px;
       border: 1px solid #e8e9ed;
+      border-radius: 5px;
+      position: relative;
 
       &__backgroundGreen {
-        width: 314px;
-        top: 291px;
-        left: 11.69px;
-        gap: 0px;
-        border-radius: 5px 0px 0px 0px;
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
-
+        border-radius: 5px;
+        border: 1px;
         position: absolute;
+        padding: 0px;
+        left: 0px;
+        top: -2px;
       }
 
       &__megaphone {
         z-index: 1;
         position: absolute;
-        top: 25px;
+        top: 24px;
         right: 30px;
-      }
-    }
-
-    &__containerText2 {
-      @include containerText;
-      padding: 10px 0;
-      background-color: #fff;
-      border: 1px solid #e8e9ed;
-
-      &__text {
-        padding-top: 50px;
-        // background-color: red;
-        font-family: $font-secondary;
-        font-size: 16px;
+        padding: 0;
+        margin: 0px;
       }
     }
   }
