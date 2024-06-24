@@ -20,19 +20,6 @@ nav ul {
   display: none;
 }
 
-@media only screen and (min-width: 980px) {
-  nav {
-    background-color: rgb(163, 146, 146);
-    height: 70px;
-    width: 100%;
-  }
-  nav .menu {
-    display: none;
-  }
-  nav ul {
-    display: inline-block;
-  }
-}
 header {
   display: block;
   width: 100%;
@@ -782,14 +769,4 @@ body footer .pack__logos {
   top: 25px;
   left: 80%;
   display: inline-block;
-}
-
-@media only screen and (min-width: 1000px) {
-  body {
-    background-color: greenyellow;
-    max-width: 1626px;
-    height: 70px;
-    width: 1626px;
-    height: 4234px;
-  }
 }
