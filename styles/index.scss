@@ -38,16 +38,14 @@ body {
 
   .logo_Oxygen {
     width: 206px;
-    // height: 37px;
-
     font-family: $font-primary;
     font-size: 32px;
     font-weight: 300;
     line-height: 37px;
     color: $color-primary;
-
     display: inline-block;
-    margin: 17px 0px 0px 25px;
+    margin: 17px auto 17px 25px;
+    padding: 30px auto;
   }
 
   main {
