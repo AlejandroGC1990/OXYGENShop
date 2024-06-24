@@ -36,18 +36,6 @@ body {
     color: #fff;
   }
 
-  @mixin logo_Oxygen {
-    width: 206px;
-    font-family: $font-primary;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 37px;
-    color: $color-primary;
-    display: inline-block;
-    margin: 17px auto 17px 25px;
-    padding: 30px auto;
-  }
-
   main {
     margin-top: 15px;
     display: block;
@@ -64,7 +52,7 @@ body {
       display: block;
       width: 90%;
       &__oxygen {
-        @include logo_Oxygen;
+        color: $color-primary;
         font-size: 26px;
         font-weight: 300;
         line-height: 30px;

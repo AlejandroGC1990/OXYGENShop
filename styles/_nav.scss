@@ -1,17 +1,33 @@
 nav {
   box-shadow: 0px 3px 6px 0px $color-shadow;
+  display: inline-block;
+  width: 375px;
+  position: relative;
 
-  .menu {
-    width: 20px;
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-left: 95px;
+  .logo_Oxygen {
+    font-family: $font-primary;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 37px;
+    color: $color-primary;
+    margin: 0px 0px 0px;
+    padding: 18px 0px 18px 25px;
+    text-align: left;
   }
 
-  .rectangle-menu {
+  .menu {
+    position: absolute;
+    top: 30px;
+    left: 330px;
     width: 20px;
-    display: block;
-    margin-bottom: 3px;
+
+
+    &__rectangle {
+      position: absolute;
+      width: 20px;
+      display: block;
+      margin-bottom: 3px;
+    }
   }
 
   ul {
