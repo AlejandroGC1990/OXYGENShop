@@ -78,6 +78,11 @@
         transform: scale(110%);
         
         .section3__card3__containerPrice {
+          left: 0;
+          padding-left: 0px;  
+        }
+
+        .section3__card3__containerPrice {
           left: 0px;
           padding-left: 0px;
         }
@@ -92,6 +97,11 @@
       border: 1px solid $color-tertiary;
       button {
         background-color: $color-tertiary;
+      }
+
+      .section3__card3__containerPrice {
+        left: 35px;
+        padding-left: 0px;  
       }
 
       .section3__card3__containerPrice__price {
@@ -153,14 +163,12 @@
       right: 0px;
       &__input {
         width: 10%;
-        // height: 90%;
         display: block;
         position: absolute;
         padding-top: 12px;
 
         &__checkbox {
           width: 11px;
-          // height: 11px;
           margin: 0px auto 23px;
         }
       }
@@ -173,7 +181,6 @@
         padding-top: 8px;
         &__title {
           width: 115px;
-          // height: 19px;
           left: 21px;
           margin: 0 5px 19px;
           font-family: $font-secondary;

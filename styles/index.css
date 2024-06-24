@@ -387,6 +387,10 @@ header .header__container__img {
   transform: scale(110%);
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
+  left: 0;
+  padding-left: 0px;
+}
+.section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
   left: 0px;
   padding-left: 0px;
 }
@@ -398,6 +402,10 @@ header .header__container__img {
 }
 .section3__card3:nth-of-type(3) button {
   background-color: #55dfb4;
+}
+.section3__card3:nth-of-type(3) .section3__card3__containerPrice {
+  left: 35px;
+  padding-left: 0px;
 }
 .section3__card3:nth-of-type(3) .section3__card3__containerPrice__price {
   color: #55dfb4;
@@ -515,7 +523,7 @@ header .header__container__img {
 .section4__header__contact {
   display: inline-block;
   width: 100%;
-  margin: 35px auto 55px;
+  margin: 35px auto 20px;
 }
 .section4__header__contact__pack {
   margin: 4px;
@@ -542,12 +550,12 @@ header .header__container__img {
   color: #08a6e4;
   font-size: 11px;
   font-weight: 700;
-  line-height: 14.98px;
+  line-height: 18px;
   letter-spacing: 3.28px;
 }
 .section4__form__pack input {
   width: 312px;
-  margin-bottom: 20px;
+  margin: 30px 0px 35px;
   display: block;
   width: 312px;
   border: none;
@@ -563,6 +571,7 @@ header .header__container__img {
   appearance: none;
   border: 1px solid #95989a;
   border-radius: 3px;
+  padding: 12px;
   width: 24px;
   font-size: 34;
   position: relative;
@@ -588,7 +597,7 @@ header .header__container__img {
   position: absolute;
   top: 180px;
   left: 85px;
-  padding: 20px 100px;
+  padding: 18px 100px;
   background-color: #08a6e4;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
