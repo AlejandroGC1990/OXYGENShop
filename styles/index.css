@@ -633,7 +633,22 @@ body button {
   cursor: pointer;
   color: #fff;
 }
-body .logo_Oxygen {
+body main {
+  margin-top: 15px;
+  display: block;
+}
+body footer {
+  width: 100%;
+  box-shadow: 0px -5px 40px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 250px 0px 0px;
+  padding: 10px 0 10px;
+}
+body footer .pack {
+  display: block;
+  width: 90%;
+}
+body footer .pack__oxygen {
   width: 206px;
   font-family: "Raleway", sans-serif;
   font-size: 32px;
@@ -643,24 +658,16 @@ body .logo_Oxygen {
   display: inline-block;
   margin: 17px auto 17px 25px;
   padding: 30px auto;
-}
-body main {
-  margin-top: 15px;
-  display: block;
-}
-body footer {
-  width: 100%;
-  box-shadow: 0px -5px 40px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
-  margin: 260px 0px 0px;
-  padding: 45px auto 50px;
-}
-body footer .pack {
-  display: block;
-  width: 90%;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  margin: 0px 17px 0px;
+  padding: 10px 7px 0px;
 }
 body footer .pack__copyright {
   width: 187px;
+  padding: 0px 0px 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 400;
