@@ -1,0 +1,190 @@
+@import "./card.scss";
+@import "./variables";
+
+.section3 {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  h3 {
+    margin-bottom: 6px;
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42.26px;
+    height: 42px;
+  }
+
+  &__card3 {
+    width: 293px;
+    height: 251px;
+    border-radius: 18px;
+    display: inline-block;
+    margin: 5px auto 55px;
+
+    button {
+      padding: 13px 53px;
+      border-radius: 23px;
+      position: absolute;
+      left: -70px;
+      top: 222px;
+      font-family: $font-secondary;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 17.7px;
+    }
+
+    &:nth-of-type(1) /*basic card*/ {
+      border: 1px solid $color-quaternary;
+      button {
+        background-color: $color-quaternary;
+      }
+
+      .section3__card3__containerPrice__price {
+        color: $color-quaternary;
+      }
+
+      &:nth-of-type(1):hover {
+        box-shadow: 2px 9px 50px -25px $color-quaternary;
+        transform: scale(110%);
+
+        button {
+          box-shadow: 2px 9px 25px -10px $color-quaternary;
+        }
+      }
+    }
+
+    &:nth-of-type(2) /*professional card*/ {
+      border: 1px solid $color-primary;
+
+      button {
+        background-color: $color-primary;
+      }
+
+      .section3__card3__containerPrice__price {
+        color: $color-primary;
+      }
+
+      &:nth-of-type(2):hover {
+        box-shadow: 2px 9px 50px -25px $color-primary;
+        transform: scale(110%);
+
+        button {
+          box-shadow: 2px 9px 25px -10px $color-primary;
+        }
+      }
+    }
+
+    &:nth-of-type(3) /*premium card*/ {
+      border: 1px solid $color-tertiary;
+      button {
+        background-color: $color-tertiary;
+      }
+
+      .section3__card3__containerPrice__price {
+        color: $color-tertiary;
+      }
+
+      &:nth-of-type(3):hover {
+        box-shadow: 2px 9px 50px -25px $color-tertiary;
+        transform: scale(110%);
+
+        button {
+          box-shadow: 2px 9px 25px -10px $color-tertiary;
+        }
+      }
+    }
+
+    &__containerPrice {
+      position: absolute;
+      display: block;
+      width: 38%;
+      margin: 0 auto;
+      padding: 70px 0;
+      height: 251px;
+      &__basic {
+        height: 20px;
+        margin: 0 auto;
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+
+      &__price {
+        width: 59;
+        height: 60px;
+        padding-top: 0px;
+        font-family: $font-secondary;
+        font-size: 46px;
+        font-weight: 300;
+        line-height: 60px;
+        margin: 0 auto;
+      }
+
+      &__subtitle {
+        width: 74px;
+        height: 14px;
+        margin: 0 auto;
+        font-family: $font-primary;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 10.09px;
+        color: #13253b;
+      }
+    }
+
+    &__containerFeature {
+      display: inline-block;
+      height: 248px;
+      width: 40%;
+      position: absolute;
+      left: 185px;
+      padding-top: 15px;
+      right: 0px;
+      &__input {
+        width: 10%;
+        height: 90%;
+        display: block;
+        position: absolute;
+        padding-top: 12px;
+
+        &__checkbox {
+          width: 11px;
+          height: 11px;
+          margin: 0px auto 23px;
+        }
+      }
+
+      &__text {
+        display: block;
+        position: absolute;
+        width: 89%;
+        right: 0px;
+        padding-top: 8px;
+        &__title {
+          width: 115px;
+          height: 19px;
+          left: 21px;
+          margin: 0 5px 19px;
+          font-family: $font-secondary;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.07px;
+          text-align: initial;
+        }
+      }
+    }
+  }
+
+  &__card3:hover {
+    .section3__card3__containerPrice {
+      width: 50%;
+    }
+    .section3__card3__containerFeature {
+      width: 50%;
+      left: 145px;
+    }
+  }
+}

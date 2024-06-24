@@ -1,21 +1,27 @@
 .section1 {
-  display: block;
-  text-align: center;
+  display: inline-block;
   padding-bottom: 50px;
-  
+
   h3 {
+    width: 303px;
+    height: 112px;
+    top: 714px;
+    left: 36px;
+
+    font-family: $font-primary;
     font-size: 30px;
     font-weight: 300;
     line-height: 35px;
-    margin-bottom: 35px;
+    margin: 0 auto 25px;
   }
-  
+
   .card_section1 {
     @extend .card;
     display: inline-block;
     max-height: 168px;
     width: 370px;
-    padding: 0px 0 25px ;
+    // background-color: aquamarine;
+    padding: 0px 0 25px;
 
     .container_icons {
       margin: 0 auto;
@@ -89,10 +95,10 @@
       }
     }
 
-    p {     
+    p {
       margin: 0px auto;
       font-family: $font-primary;
-      color:#A5A5A5;
+      color: #a5a5a5;
     }
 
     .title {

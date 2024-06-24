@@ -1,0 +1,139 @@
+@import "./variables";
+
+.section4 {
+  display: inline-block;
+  padding: 20px 30px 0px;
+  width: 375px;
+
+  p,
+  a,
+  label {
+    font-family: $font-secondary;
+  }
+
+  &__header {
+    margin: 0 auto;
+    h1 {
+      margin: 0;
+      width: 280px;
+      height: 47px;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 46.96px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+
+    &__contact {
+      display: inline-block;
+      width: 100%;
+      margin: 35px auto 55px;
+      &__pack {
+        margin: 4px;
+        display: inline-block;
+        position: relative;
+        height: 27px;
+        width: 100%;
+
+        &__icon {
+          width: 20px;
+          height: 17px;
+        }
+
+        &__text {
+          color: $color-secondary;
+          position: absolute;
+          top: 0;
+          width: 80%;
+          left: 34.59px;
+          height: 27px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    display: block;
+    position: relative;
+    height: auto;
+
+    &__pack {
+      &__text {
+        width: 100%;
+        color: $color-primary;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 14.98px;
+        letter-spacing: 3.28px;
+      }
+
+      input {
+        // background-color: red;
+        width: 312px;
+        height: 40px;
+        margin-bottom: 20px;
+        display: block;
+        width: 312px;
+        border: none;
+        border-bottom: 2px solid #cfd0d1;
+      }
+    }
+
+    &__terms {
+      width: 100%;
+      height: 144;
+      display: inline-block;
+      position: relative;
+      direction: ltr;
+
+      &__checkbox {
+        appearance: none;
+        border: 1px solid #95989a;
+        border-radius: 3px;
+        height: 24px;
+        width: 24px;
+        font-size: 34;
+        position: relative;
+      }
+
+      &__checkbox:checked {
+        background: no-repeat;
+        background-image: url("../images/check.png");
+        background-size: 20;
+        background-position: center;
+      }
+
+      &__text {
+        width: 90%;
+        height: 144;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+        position: absolute;
+        left: 35px;
+        top: 0px;
+        color: #707070;
+      }
+
+      button {
+        position: absolute;
+        top: 180px;
+        left: 85px;
+        padding: 20px 100px ;
+        background-color: $color-primary;
+        font-family: $font-secondary;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 17.7px;
+      }
+    }
+  }
+}
