@@ -326,24 +326,25 @@ header .header__container__img {
   padding-top: 50px;
 }
 .section3 h3 {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   display: block;
   font-size: 36px;
   font-weight: 400;
   line-height: 42.26px;
 }
 .section3__card3 {
-  width: 293px;
+  padding: 127px 150px;
   border-radius: 18px;
   display: inline-block;
   margin: 5px auto 55px;
+  position: relative;
 }
 .section3__card3 button {
   padding: 13px 53px;
   border-radius: 23px;
   position: absolute;
   left: -70px;
-  top: 222px;
+  top: 228px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -362,6 +363,9 @@ header .header__container__img {
   box-shadow: 2px 9px 50px -25px #eb476e;
   transform: scale(110%);
 }
+.section3__card3:nth-of-type(1):nth-of-type(1):hover .section3__card3__containerPrice {
+  left: 0px;
+}
 .section3__card3:nth-of-type(1):nth-of-type(1):hover button {
   box-shadow: 2px 9px 25px -10px #eb476e;
 }
@@ -371,12 +375,20 @@ header .header__container__img {
 .section3__card3:nth-of-type(2) button {
   background-color: #08a6e4;
 }
+.section3__card3:nth-of-type(2) .section3__card3__containerPrice {
+  left: 0;
+  padding-left: 20px;
+}
 .section3__card3:nth-of-type(2) .section3__card3__containerPrice__price {
   color: #08a6e4;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover {
   box-shadow: 2px 9px 50px -25px #08a6e4;
   transform: scale(110%);
+}
+.section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
+  left: 0px;
+  padding-left: 0px;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover button {
   box-shadow: 2px 9px 25px -10px #08a6e4;
@@ -399,13 +411,12 @@ header .header__container__img {
 }
 .section3__card3__containerPrice {
   position: absolute;
+  top: 75px;
+  left: 45px;
   display: block;
-  width: 38%;
   margin: 0 auto;
-  padding: 70px 0;
 }
 .section3__card3__containerPrice__basic {
-  margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -433,8 +444,9 @@ header .header__container__img {
   display: inline-block;
   width: 40%;
   position: absolute;
-  left: 185px;
-  padding-top: 15px;
+  left: 150px;
+  top: 0;
+  padding-top: 18px;
   right: 0px;
 }
 .section3__card3__containerFeature__input {

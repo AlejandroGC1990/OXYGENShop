@@ -7,27 +7,26 @@
   padding-top: 50px;
 
   h3 {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     display: block;
     font-size: 36px;
     font-weight: 400;
     line-height: 42.26px;
-    // height: 42px;
   }
 
   &__card3 {
-    width: 293px;
-    // height: 251px;
+    padding: 127px 150px;
     border-radius: 18px;
     display: inline-block;
     margin: 5px auto 55px;
+    position: relative;
 
     button {
       padding: 13px 53px;
       border-radius: 23px;
       position: absolute;
       left: -70px;
-      top: 222px;
+      top: 228px;
       font-family: $font-secondary;
       font-size: 13px;
       font-weight: 700;
@@ -48,6 +47,10 @@
         box-shadow: 2px 9px 50px -25px $color-quaternary;
         transform: scale(110%);
 
+        .section3__card3__containerPrice {
+          left: 0px;
+        }
+
         button {
           box-shadow: 2px 9px 25px -10px $color-quaternary;
         }
@@ -61,13 +64,23 @@
         background-color: $color-primary;
       }
 
+      .section3__card3__containerPrice {
+        left: 0;
+        padding-left: 20px;  
+      }
+
       .section3__card3__containerPrice__price {
         color: $color-primary;
       }
-
+      
       &:nth-of-type(2):hover {
         box-shadow: 2px 9px 50px -25px $color-primary;
         transform: scale(110%);
+        
+        .section3__card3__containerPrice {
+          left: 0px;
+          padding-left: 0px;
+        }
 
         button {
           box-shadow: 2px 9px 25px -10px $color-primary;
@@ -97,14 +110,12 @@
 
     &__containerPrice {
       position: absolute;
+      top: 75px;
+      left: 45px;
       display: block;
-      width: 38%;
       margin: 0 auto;
-      padding: 70px 0;
-      // height: 251px;
+
       &__basic {
-        // height: 20px;
-        margin: 0 auto;
         font-family: $font-primary;
         font-size: 20px;
         font-weight: 700;
@@ -113,7 +124,6 @@
 
       &__price {
         width: 59;
-        // height: 60px;
         padding-top: 0px;
         font-family: $font-secondary;
         font-size: 46px;
@@ -124,7 +134,6 @@
 
       &__subtitle {
         width: 74px;
-        // height: 14px;
         margin: 0 auto;
         font-family: $font-primary;
         font-size: 12px;
@@ -136,11 +145,11 @@
 
     &__containerFeature {
       display: inline-block;
-      // height: 248px;
       width: 40%;
       position: absolute;
-      left: 185px;
-      padding-top: 15px;
+      left: 150px;
+      top: 0;
+      padding-top: 18px;
       right: 0px;
       &__input {
         width: 10%;
