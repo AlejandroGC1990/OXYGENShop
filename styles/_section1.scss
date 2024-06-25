@@ -136,11 +136,17 @@
     justify-content: center;
     align-items: center;
     h3 {
-      width: 700px;
+      width: 100%;
+      font-family: Raleway;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      text-align: center;
+      margin: 20px 0;
     }
 
     &__containerCard {
-      margin: 0 auto;
+      margin: 70px auto 100px;
       display: flex;
     }
   }

@@ -281,10 +281,16 @@ header .header__container__img {
     align-items: center;
   }
   .section1 h3 {
-    width: 700px;
+    width: 100%;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    margin: 20px 0;
   }
   .section1__containerCard {
-    margin: 0 auto;
+    margin: 70px auto 100px;
     display: flex;
   }
 }
