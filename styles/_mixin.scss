@@ -9,6 +9,17 @@
   min-width: 1000px;
 }
 
+@mixin logo {
+  font-family: $font-primary;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 37px;
+  color: $color-primary;
+  margin: 0px 0px 0px;
+  padding: 18px 0px 18px 25px;
+  text-align: left;
+}
+
 //section2
 
 @mixin __card {
@@ -48,8 +59,4 @@
   font-weight: 600;
   line-height: 21px;
   text-align: left;
-}
-
-@mixin line {
-  
 }

@@ -4,7 +4,7 @@ nav {
   width: 375px;
   position: relative;
 }
-nav .logo {
+nav .logoNav {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-weight: 300;
@@ -546,7 +546,7 @@ header .header__container__img {
     height: 370px;
   }
   .section2 .section2__card2__containerText2 {
-    width: 623px;
+    width: 624px;
     height: 370px;
     padding: 8% 1.5%;
   }
@@ -593,7 +593,7 @@ header .header__container__img {
   }
 }
 .section3 {
-  display: inline-block;
+  display: block;
   text-align: center;
   margin: 0 auto;
   padding-top: 50px;
@@ -765,6 +765,11 @@ header .header__container__img {
   left: 145px;
 }
 
+@media (min-width: 1000px) {
+  .section3 {
+    padding: 0;
+  }
+}
 .section4 {
   display: inline-block;
   padding: 20px 30px 0px;
@@ -918,9 +923,9 @@ body footer {
 }
 body footer .pack {
   display: block;
-  width: 90%;
+  width: 60%;
 }
-body footer .pack__oxygen {
+body footer .pack__logoFooter {
   color: #08a6e4;
   font-size: 26px;
   font-weight: 300;
@@ -939,11 +944,18 @@ body footer .pack__copyright {
   margin-left: 25px;
   color: #a5a5a5;
 }
-body footer .pack__logos {
+body footer .packLogos {
   position: absolute;
-  top: 25px;
-  left: 80%;
+  top: 30px;
+  left: 290px;
   display: inline-block;
+}
+body footer .packLogos__x {
+  margin-left: -20px;
+  padding: 0 15px;
+}
+body footer .packLogos__facebook {
+  padding-right: 20px;
 }
 
 @media (min-width: 1000px) {
@@ -952,5 +964,55 @@ body footer .pack__logos {
     flex-direction: column;
     justify-items: center;
     margin: 0 auto;
+  }
+  body footer {
+    width: 100%;
+  }
+  body footer .limit {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1626px;
+    min-width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body footer .limit .pack {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+    width: 40%;
+  }
+  body footer .limit .pack__logoFooter {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 37px;
+    color: #08a6e4;
+    margin: 0px 0px 0px;
+    padding: 18px 0px 18px 25px;
+    text-align: left;
+    padding: 5px 0;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+  }
+  body footer .limit .pack__copyright {
+    margin: 0 18px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.98px;
+    text-align: left;
+  }
+  body footer .limit .packLogos {
+    display: flex;
+    top: 0;
+    left: -100px;
+    position: relative;
+    width: 75px;
+    justify-content: space-around;
+    margin-right: 40px;
   }
 }

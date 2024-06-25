@@ -6,15 +6,8 @@ nav {
   width: 375px;
   position: relative;
 
-  .logo {
-    font-family: $font-primary;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 37px;
-    color: $color-primary;
-    margin: 0px 0px 0px;
-    padding: 18px 0px 18px 25px;
-    text-align: left;
+  .logoNav{
+    @include logo;
   }
 
   .menu {

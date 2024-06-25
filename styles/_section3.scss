@@ -1,7 +1,7 @@
 @import "./variables";
 
 .section3 {
-  display: inline-block;
+  display: block;
   text-align: center;
   margin: 0 auto;
   padding-top: 50px;
@@ -201,5 +201,11 @@
       width: 50%;
       left: 145px;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .section3 {
+    padding: 0;
   }
 }
