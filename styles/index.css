@@ -46,8 +46,8 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
   }
-  nav .limit .logo {
-    margin-left: 127px;
+  nav .limit .logoNav {
+    margin-left: 85px;
   }
   nav .limit .menu {
     display: none;
@@ -993,7 +993,7 @@ body footer .packLogos__facebook {
     margin: 0px 0px 0px;
     padding: 18px 0px 18px 25px;
     text-align: left;
-    padding: 5px 0;
+    padding: 0px 15px;
     font-size: 26px;
     font-weight: 300;
     line-height: 30px;
