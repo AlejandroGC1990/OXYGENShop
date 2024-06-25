@@ -1,9 +1,7 @@
 //nav & footer
 
 @mixin limit {
-  background-color: red;   
   display: flex;
-  flex-direction: row;
   justify-items: center;
   align-items: center;
   margin: 0 auto;
@@ -50,4 +48,8 @@
   font-weight: 600;
   line-height: 21px;
   text-align: left;
+}
+
+@mixin line {
+  
 }

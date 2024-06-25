@@ -83,13 +83,10 @@ body {
 }
 
 @media (min-width: 1000px) {
-  body {
-    
-  // background-color: red;   
+  body { 
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
   margin: 0 auto;
   }
 }
