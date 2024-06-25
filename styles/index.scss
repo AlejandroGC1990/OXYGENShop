@@ -96,11 +96,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin: 0 auto;
+    align-items: center;
 
     footer {
       width: 100%;
-
+      margin-top: 60px;
       .limit {
         @include limit;
         flex-direction: row;

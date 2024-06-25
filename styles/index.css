@@ -883,6 +883,67 @@ header .header__container__img {
   line-height: 17.7px;
 }
 
+@media (min-width: 1000px) {
+  .section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+  }
+  .section4 .container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1626px;
+    padding-left: 20px;
+  }
+  .section4__header {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 0px;
+    padding: 0px 0px 50px 30px;
+  }
+  .section4__header h1 {
+    width: 100%;
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 57.53px;
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  .section4__header__contact {
+    width: 100%;
+  }
+  .section4__header__contact__pack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section4__header__contact__pack__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+  .section4__form {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    height: 450px;
+    padding: 75px 0 0px 15px;
+  }
+  .section4__form__pack input {
+    width: 96%;
+  }
+  .section4__form__terms {
+    width: 98%;
+  }
+  .section4__form button {
+    top: 130px;
+    left: 220px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -963,10 +1024,11 @@ body footer .packLogos__facebook {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin: 0 auto;
+    align-items: center;
   }
   body footer {
     width: 100%;
+    margin-top: 60px;
   }
   body footer .limit {
     display: flex;
