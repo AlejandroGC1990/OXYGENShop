@@ -84,15 +84,12 @@ body {
 
 @media (min-width: 1000px) {
   body {
-    // display: flex;
-    // flex-direction: column;
-    // margin: 0 auto;
-    // justify-content: center;
-    // align-items: center;
-    width: 100%;
     
-    .body__limit{
-      @include limit;
-    }
+  // background-color: red;   
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
   }
 }

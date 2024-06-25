@@ -40,41 +40,48 @@ nav {
   nav {
     width: 100%;
     display: flex;
-
+    margin: 0 auto;
+    
     .nav_footer__limit{
-      @include limit;
-      flex-direction: row;
+    @include limit;
+    flex-direction: row;
+    justify-content:space-between;
 
-      .logo {
-        padding-left: 125px;
+    .logo {
+      margin-left: 127px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      min-width: 350px;
+      width: 600px;
+      margin-right: 65px;
+      justify-content: space-between;
+
+      li {
+        color: $color-secondary;
+        width: 80px;
+        flex-direction: row;
+        font-family: $font-secondary;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 3.2799999713897705px;
+        text-align: center;
+        padding: 27px 0px;
+        border-bottom: 3px solid transparent;
       }
 
-      .menu {
-        display: none;
-      }
-
-      ul {
-        display: flex;
-        list-style: none;
-        margin-left: 492px;
-
-        li {
-          width: 80px;
-          flex-direction: row;
-          font-family: $font-secondary;
-          font-size: 11px;
-          font-weight: 700;
-          line-height: 15px;
-          letter-spacing: 3.2799999713897705px;
-          margin-left: 90px;
-          padding: 27px 0px;
-          border-bottom: 3px solid transparent;
-        }
-
-        li:hover{
-          border-bottom: 3px solid $color-primary;
-        }
+      li:hover {
+        color:black;
+        border-bottom: 3px solid $color-primary;
       }
     }
   }
+}
 }

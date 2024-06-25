@@ -1,14 +1,14 @@
-//body
+//nav & footer
 
 @mixin limit {
-  max-width: 1626px;
-  width: 1626px;
-  // background-color: red;   
+  background-color: red;   
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-items: center;
   align-items: center;
   margin: 0 auto;
+  width: 1626px;
+  min-width: 1000px;
 }
 
 //section2
