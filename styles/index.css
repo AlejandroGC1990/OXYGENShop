@@ -4,7 +4,7 @@ nav {
   width: 375px;
   position: relative;
 }
-nav .logo_Oxygen {
+nav .limit__logo {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-weight: 300;
@@ -30,6 +30,53 @@ nav ul {
   display: none;
 }
 
+@media (min-width: 1000px) {
+  nav {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-content: center;
+    align-items: center;
+  }
+  nav .limit {
+    max-width: 1626px;
+    width: 1626px;
+    background-color: red;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  nav .limit__logo {
+    padding-left: 150px;
+  }
+  nav .limit .menu {
+    display: none;
+  }
+  nav .limit ul {
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+  }
+  nav .limit ul li {
+    width: 70px;
+    flex-direction: row;
+    left: 1101px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 3.2799999714px;
+    text-align: center;
+    margin-left: 110px;
+    padding: 20px 0px;
+    border-bottom: 3px solid transparent;
+  }
+  nav .limit ul li:hover {
+    border-bottom: 3px solid #08a6e4;
+  }
+}
 header {
   display: block;
   width: 100%;
@@ -686,4 +733,15 @@ body footer .pack__logos {
   top: 25px;
   left: 80%;
   display: inline-block;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }

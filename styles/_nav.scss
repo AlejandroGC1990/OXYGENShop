@@ -4,7 +4,7 @@ nav {
   width: 375px;
   position: relative;
 
-  .logo_Oxygen {
+  .limit__logo {
     font-family: $font-primary;
     font-size: 32px;
     font-weight: 300;
@@ -21,7 +21,6 @@ nav {
     left: 330px;
     width: 20px;
 
-
     &__rectangle {
       position: absolute;
       width: 20px;
@@ -35,19 +34,57 @@ nav {
   }
 }
 
-// @media (min-width: 1000px) {
-//   nav {
-//     background-color: rgb(163, 146, 146);
-//     // // height: 70px;
-//     width: 100%;
+@media (min-width: 1000px) {
+  nav {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-content: center;
+    align-items: center;
 
-//     .menu {
-//       display: none;
-//     }
+    @mixin limit {
+      max-width: 1626px;
+      width: 1626px;
+      background-color: red;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      margin: 0 auto;
 
-//     ul {
-//       display: inline-block;
+      &__logo {
+        padding-left: 150px;
+      }
 
-//     }
-//   }
-// }
+      .menu {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin-right: 100px;
+
+        li {
+          width: 70px;
+          flex-direction: row;
+          left: 1101px;
+          font-family: $font-secondary;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 3.2799999713897705px;
+          text-align: center;
+          margin-left: 110px;
+          padding: 20px 0px;
+          border-bottom: 3px solid transparent;
+        }
+
+        li:hover{
+        border-bottom: 3px solid $color-primary;
+        
+        }
+      }
+    }
+  }
+}
