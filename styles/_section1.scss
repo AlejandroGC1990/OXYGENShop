@@ -9,19 +9,19 @@
     line-height: 35px;
     margin: 0px auto 26px;
   }
+
   &__containerCard {
     display: inline-block;
     margin: 0 10px;
+
     &__card {
-      // background-color: greenyellow;
       display: block;
       width: 360px;
       padding: 10px 0px 0px;
-      margin: 10px auto 10px;
+      margin: 10px 0;
 
       &__container {
         margin: 0 auto;
-        // padding: 5px 0 0px;
         width: 63px;
         position: relative;
 
@@ -125,6 +125,23 @@
         width: 35%;
         color: #a5a5a5;
       }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      width: 700px;
+    }
+
+    &__containerCard {
+      margin: 0 auto;
+      display: flex;
     }
   }
 }

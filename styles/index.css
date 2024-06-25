@@ -38,7 +38,6 @@ nav ul {
   nav .nav_footer__limit {
     max-width: 1626px;
     width: 1626px;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -119,7 +118,6 @@ header .header__container__img {
 @media (min-width: 1000px) {
   header {
     width: 100%;
-    background-color: aqua;
   }
   header h1 {
     width: 242px;
@@ -173,7 +171,7 @@ header .header__container__img {
   display: block;
   width: 360px;
   padding: 10px 0px 0px;
-  margin: 10px auto 10px;
+  margin: 10px 0;
 }
 .section1__containerCard__card__container {
   margin: 0 auto;
@@ -267,6 +265,21 @@ header .header__container__img {
   color: #a5a5a5;
 }
 
+@media (min-width: 1000px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section1 h3 {
+    width: 700px;
+  }
+  .section1__containerCard {
+    margin: 0 auto;
+    display: flex;
+  }
+}
 .section2 {
   display: block;
   text-align: center;
@@ -779,7 +792,6 @@ body footer .pack__logos {
   body .body__limit {
     max-width: 1626px;
     width: 1626px;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-items: center;
