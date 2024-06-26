@@ -687,35 +687,35 @@ header .header__container__img {
   display: block;
   text-align: center;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 3.125em;
 }
 .section3 h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5em;
   display: block;
   font-size: 36px;
   font-weight: 400;
-  line-height: 42.26px;
+  line-height: 2.6412em;
 }
 .section3__card3 {
-  padding: 127px 150px;
-  border-radius: 18px;
+  padding: 7.9375em 9.375em;
+  border-radius: 1.125em;
   display: inline-block;
-  margin: 5px auto 55px;
+  margin: 0.3125em auto 3.4375em;
   position: relative;
 }
 .section3__card3 button {
-  padding: 13px 53px;
-  border-radius: 23px;
+  padding: 0.8125em 3.3125em;
+  border-radius: 1.4375em;
   position: absolute;
-  left: -70px;
-  top: 228px;
+  left: -4.375em;
+  top: 14.25em;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 700;
-  line-height: 17.7px;
+  line-height: 1.1062em;
 }
 .section3__card3:nth-of-type(1) {
-  border: 1px solid #eb476e;
+  border: 0.0625em solid #eb476e;
 }
 .section3__card3:nth-of-type(1) button {
   background-color: #eb476e;
@@ -724,67 +724,67 @@ header .header__container__img {
   color: #eb476e;
 }
 .section3__card3:nth-of-type(1):nth-of-type(1):hover {
-  box-shadow: 2px 9px 50px -25px #eb476e;
+  box-shadow: 0.125em 0.5625em 3.125em -1.5625em #eb476e;
   transform: scale(110%);
 }
 .section3__card3:nth-of-type(1):nth-of-type(1):hover .section3__card3__containerPrice {
-  left: 0px;
+  left: 0em;
 }
 .section3__card3:nth-of-type(1):nth-of-type(1):hover button {
-  box-shadow: 2px 9px 25px -10px #eb476e;
+  box-shadow: 0.125em 0.5625em 1.5625em -0.625em #eb476e;
 }
 .section3__card3:nth-of-type(2) {
-  border: 1px solid #08a6e4;
+  border: 0.0625em solid #08a6e4;
 }
 .section3__card3:nth-of-type(2) button {
   background-color: #08a6e4;
 }
 .section3__card3:nth-of-type(2) .section3__card3__containerPrice {
   left: 0;
-  padding-left: 20px;
+  padding-left: 1.25em;
 }
 .section3__card3:nth-of-type(2) .section3__card3__containerPrice__price {
   color: #08a6e4;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover {
-  box-shadow: 2px 9px 50px -25px #08a6e4;
+  box-shadow: 0.125em 0.5625em 3.125em -1.5625em #08a6e4;
   transform: scale(110%);
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
   left: 0;
-  padding-left: 0px;
+  padding-left: 0em;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
-  left: 0px;
-  padding-left: 0px;
+  left: 0em;
+  padding-left: 0em;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover button {
-  box-shadow: 2px 9px 25px -10px #08a6e4;
+  box-shadow: 0.125em 0.5625em 1.5625em -0.625em #08a6e4;
 }
 .section3__card3:nth-of-type(3) {
-  border: 1px solid #55dfb4;
+  border: 0.0625em solid #55dfb4;
 }
 .section3__card3:nth-of-type(3) button {
   background-color: #55dfb4;
 }
 .section3__card3:nth-of-type(3) .section3__card3__containerPrice {
-  left: 35px;
-  padding-left: 0px;
+  left: 2.1875em;
+  padding-left: 0em;
 }
 .section3__card3:nth-of-type(3) .section3__card3__containerPrice__price {
   color: #55dfb4;
 }
 .section3__card3:nth-of-type(3):nth-of-type(3):hover {
-  box-shadow: 2px 9px 50px -25px #55dfb4;
+  box-shadow: 0.125em 0.5625em 3.125em -1.5625em #55dfb4;
   transform: scale(110%);
 }
 .section3__card3:nth-of-type(3):nth-of-type(3):hover button {
-  box-shadow: 2px 9px 25px -10px #55dfb4;
+  box-shadow: 0.125em 0.5625em 1.5625em -0.625em #55dfb4;
 }
 .section3__card3__containerPrice {
   position: absolute;
-  top: 75px;
-  left: 45px;
+  top: 4.6875em;
+  left: 2.8125em;
   display: block;
   margin: 0 auto;
 }
@@ -792,60 +792,60 @@ header .header__container__img {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 .section3__card3__containerPrice__price {
   width: 59;
-  padding-top: 0px;
+  padding-top: 0em;
   font-family: "Open Sans", sans-serif;
   font-size: 46px;
   font-weight: 300;
-  line-height: 60px;
+  line-height: 3.75em;
   margin: 0 auto;
 }
 .section3__card3__containerPrice__subtitle {
-  width: 74px;
+  width: 4.625em;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: 700;
-  line-height: 10.09px;
+  line-height: 0.6306em;
   color: #13253b;
 }
 .section3__card3__containerFeature {
   display: inline-block;
   width: 40%;
   position: absolute;
-  left: 150px;
+  left: 9.375em;
   top: 0;
-  padding-top: 18px;
-  right: 0px;
+  padding-top: 1.125em;
+  right: 0em;
 }
 .section3__card3__containerFeature__input {
   width: 10%;
   display: block;
   position: absolute;
-  padding-top: 12px;
+  padding-top: 0.75em;
 }
 .section3__card3__containerFeature__input__checkbox {
-  width: 11px;
-  margin: 0px auto 23px;
+  width: 0.6875em;
+  margin: 0em auto 1.4375em;
 }
 .section3__card3__containerFeature__text {
   display: block;
   position: absolute;
   width: 89%;
-  right: 0px;
-  padding-top: 8px;
+  right: 0em;
+  padding-top: 0.5em;
 }
 .section3__card3__containerFeature__text__title {
-  width: 115px;
-  left: 21px;
-  margin: 0 5px 19px;
+  width: 7.1875em;
+  left: 1.3125em;
+  margin: 0 0.3125em 1.1875em;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 19.07px;
+  line-height: 1.1919em;
   text-align: initial;
 }
 .section3__card3:hover .section3__card3__containerPrice {
@@ -853,7 +853,7 @@ header .header__container__img {
 }
 .section3__card3:hover .section3__card3__containerFeature {
   width: 50%;
-  left: 145px;
+  left: 9.0625em;
 }
 
 @media (min-width: 1000px) {
@@ -862,10 +862,10 @@ header .header__container__img {
     flex-direction: column;
   }
   .section3 h3 {
-    padding: 60px 0 0px;
-    font-size: 36px;
+    padding: 3.75em 0 0em;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 2.625em;
     text-align: center;
   }
   .section3 .limit3 {
@@ -875,47 +875,46 @@ header .header__container__img {
     margin: 0 auto;
     width: 101.625em;
     min-width: 62.5em;
-    height: 616px;
     display: flex;
     flex-direction: row;
   }
   .section3 .section3__card3 {
     display: flex;
     flex-direction: column;
-    height: 461px;
-    width: 400px;
+    height: 28.8125em;
+    width: 25em;
   }
   .section3 .section3__card3 button {
     display: none;
   }
   .section3 .section3__card3__containerPrice {
-    top: 0px;
+    top: 0em;
     display: flex;
     flex-direction: column;
-    padding: 25px 75px;
+    padding: 1.5625em 4.6875em;
   }
   .section3 .section3__card3__containerPrice__basic {
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5em;
   }
   .section3 .section3__card3__containerPrice__price {
     width: 59;
-    padding-top: 0px;
+    padding-top: 0em;
     font-family: "Open Sans", sans-serif;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 300;
-    line-height: 60px;
+    line-height: 3.75em;
     margin: 0 auto;
   }
   .section3 .section3__card3__containerPrice__subtitle {
-    width: 74px;
+    width: 4.625em;
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
-    line-height: 10.09px;
+    line-height: 0.6306em;
     color: #13253b;
   }
   .section3 .section3__card3__containerInputsFeature {
@@ -924,10 +923,10 @@ header .header__container__img {
     flex-direction: column;
     width: 250%;
     position: relative;
-    left: 0px;
+    left: 0em;
     top: 0;
-    padding-top: 18px;
-    right: 0px;
+    padding-top: 1.125em;
+    right: 0em;
   }
   .section3 .section3__card3__containerInputsFeature__pack {
     background-color: red;
@@ -940,24 +939,24 @@ header .header__container__img {
     clear: absolute;
   }
   .section3 .section3__card3__containerInputsFeature__pack__input__checkbox {
-    width: 11px;
-    margin: 0px auto 23px;
+    width: 0.6875em;
+    margin: 0em auto 1.4375em;
   }
   .section3 .section3__card3__containerInputsFeature__pack__text {
     display: block;
     position: absolute;
     width: 70%;
-    right: 0px;
-    padding-top: 8px;
+    right: 0em;
+    padding-top: 0.5em;
   }
   .section3 .section3__card3__containerInputsFeature__pack__text__title {
-    width: 115px;
-    left: 21px;
-    margin: 0 5px 19px;
+    width: 7.1875em;
+    left: 1.3125em;
+    margin: 0 0.3125em 1.1875em;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 19.07px;
+    line-height: 1.1919em;
     text-align: initial;
   }
 }
