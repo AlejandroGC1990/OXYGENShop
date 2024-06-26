@@ -1,25 +1,29 @@
 @import "./mixin";
 
 nav {
-  box-shadow: 0em .1875em .375em 0em $color-shadow;
-  display: inline-block;
   width: 100%;
-  position: relative;
-
+  box-shadow: 0em .1875em .375em 0em $color-shadow;
+  
   .logoNav{
     @include logo;
+    display: inline;
+    margin-right: 1em;
   }
 
   .menu {
-    position: absolute;
-    top: 1.875em;
-    left: 20.625em;
+    // background-color: red;
+    display: inline;
+    // position: absolute;
+    top: 0.9em;
+    margin-bottom: 0.5em;
+    margin-right: 0;
+    margin-left: 2em;
+    padding: 1em ;
 
     &__rectangle {
-      position: absolute;
-      width: 1.25rem;
-      display: block;
-      margin-bottom: .1875em;
+      // position: absolute;
+      // width: 1.25rem;
+      display: inline-block;
     }
   }
 
@@ -28,7 +32,7 @@ nav {
   }
 }
 
-@media (min-width: 62.5rem) {
+@media (min-width: 1000px) {
   nav {
     width: 100%;
     display: flex;

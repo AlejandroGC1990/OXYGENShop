@@ -15,25 +15,13 @@
 
 body {
   min-width: 320px;
-  margin: 0;
-  padding: 0;
-  position: relative;
+  text-align: center;
 
   h1,
   h2,
   h3 {
     font-family: $font-primary;
     text-align: center;
-  }
-
-  button {
-    border-radius: 25%;
-    font-family: $font-secondary;
-    border-color: transparent;
-    border-radius: 40px;
-    display: inline-block;
-    cursor: pointer;
-    color: #fff;
   }
 
   main {
@@ -43,7 +31,7 @@ body {
 
   footer {
     width: 100%;
-    box-shadow: 0em -0.3125em 2.5em .3125em #00000033;
+    box-shadow: 0em -0.3125em 2.5em 0.3125em #00000033;
     position: relative;
     margin: 250px 0px;
     padding: 10px 0;
@@ -58,16 +46,16 @@ body {
         line-height: 1.875em;
         text-align: left;
         margin: 0em 1.0625em 0em;
-        padding: .625em .4375em 0em;
+        padding: 0.625em 0.4375em 0em;
       }
 
       &__copyright {
         width: 11.6875em;
-        padding: 0em 0em .625em;
+        padding: 0em 0em 0.625em;
         font-family: $font-secondary;
-        font-size: .6875rem;
+        font-size: 0.6875rem;
         font-weight: 400;
-        line-height: .9363em;
+        line-height: 0.9363em;
         margin-left: 1.5625em;
         color: #a5a5a5;
       }
@@ -81,10 +69,10 @@ body {
 
       &__x {
         margin-left: -1.25em;
-        padding: 0 .9375em;
+        padding: 0 0.9375em;
       }
 
-      &__facebook{
+      &__facebook {
         padding-right: 1.25em;
       }
     }
@@ -114,7 +102,7 @@ body {
 
           &__logoFooter {
             @include logo;
-            padding: 0 .9375em;
+            padding: 0 0.9375em;
             font-size: 1.625rem;
             font-weight: 300;
             line-height: 1.875em;
@@ -123,11 +111,10 @@ body {
 
           &__copyright {
             margin: 0 1.125em;
-            font-size: .6875rem;
+            font-size: 0.6875rem;
             font-weight: 400;
-            line-height: .9363em;
+            line-height: 0.9363em;
             text-align: left;
-          
           }
         }
 
