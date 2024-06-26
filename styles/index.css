@@ -865,7 +865,6 @@ header .header__container__img {
   .section3 {
     display: flex;
     flex-direction: column;
-    background-color: green;
   }
   .section3 h3 {
     padding: 60px 0 0px;
@@ -881,7 +880,6 @@ header .header__container__img {
     margin: 0 auto;
     width: 1626px;
     min-width: 1000px;
-    background-color: red;
     height: 616px;
     display: flex;
     flex-direction: row;
@@ -890,13 +888,12 @@ header .header__container__img {
     display: flex;
     flex-direction: column;
     height: 461px;
-    background-color: violet;
+    width: 400px;
   }
   .section3 .section3__card3 button {
     display: none;
   }
   .section3 .section3__card3__containerPrice {
-    background-color: greenyellow;
     top: 0px;
     display: flex;
     flex-direction: column;
@@ -930,32 +927,35 @@ header .header__container__img {
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 150%;
+    width: 250%;
     position: relative;
     left: 0px;
     top: 0;
     padding-top: 18px;
     right: 0px;
   }
-  .section3 .section3__card3__containerInputsFeature__input {
-    width: 10%;
-    display: block;
-    position: absolute;
-    padding-top: 12px;
+  .section3 .section3__card3__containerInputsFeature__pack {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
   }
-  .section3 .section3__card3__containerInputsFeature__input__checkbox {
+  .section3 .section3__card3__containerInputsFeature__pack__input {
+    width: 10%;
+    display: flex;
+    clear: absolute;
+  }
+  .section3 .section3__card3__containerInputsFeature__pack__input__checkbox {
     width: 11px;
     margin: 0px auto 23px;
   }
-  .section3 .section3__card3__containerInputsFeature__text {
+  .section3 .section3__card3__containerInputsFeature__pack__text {
     display: block;
     position: absolute;
-    width: 89%;
+    width: 70%;
     right: 0px;
     padding-top: 8px;
   }
-  .section3 .section3__card3__containerInputsFeature__text__title {
+  .section3 .section3__card3__containerInputsFeature__pack__text__title {
     width: 115px;
     left: 21px;
     margin: 0 5px 19px;
