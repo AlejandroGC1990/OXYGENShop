@@ -10,14 +10,14 @@ nav .logoNav {
   color: #08a6e4;
   text-align: left;
   display: inline;
-  margin-right: 1em;
+  margin-right: 3.7em;
 }
 nav .menu {
   display: inline;
+  position: absolute;
   top: 0.9em;
+  right: 0.7em;
   margin-bottom: 0.5em;
-  margin-right: 0;
-  margin-left: 2em;
   padding: 1em;
 }
 nav .menu__rectangle {
@@ -45,30 +45,25 @@ nav ul {
     justify-content: space-between;
   }
   nav .limit .logoNav {
-    margin-left: 5.3125em;
+    margin-left: 4.3em;
   }
   nav .limit .menu {
     display: none;
   }
   nav .limit ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
-    min-width: 21.875em;
-    width: 37.5em;
-    margin-right: 4.0625em;
-    justify-content: space-between;
   }
   nav .limit ul li {
     color: #a5a5a5;
-    width: 5em;
-    flex-direction: row;
     font-family: "Open Sans", sans-serif;
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
     font-weight: 700;
     line-height: 0.9375em;
     letter-spacing: 0.205em;
     text-align: center;
-    padding: 1.6875em 0em;
+    padding: 0.875em 8.5em 0.875em 0em;
     border-bottom: 0.1875em solid transparent;
   }
   nav .limit ul li:hover {
@@ -79,27 +74,31 @@ nav ul {
 header {
   display: block;
   width: 100%;
-  margin: 0rem auto;
+  margin: 0px auto;
   text-align: center;
 }
 header h1 {
-  width: 10.125em;
-  font-size: 2.1875rem;
+  font-size: 35px;
   font-weight: 400;
   line-height: 2.5681em;
-  margin: 6.5625em auto 1.375em auto;
+  margin: 2.1em auto 0;
 }
 header p {
-  width: 17.8125em;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.4375em;
-  margin: 0 auto 0.4375em;
+  margin: 0 3em 0.4375em;
 }
 header button {
+  border-radius: 25%;
+  font-family: "Open Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
   box-shadow: 0.3125em 0.625em 0.875em 0em rgba(7, 172, 230, 0.2901960784);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
   margin: 1.4375em auto 3.375em;
   padding: 1.375em 5.625em;
@@ -113,19 +112,19 @@ header .header__container {
 }
 header .header__container__img {
   width: 100%;
-  height: 267px;
+  height: 16.6875rem;
   display: block;
   object-fit: cover;
-  margin: 0rem auto;
+  margin: 0px auto;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   header {
     width: 100%;
   }
   header h1 {
     width: 15.125em;
-    font-size: 3.0625rem;
+    font-size: 49px;
     font-weight: 400;
     line-height: 3.5625em;
     text-align: center;
@@ -133,14 +132,14 @@ header .header__container__img {
   header p {
     width: 25em;
     font-family: Open Sans;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.375em;
   }
   header button {
     line-height: 1.375em;
     text-align: center;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     margin: 1.4375em auto 0em;
     padding: 1.375em 9.6875em;
@@ -1150,7 +1149,6 @@ body h3 {
   text-align: center;
 }
 body main {
-  margin-top: 15px;
   display: block;
 }
 body footer {
