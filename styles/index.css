@@ -319,14 +319,14 @@ header .header__container__img {
 .section2__card1__containerImg1__pc {
   position: absolute;
   width: 192.76px;
-  top: 2.3194rem;
-  left: 3.4544rem;
+  top: 2.3194em;
+  left: 3.4544em;
 }
 .section2__card1__containerImg1__circleBlue {
   position: absolute;
   width: 131.88px;
-  top: 1.0625rem;
-  left: 5.625rem;
+  top: 1.0625em;
+  left: 5.625em;
 }
 .section2__card1__containerImg1__circleBluePc {
   display: none;
@@ -334,13 +334,13 @@ header .header__container__img {
 .section2__card1__containerImg1__mobile {
   position: absolute;
   width: 160px;
-  top: 1.5631rem;
-  left: 5.625rem;
+  top: 1.5631em;
+  left: 5.625em;
 }
 .section2__card1__containerText1 {
   padding-top: 10.625em;
   display: block;
-  padding-top: 10.625rem;
+  padding-top: 10.625em;
   background-color: #fff;
 }
 .section2__card1__containerText1 p {
@@ -353,10 +353,10 @@ header .header__container__img {
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
-  margin: 0rem 1.25rem 3.125rem;
+  margin: 0em 1.25em 3.125em;
 }
 .section2__card1__containerText1__text {
-  margin: 0rem 1.25rem 2.1875rem;
+  margin: 0em 1.25em 2.1875em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
@@ -370,7 +370,7 @@ header .header__container__img {
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
-  margin: 0.4375rem 1.0625rem 0.9375rem;
+  margin: 0.4375em 1.0625em 0.9375em;
 }
 .section2__card1__containerText1__text2 {
   font-family: "Open Sans", sans-serif;
@@ -378,7 +378,7 @@ header .header__container__img {
   font-weight: 600;
   line-height: 1.3125em;
   text-align: left;
-  margin: 0rem 1rem 1.0625rem;
+  margin: 0em 1em 1.0625em;
 }
 .section2__card2row {
   margin: 1.1875em auto 1.125em;
@@ -386,7 +386,7 @@ header .header__container__img {
   border-radius: 0.3125em;
   display: inline-block;
   background-color: #fff;
-  border: 0.0625rem solid #e8e9ed;
+  border: 0.0625em solid #e8e9ed;
 }
 .section2__card2row__containerImg1 {
   margin: 0 auto;
@@ -396,8 +396,8 @@ header .header__container__img {
 .section2__card2row__containerImg1__circleBlue {
   position: absolute;
   width: 131.88px;
-  top: 1.0625rem;
-  left: 5.625rem;
+  top: 1.0625em;
+  left: 5.625em;
 }
 .section2__card2row__containerImg1__circleBluePc {
   display: none;
@@ -405,13 +405,13 @@ header .header__container__img {
 .section2__card2row__containerImg1__mobile {
   position: absolute;
   width: 160px;
-  top: 1.5631rem;
-  left: 5.625rem;
+  top: 1.5631em;
+  left: 5.625em;
 }
 .section2__card2row__containerText1 {
   padding-top: 10.625em;
   display: block;
-  padding-top: 10.625rem;
+  padding-top: 10.625em;
   background-color: #fff;
 }
 .section2__card2row__containerText1 p {
@@ -424,10 +424,10 @@ header .header__container__img {
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
-  margin: 0rem 1.25rem 3.125rem;
+  margin: 0em 1.25em 3.125em;
 }
 .section2__card2row__containerText1__text {
-  margin: 0rem 1.25rem 2.1875rem;
+  margin: 0em 1.25em 2.1875em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
@@ -441,7 +441,7 @@ header .header__container__img {
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
-  margin: 0.4375rem 1.0625rem 0.9375rem;
+  margin: 0.4375em 1.0625em 0.9375em;
 }
 .section2__card2row__containerText1__text2 {
   font-family: "Open Sans", sans-serif;
@@ -449,7 +449,7 @@ header .header__container__img {
   font-weight: 600;
   line-height: 1.3125em;
   text-align: left;
-  margin: 0rem 1rem 1.0625rem;
+  margin: 0em 1em 1.0625em;
 }
 .section2__card2 {
   margin: 1.1875em auto 1.125em;
@@ -457,16 +457,16 @@ header .header__container__img {
   border-radius: 0.3125em;
   display: inline-block;
   background-color: #fff;
-  padding: 0rem 0 0.625rem;
-  margin: 1.25rem 0 0rem;
+  padding: 0em 0 0.625em;
+  margin: 1.25em 0 0em;
 }
 .section2__card2__containerText2 {
   padding-top: 10.625em;
   display: block;
-  padding-top: 1.5625rem;
+  padding-top: 1.5625em;
   background-color: #fff;
-  border: 0.0625rem solid #e8e9ed;
-  border-radius: 0.1875rem;
+  border: 0.0625em solid #e8e9ed;
+  border-radius: 0.1875em;
 }
 .section2__card2__containerText2 p {
   width: 90%;
@@ -478,7 +478,7 @@ header .header__container__img {
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
-  margin: 0.3125rem auto 1.0625rem;
+  margin: 0.3125em auto 1.0625em;
 }
 .section2__card2__containerText2__text {
   font-family: "Open Sans", sans-serif;
@@ -486,34 +486,34 @@ header .header__container__img {
   font-weight: 600;
   line-height: 1.3125em;
   text-align: left;
-  margin: 1.25rem 1.25rem 1.5625rem;
+  margin: 1.25em 1.25em 1.5625em;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.3619rem;
+  line-height: 1.3619em;
 }
 .section2__card2__containerImg2 {
   margin: 0 auto;
   position: relative;
-  border: 0.0625rem solid #e8e9ed;
-  border-radius: 0.3125rem;
+  border: 0.0625em solid #e8e9ed;
+  border-radius: 0.3125em;
   position: relative;
 }
 .section2__card2__containerImg2__backgroundGreen {
-  border-radius: 0.3125rem;
-  border: 0.0625rem;
+  border-radius: 0.3125em;
+  border: 0.0625em;
   position: absolute;
-  padding: 0rem;
-  left: 0rem;
-  top: -0.125rem;
+  padding: 0em;
+  left: 0em;
+  top: -0.125em;
 }
 .section2__card2__containerImg2__megaphone {
   z-index: 1;
   position: absolute;
-  top: 1.5rem;
-  right: 1.875rem;
+  top: 1.5em;
+  right: 1.875em;
   padding: 0;
-  margin: 0rem;
+  margin: 0em;
 }
 
 @media (min-width: 1000px) {
@@ -532,11 +532,11 @@ header .header__container__img {
     min-width: 62.5em;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5.625rem 0rem;
+    padding: 5.625em 0em;
   }
   .section2 .section2__card1 {
     display: flex;
-    width: 70.25rem;
+    width: 70.25em;
     flex-direction: row-reverse;
     background-color: #fff;
   }
@@ -550,62 +550,60 @@ header .header__container__img {
     display: block;
     position: absolute;
     width: 40%;
-    top: 3.75rem;
-    left: 17.5rem;
+    top: 3.75em;
+    left: 17.5em;
   }
   .section2 .section2__card1__containerImg1__pc {
     flex: 1;
     position: absolute;
     width: 86%;
-    top: 7.1875rem;
-    right: 1.875rem;
+    top: 7.1875em;
+    right: 1.875em;
   }
   .section2 .section2__card1__containerImg1__mobile {
     z-index: 2;
     width: 93%;
-    top: 1.5625rem;
+    top: 1.5625em;
     left: 5%;
   }
   .section2 .section2__card1__containerImg1__circleBlue {
     position: absolute;
     width: 70%;
-    top: 0.625rem;
-    left: 1.25rem;
+    top: 0.625em;
+    left: 1.25em;
   }
   .section2 .section2__card1__containerText1 {
     width: 45%;
-    padding: 80px 40px;
+    padding: 5em 2.5em;
   }
   .section2 .section2__card1__containerText1__title {
     font-size: 2.25rem;
     font-weight: 400;
-    line-height: 2.625rem;
+    line-height: 2.625em;
   }
   .section2 .section2__card1__containerText1__text {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375rem;
+    line-height: 1.375em;
     text-align: left;
   }
   .section2 .section2__card1__containerText1__linePink {
     background-color: #eb476e;
-    height: 0.25rem;
+    height: 0.25em;
     width: 70%;
-    margin: 10% 5% 0rem;
+    margin: 2em 5em 0em;
   }
   .section2 .section2__card1__containerText1__lineBlue {
     background-color: #08a6e4;
-    height: 0.25rem;
+    height: 0.25em;
     width: 70%;
-    margin: 10% 5% 0rem;
+    margin: 2em 5em 0em;
   }
   .section2 .section2__card2row {
     display: flex;
     flex-wrap: nowrap;
-    width: 70.25rem;
-    height: 23.125rem;
     background-color: #fff;
-    border: 0.0625rem solid #e8e9ed;
+    border: 0.0625em solid #e8e9ed;
   }
   .section2 .section2__card2row .section2__card2row__containerImg1 {
     width: 50%;
@@ -613,67 +611,67 @@ header .header__container__img {
   .section2 .section2__card2row .section2__card2row__containerImg1 .section2__card2row__containerImg1__circleBlue {
     z-index: 1;
     width: 60%;
-    top: 0.625rem;
-    left: 1.25rem;
+    top: 0.625em;
+    left: 1.25em;
   }
   .section2 .section2__card2row .section2__card2row__containerImg1__mobile {
     z-index: 2;
     width: 80%;
-    top: 1.5625rem;
+    top: 1.5625em;
     left: 5%;
   }
   .section2 .section2__card2row__containerText1 {
     width: 41%;
-    padding: 8% 0%;
+    padding: 8em 0em;
   }
   .section2 .section2__card2row__containerText1__lineBlue {
     background-color: #08a6e4;
     height: 0.25rem;
     width: 70%;
-    margin: 10% 5% 0rem;
+    margin: 10em 5em 0rem;
   }
   .section2 .section2__card2 {
     display: flex;
     background-color: transparent;
-    width: 95.25rem;
-    height: 23.125rem;
+    width: 95.25em;
+    height: 23.125em;
   }
   .section2 .section2__card2__containerText2 {
-    width: 38.75rem;
-    height: 23.125rem;
-    margin-left: 12.5rem;
+    width: 38.75em;
+    height: 23.125em;
+    margin-left: 12.5em;
   }
   .section2 .section2__card2__containerText2__title {
-    margin: 0 1.25rem;
+    margin: 0 1.25em;
     width: 70%;
     text-align: left;
     font-size: 2.25rem;
     font-weight: 400;
-    line-height: 2.625rem;
+    line-height: 2.625em;
   }
   .section2 .section2__card2__containerText2__text {
     width: 75%;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375rem;
+    line-height: 1.375em;
     text-align: left;
   }
   .section2 .section2__card2__containerText2__lineGreen {
     background-color: #55dfb4;
-    height: 0.25rem;
+    height: 0.25em;
     width: 56%;
-    margin: 10% 4% 0rem;
+    margin: 10em 4em 0em;
   }
   .section2 .section2__card2__containerImg2 {
-    width: 27.5rem;
-    height: 23.125rem;
-    margin-left: 3.75rem;
+    width: 27.5em;
+    height: 23.125em;
+    margin-left: 3.75em;
     position: relative;
   }
   .section2 .section2__card2__containerImg2__backgroundGreen {
     display: absolute;
-    padding: 0rem;
-    top: 0rem;
+    padding: 0em;
+    top: 0em;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -681,7 +679,7 @@ header .header__container__img {
   .section2 .section2__card2__containerImg2__megaphone {
     position: absolute;
     left: 10%;
-    top: 6.25rem;
+    top: 6.25em;
     z-index: 2;
   }
 }

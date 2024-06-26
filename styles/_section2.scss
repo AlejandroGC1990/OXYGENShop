@@ -27,15 +27,15 @@
       &__pc {
         position: absolute;
         width: 192.76px;
-        top: 2.3194rem;
-        left: 3.4544rem;
+        top: 2.3194em;
+        left: 3.4544em;
       }
 
       &__circleBlue {
         position: absolute;
         width: 131.88px;
-        top: 1.0625rem;
-        left: 5.625rem;
+        top: 1.0625em;
+        left: 5.625em;
       }
 
       &__circleBluePc {
@@ -45,41 +45,41 @@
       &__mobile {
         position: absolute;
         width: 160px;
-        top: 1.5631rem;
-        left: 5.625rem;
+        top: 1.5631em;
+        left: 5.625em;
       }
     }
 
     &__containerText1 {
       @include containerText;
-      padding-top: 10.625rem;
+      padding-top: 10.625em;
       background-color: #fff;
 
       &__title {
         @include title;
-        margin: 0rem 1.25rem 3.125rem;
+        margin: 0em 1.25em 3.125em;
       }
 
       &__text {
-        margin: 0rem 1.25rem 2.1875rem;
+        margin: 0em 1.25em 2.1875em;
         @include text;
       }
 
       &__title2 {
         @include title;
-        margin: .4375rem 1.0625rem .9375rem;
+        margin: .4375em 1.0625em .9375em;
       }
 
       &__text2 {
         @include text;
-        margin: 0rem 1rem 1.0625rem;
+        margin: 0em 1em 1.0625em;
       }
     }
   }
 
   &__card2row {
     @include __card;
-    border: .0625rem solid #e8e9ed;
+    border: .0625em solid #e8e9ed;
     &__containerImg1 {
       @include containerImg;
       background-color: #fff;
@@ -87,8 +87,8 @@
       &__circleBlue {
         position: absolute;
         width: 131.88px;
-        top: 1.0625rem;
-        left: 5.625rem;
+        top: 1.0625em;
+        left: 5.625em;
       }
 
       &__circleBluePc {
@@ -98,69 +98,69 @@
       &__mobile {
         position: absolute;
         width: 160px;
-        top: 1.5631rem;
-        left: 5.625rem;
+        top: 1.5631em;
+        left: 5.625em;
       }
     }
 
     &__containerText1 {
       @include containerText;
-      padding-top: 10.625rem;
+      padding-top: 10.625em;
       background-color: #fff;
 
       &__title {
         @include title;
-        margin: 0rem 1.25rem 3.125rem;
+        margin: 0em 1.25em 3.125em;
       }
 
       &__text {
-        margin: 0rem 1.25rem 2.1875rem;
+        margin: 0em 1.25em 2.1875em;
         @include text;
       }
 
       &__title2 {
         @include title;
-        margin: .4375rem 1.0625rem .9375rem;
+        margin: .4375em 1.0625em .9375em;
       }
 
       &__text2 {
         @include text;
-        margin: 0rem 1rem 1.0625rem;
+        margin: 0em 1em 1.0625em;
       }
     }
   }
 
   &__card2 {
     @include __card;
-    padding: 0rem 0 .625rem;
-    margin: 1.25rem 0 0rem;
+    padding: 0em 0 .625em;
+    margin: 1.25em 0 0em;
 
     &__containerText2 {
       @include containerText;
-      padding-top: 1.5625rem;
+      padding-top: 1.5625em;
       background-color: #fff;
-      border: .0625rem solid #e8e9ed;
-      border-radius: .1875rem;
+      border: .0625em solid #e8e9ed;
+      border-radius: .1875em;
 
       &__title {
         @include title;
-        margin: .3125rem auto 1.0625rem;
+        margin: .3125em auto 1.0625em;
       }
 
       &__text {
         @include text;
-        margin: 1.25rem 1.25rem 1.5625rem;
+        margin: 1.25em 1.25em 1.5625em;
         font-family: $font-secondary;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 400;
-        line-height: 1.3619rem;
+        line-height: 1.3619em;
       }
     }
 
     &__containerImg2 {
       @include containerImg;
-      border: .0625rem solid #e8e9ed;
-      border-radius: .3125rem;
+      border: .0625em solid #e8e9ed;
+      border-radius: .3125em;
       position: relative;
 
       // &__backgroundGreenPC {
@@ -168,21 +168,21 @@
       // }
 
       &__backgroundGreen {
-        border-radius: .3125rem;
-        border: .0625rem;
+        border-radius: .3125em;
+        border: .0625em;
         position: absolute;
-        padding: 0rem;
-        left: 0rem;
-        top: -0.125rem;
+        padding: 0em;
+        left: 0em;
+        top: -0.125em;
       }
 
       &__megaphone {
         z-index: 1;
         position: absolute;
-        top: 1.5rem;
-        right: 1.875rem;
+        top: 1.5em;
+        right: 1.875em;
         padding: 0;
-        margin: 0rem;
+        margin: 0em;
       }
     }
   }
@@ -199,12 +199,12 @@
       @include limit;
       flex-direction: column;
       justify-content: space-between;
-      padding: 5.625rem 0rem;
+      padding: 5.625em 0em;
     }
 
     .section2__card1 {
       display: flex;
-      width: 70.25rem;
+      width: 70.25em;
       flex-direction: row-reverse;
       background-color: #fff;
 
@@ -219,61 +219,61 @@
           display: block;
           position: absolute;
           width: 40%;
-          top: 3.75rem;
-          left: 17.5rem;
+          top: 3.75em;
+          left: 17.5em;
         }
 
         &__pc {
           flex: 1;
           position: absolute;
           width: 86%;
-          top: 7.1875rem;
-          right: 1.875rem;
+          top: 7.1875em;
+          right: 1.875em;
         }
 
         &__mobile {
           z-index: 2;
           width: 93%;
-          top: 1.5625rem;
+          top: 1.5625em;
           left: 5%;
         }
 
         &__circleBlue {
           position: absolute;
           width: 70%;
-          top: .625rem;
-          left: 1.25rem;
+          top: .625em;
+          left: 1.25em;
         }
       }
 
       &__containerText1 {
         width: 45%;
-        padding: 80px 40px;
+        padding: 5em 2.5em;
 
         &__title {
           font-size: 2.25rem;
           font-weight: 400;
-          line-height: 2.625rem;
+          line-height: 2.625em;
         }
 
         &__text {
           font-size: 1rem;
           font-weight: 400;
-          line-height: 1.375rem;
+          line-height: 1.375em;
           text-align: left;
         }
 
         &__linePink {
           background-color: $color-quaternary;
-          height: .25rem;
+          height: .25em;
           width: 70%;
-          margin: 10% 5% 0rem;
+          margin: 2em 5em 0em;
         }
         &__lineBlue {
           background-color: $color-primary;
-          height: .25rem;
+          height: .25em;
           width: 70%;
-          margin: 10% 5% 0rem;
+          margin: 2em 5em 0em;
         }
       }
     }
@@ -281,10 +281,8 @@
     .section2__card2row {
       display: flex;
       flex-wrap: nowrap;
-      width: 70.25rem;
-      height: 23.125rem;
       background-color: #fff;
-      border: .0625rem solid #e8e9ed;
+      border: .0625em solid #e8e9ed;
       
       .section2__card2row__containerImg1 {
         width: 50%;
@@ -292,27 +290,27 @@
         .section2__card2row__containerImg1__circleBlue {
           z-index: 1;
           width: 60%;
-          top: .625rem;
-          left: 1.25rem;
+          top: .625em;
+          left: 1.25em;
         }
         
         &__mobile {
           z-index: 2;
           width: 80%;
-          top: 1.5625rem;
+          top: 1.5625em;
           left: 5%;
         }
       }
       
       &__containerText1 {
         width: 41%;
-        padding: 8% 0%;
+        padding: 8em 0em;
 
         &__lineBlue {
           background-color: $color-primary;
           height: .25rem;
           width: 70%;
-          margin: 10% 5% 0rem;
+          margin: 10em 5em 0rem;
         }
       }
     }
@@ -320,49 +318,49 @@
     .section2__card2 {
       display: flex;
       background-color: transparent;
-      width: 95.25rem;
-      height: 23.125rem;
+      width: 95.25em;
+      height: 23.125em;
 
       &__containerText2 {
-        width: 38.75rem;
-        height: 23.125rem;
-        margin-left: 12.5rem;
+        width: 38.75em;
+        height: 23.125em;
+        margin-left: 12.5em;
         
         &__title {
-          margin: 0 1.25rem;
+          margin: 0 1.25em;
           width: 70%;
           text-align: left;
           font-size: 2.25rem;
           font-weight: 400;
-          line-height: 2.625rem;
+          line-height: 2.625em;
         }
 
         &__text {
           width: 75%;
           font-size: 1rem;
           font-weight: 400;
-          line-height: 1.375rem;
+          line-height: 1.375em;
           text-align: left;
         }
 
         &__lineGreen {
           background-color: $color-tertiary;
-          height: .25rem;
+          height: .25em;
           width: 56%;
-          margin: 10% 4% 0rem;
+          margin: 10em 4em 0em;
         }
       }
 
       &__containerImg2 {
-        width: 27.5rem;
-        height: 23.125rem;
-        margin-left: 3.75rem;
+        width: 27.5em;
+        height: 23.125em;
+        margin-left: 3.75em;
         position: relative;
 
         &__backgroundGreen {
           display: absolute;
-          padding: 0rem;
-          top: 0rem;
+          padding: 0em;
+          top: 0em;
           z-index: 1;
           width: 100%;
           height: 100%;
@@ -371,7 +369,7 @@
         &__megaphone {
           position: absolute;
           left: 10%;
-          top: 6.25rem;
+          top: 6.25em;
           z-index: 2;
         }
       }
