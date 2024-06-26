@@ -962,8 +962,8 @@ header .header__container__img {
 }
 .section4 {
   display: inline-block;
-  padding: 20px 30px 0px;
-  width: 375px;
+  padding: 1.25rem 1.875rem 0rem;
+  width: 23.4375rem;
 }
 .section4 p,
 .section4 a,
@@ -975,18 +975,17 @@ header .header__container__img {
 }
 .section4__header h1 {
   margin: 0;
-  width: 280px;
+  width: 17.5em;
   font-size: 40px;
   font-weight: 400;
-  line-height: 46.96px;
+  line-height: 2.935em;
 }
 .section4__header__subtitle {
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
-  font-size: 16px;
+  line-height: 1.375em;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 1.5625em;
 }
 .section4__header__contact {
   display: inline-block;
@@ -1000,14 +999,14 @@ header .header__container__img {
   width: 100%;
 }
 .section4__header__contact__pack__icon {
-  width: 20px;
+  width: 1.25rem;
 }
 .section4__header__contact__pack__text {
   color: #a5a5a5;
   position: absolute;
   top: 0;
   width: 80%;
-  left: 34.59px;
+  left: 2.1619em;
 }
 .section4__form {
   display: block;
@@ -1016,18 +1015,18 @@ header .header__container__img {
 .section4__form__pack__text {
   width: 100%;
   color: #08a6e4;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 3.28px;
+  line-height: 1.125em;
+  letter-spacing: 0.205em;
 }
 .section4__form__pack input {
-  width: 312px;
-  margin: 30px 0px 35px;
+  width: 19.5em;
+  margin: 1.875em 0em 2.1875em;
   display: block;
-  width: 312px;
+  width: 19.5em;
   border: none;
-  border-bottom: 2px solid #cfd0d1;
+  border-bottom: 0.125em solid #cfd0d1;
 }
 .section4__form__terms {
   width: 100%;
@@ -1037,10 +1036,10 @@ header .header__container__img {
 }
 .section4__form__terms__checkbox {
   appearance: none;
-  border: 1px solid #95989a;
-  border-radius: 3px;
-  padding: 12px;
-  width: 24px;
+  border: 0.0625em solid #95989a;
+  border-radius: 0.1875em;
+  padding: 0.75em;
+  width: 1.5em;
   font-size: 34;
   position: relative;
 }
@@ -1053,24 +1052,24 @@ header .header__container__img {
 .section4__form__terms__text {
   width: 90%;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 16.34px;
+  line-height: 1.0212em;
   position: absolute;
-  left: 35px;
-  top: 0px;
+  left: 2.1875em;
+  top: 0em;
   color: #707070;
 }
 .section4__form__terms button {
   position: absolute;
-  top: 180px;
-  left: 85px;
-  padding: 18px 100px;
+  top: 11.25em;
+  left: 5.3125em;
+  padding: 1.125em 6.25em;
   background-color: #08a6e4;
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 700;
-  line-height: 17.7px;
+  line-height: 1.1062em;
 }
 
 @media (min-width: 1000px) {
@@ -1079,29 +1078,29 @@ header .header__container__img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 31.25em;
   }
   .section4 .container4 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 1626px;
-    padding-left: 20px;
+    width: 101.625em;
+    padding-left: 1.25em;
   }
   .section4__header {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin: 0 0px;
-    padding: 0px 0px 50px 30px;
+    margin: 0 0em;
+    padding: 0em 0em 3.125em 1.875em;
   }
   .section4__header h1 {
     width: 100%;
-    font-size: 49px;
+    font-size: 3.0625rem;
     font-weight: 400;
-    line-height: 57.53px;
+    line-height: 3.5956em;
     text-align: left;
-    padding-bottom: 30px;
+    padding-bottom: 1.875em;
   }
   .section4__header__contact {
     width: 100%;
@@ -1111,17 +1110,16 @@ header .header__container__img {
     flex-wrap: wrap;
   }
   .section4__header__contact__pack__text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 1.375em;
     text-align: left;
   }
   .section4__form {
     display: flex;
     flex-direction: column;
     width: 31%;
-    height: 450px;
-    padding: 75px 0 0px 15px;
+    padding: 4.6875em 0 0em 0.9375em;
   }
   .section4__form__pack input {
     width: 96%;
@@ -1130,8 +1128,8 @@ header .header__container__img {
     width: 98%;
   }
   .section4__form button {
-    top: 130px;
-    left: 220px;
+    top: 8.125em;
+    left: 13.75em;
   }
 }
 * {
