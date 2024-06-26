@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixin";
 
 .section3 {
   display: block;
@@ -66,20 +67,20 @@
 
       .section3__card3__containerPrice {
         left: 0;
-        padding-left: 20px;  
+        padding-left: 20px;
       }
 
       .section3__card3__containerPrice__price {
         color: $color-primary;
       }
-      
+
       &:nth-of-type(2):hover {
         box-shadow: 2px 9px 50px -25px $color-primary;
         transform: scale(110%);
-        
+
         .section3__card3__containerPrice {
           left: 0;
-          padding-left: 0px;  
+          padding-left: 0px;
         }
 
         .section3__card3__containerPrice {
@@ -101,7 +102,7 @@
 
       .section3__card3__containerPrice {
         left: 35px;
-        padding-left: 0px;  
+        padding-left: 0px;
       }
 
       .section3__card3__containerPrice__price {
@@ -206,6 +207,110 @@
 
 @media (min-width: 1000px) {
   .section3 {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+
+    h3 {
+      padding: 60px 0 0px;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    .limit3 {
+      @include limit;
+      background-color: red;
+      height: 616px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .section3__card3 {
+      display: flex;
+      flex-direction: column;
+      height: 461px;
+      background-color: violet;
+      button {
+        display: none;
+      }
+      &__containerPrice {
+        background-color: greenyellow;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 75px;
+
+        &__basic {
+          font-family: $font-primary;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+
+        &__price {
+          width: 59;
+          padding-top: 0px;
+          font-family: $font-secondary;
+          font-size: 46px;
+          font-weight: 300;
+          line-height: 60px;
+          margin: 0 auto;
+        }
+
+        &__subtitle {
+          width: 74px;
+          margin: 0 auto;
+          font-family: $font-primary;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 10.09px;
+          color: #13253b;
+        }
+      }
+
+      &__containerInputsFeature {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 150%;
+        position: relative;
+        left: 0px;
+        top: 0;
+        padding-top: 18px;
+        right: 0px;
+        &__input {
+          width: 10%;
+          display: block;
+          position: absolute;
+          padding-top: 12px;
+
+          &__checkbox {
+            width: 11px;
+            margin: 0px auto 23px;
+          }
+        }
+
+        &__text {
+          display: block;
+          position: absolute;
+          width: 89%;
+          right: 0px;
+          padding-top: 8px;
+          &__title {
+            width: 115px;
+            left: 21px;
+            margin: 0 5px 19px;
+            font-family: $font-secondary;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.07px;
+            text-align: initial;
+          }
+        }
+      }
+    }
   }
 }

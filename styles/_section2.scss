@@ -77,6 +77,59 @@
     }
   }
 
+  &__card2row {
+    @include __card;
+    border: 1px solid #e8e9ed;
+    &__containerImg1 {
+      @include containerImg;
+      background-color: #fff;
+
+      &__circleBlue {
+        position: absolute;
+        width: 131.88px;
+        top: 17px;
+        left: 90px;
+      }
+
+      &__circleBluePc {
+        display: none;
+      }
+
+      &__mobile {
+        position: absolute;
+        width: 160px;
+        top: 25.01px;
+        left: 90px;
+      }
+    }
+
+    &__containerText1 {
+      @include containerText;
+      padding-top: 170px;
+      background-color: #fff;
+
+      &__title {
+        @include title;
+        margin: 0px 20px 50px;
+      }
+
+      &__text {
+        margin: 0px 20px 35px;
+        @include text;
+      }
+
+      &__title2 {
+        @include title;
+        margin: 7px 17px 15px;
+      }
+
+      &__text2 {
+        @include text;
+        margin: 0px 16px 17px;
+      }
+    }
+  }
+
   &__card2 {
     @include __card;
     padding: 0px 0 10px;
@@ -157,8 +210,6 @@
       background-color: #fff;
 
       &__containerImg1 {
-        display: block;
-        position: relative;
         width: 40%;
 
         &__rectangleMobile {
@@ -170,34 +221,29 @@
           position: absolute;
           width: 40%;
           top: 60px;
-          left: 250px;
+          left: 280px;
         }
 
         &__pc {
           flex: 1;
           position: absolute;
-          width: 70%;
+          width: 86%;
           top: 115px;
-          left: 55.27px;
+          right: 30px;
+        }
+
+        &__mobile {
+          z-index: 2;
+          width: 93%;
+          top: 25px;
+          left: 5%;
         }
 
         &__circleBlue {
-          display: none;
-        }
-
-        &__circleBluePc {
           position: absolute;
           width: 70%;
           top: 10px;
           left: 20px;
-        }
-
-        &__mobile {
-          z-index: 1;
-          position: absolute;
-          width: 93%;
-          top: 25px;
-          left: 5%;
         }
       }
 
@@ -233,61 +279,52 @@
       }
     }
 
-    // .section2__card1row {
-    //   display: flex;
-    //   flex-direction: row;
+    .section2__card2row {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 1124px;
+      height: 370px;
+      background-color: #fff;
+      border: 1px solid #e8e9ed;
       
-    //   &__containerImg1 {
-    //     position: relative;
-    //     width: 1124px;
-    //     height: 370px;
+      .section2__card2row__containerImg1 {
+        width: 40%;
+        
+        .section2__card2row__containerImg1__circleBlue {
+          z-index: 1;
+          width: 60%;
+          top: 10px;
+          left: 20px;
+        }
+        
+        &__circleBluePc {
+          // display: none;
+          z-index: 1;
+          width: 100%;
+          top: 10px;
+          left: 20px;
+        }
+        
+        &__mobile {
+          z-index: 2;
+          width: 93%;
+          top: 25px;
+          left: 5%;
+        }
+      }
+      
+      &__containerText1 {
+        width: 60%;
+        padding: 8% 0%;
 
-    //     &__circleBlue {
-    //       display: none;
-    //     }
-
-    //     &__circleBluePc {
-    //       z-index: 1;
-    //       position: absolute;
-    //       width: 60%;
-    //       top: 10px;
-    //       left: 20px;
-    //     }
-
-    //     &__mobile {
-    //       z-index: 2;
-    //       position: absolute;
-    //       width: 93%;
-    //       top: 25px;
-    //       left: 5%;
-    //     }
-    //   }
-
-    //   &__containerText1 {
-    //     width: 45%;
-    //     padding: 8% 1.5%;
-
-    //     &__title {
-    //       font-size: 36px;
-    //       font-weight: 400;
-    //       line-height: 42px;
-    //     }
-
-    //     &__text {
-    //       font-size: 16px;
-    //       font-weight: 400;
-    //       line-height: 22px;
-    //       text-align: left;
-    //     }
-
-    //     &__lineBlue {
-    //       background-color: $color-primary;
-    //       height: 4px;
-    //       width: 70%;
-    //       margin: 10% 5% 0px;
-    //     }
-    //   }
-    // }
+        &__lineBlue {
+          background-color: $color-primary;
+          height: 4px;
+          width: 70%;
+          margin: 10% 5% 0px;
+        }
+      }
+    }
 
     .section2__card2 {
       display: flex;
@@ -298,7 +335,7 @@
       height: 370px;
 
       &__containerText2 {
-        width: 624px;
+        width: 623px;
         height: 370px;
         padding: 8% 1.5%;
 
@@ -330,7 +367,7 @@
       &__containerImg2 {
         width: 440px;
         height: 370px;
-         margin-left: 100px;
+        margin-left: 100px;
         position: relative;
 
         &__backgroundGreen {
