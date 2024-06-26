@@ -159,113 +159,112 @@ header .header__container__img {
 }
 .section1 {
   display: block;
-  padding-bottom: 50px;
+  padding-bottom: 3.125em;
 }
 .section1 h3 {
-  width: 295px;
+  width: 18.4375em;
   font-size: 30px;
   font-weight: 300;
-  line-height: 35px;
-  margin: 0px auto 26px;
+  line-height: 2.1875em;
+  margin: 0em auto 1.625em;
 }
 .section1__containerCard {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 0.625em;
 }
 .section1__containerCard__card {
   display: block;
-  width: 360px;
-  padding: 10px 0px 0px;
-  margin: 10px 0;
+  width: 22.5em;
+  padding: 0.625em 0px 0px;
+  margin: 0.625em 0;
 }
 .section1__containerCard__card__container {
   margin: 0 auto;
-  width: 63px;
+  width: 3.9375em;
   position: relative;
 }
 .section1__containerCard__card__container__circle {
   display: inline-block;
   position: relative;
   border-radius: 50%;
-  width: auto;
-  width: 63px;
+  width: 3.9375em;
 }
 .section1__containerCard__card__container__vectors {
   position: absolute;
-  width: 44.02px;
-  top: 0px;
+  width: 2.7513em;
+  top: 0rem;
 }
 .section1__containerCard__card__container__vectors__head {
   position: absolute;
-  left: 19px;
-  padding-left: 20px;
+  left: 1.1875em;
+  padding-left: 1.25em;
 }
 .section1__containerCard__card__container__vectors__body {
   position: absolute;
-  padding-left: 21px;
-  top: 27px;
-  left: 8px;
+  padding-left: 1.3125em;
+  top: 1.6875em;
+  left: 0.5em;
 }
 .section1__containerCard__card__container__vectors__eye1 {
   position: absolute;
-  top: 11px;
-  left: 21px;
+  top: 0.6875em;
+  left: 1.3125em;
 }
 .section1__containerCard__card__container__vectors__eye2 {
   position: absolute;
-  top: 17px;
-  left: 43px;
-  width: 25px;
+  top: 1.0625em;
+  left: 2.6875em;
+  width: 1.5625em;
 }
 .section1__containerCard__card__container__vectors__eye3 {
   position: absolute;
-  width: 14px;
-  top: 22.64px;
-  left: 48px;
+  width: 0.875em;
+  top: 1.415em;
+  left: 3em;
 }
 .section1__containerCard__card__container__vectors__box1 {
   position: absolute;
-  left: 32px;
-  width: 37px;
-  top: 4px;
+  left: 2em;
+  width: 2.3125em;
+  top: 0.25em;
 }
 .section1__containerCard__card__container__vectors__box2 {
   position: absolute;
-  top: 8px;
-  left: 29px;
-  width: 43.15px;
+  top: 0.5em;
+  left: 1.8125em;
+  width: 2.6969em;
 }
 .section1__containerCard__card__container__vectors__box3 {
   position: absolute;
-  top: 10px;
-  left: 26px;
-  width: 48.17px;
+  top: 0.625em;
+  left: 1.625em;
+  width: 3.0106em;
 }
 .section1__containerCard__card__container__vectors__box4 {
-  top: 14px;
-  left: 25px;
-  width: 52px;
+  top: 0.875em;
+  left: 1.5625em;
+  width: 3.25em;
   position: absolute;
 }
 .section1__containerCard__card p {
-  margin: 0px auto;
+  margin: 0em auto;
   font-family: "Raleway", sans-serif;
 }
 .section1__containerCard__card__title {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 1000;
-  line-height: 24px;
-  letter-spacing: 5.9600000381px;
+  line-height: 1.5em;
+  letter-spacing: 0.3725em;
   color: black;
-  padding: 8px 0 22px;
+  padding: 0.5em 0 1.375em;
 }
 .section1__containerCard__card__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25em;
   text-align: center;
-  left: 8px;
+  left: 0.5em;
   width: 35%;
   color: #a5a5a5;
 }
@@ -279,14 +278,14 @@ header .header__container__img {
   }
   .section1 h3 {
     width: 100%;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 2.625em;
     text-align: center;
-    margin: 20px 0;
+    margin: 1.25em 0;
   }
   .section1__containerCard {
-    margin: 70px auto 100px;
+    margin: 4.375em auto 6.25em;
     display: flex;
   }
 }
