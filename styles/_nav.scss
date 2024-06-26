@@ -1,9 +1,9 @@
 @import "./mixin";
 
 nav {
-  box-shadow: 0px 3px 6px 0px $color-shadow;
+  box-shadow: 0em .1875em .375em 0em $color-shadow;
   display: inline-block;
-  width: 375px;
+  width: 100%;
   position: relative;
 
   .logoNav{
@@ -12,15 +12,14 @@ nav {
 
   .menu {
     position: absolute;
-    top: 30px;
-    left: 330px;
-    width: 20px;
+    top: 1.875em;
+    left: 20.625em;
 
     &__rectangle {
       position: absolute;
-      width: 20px;
+      width: 1.25rem;
       display: block;
-      margin-bottom: 3px;
+      margin-bottom: .1875em;
     }
   }
 
@@ -29,7 +28,7 @@ nav {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   nav {
     width: 100%;
     display: flex;
@@ -41,7 +40,7 @@ nav {
       justify-content: space-between;
 
       .logoNav {
-        margin-left:85px;
+        margin-left:5.3125em;
       }
 
       .menu {
@@ -51,28 +50,28 @@ nav {
       ul {
         display: flex;
         list-style: none;
-        min-width: 350px;
-        width: 600px;
-        margin-right: 65px;
+        min-width: 21.875em;
+        width: 37.5em;
+        margin-right: 4.0625em;
         justify-content: space-between;
 
         li {
           color: $color-secondary;
-          width: 80px;
+          width: 5em;
           flex-direction: row;
           font-family: $font-secondary;
-          font-size: 11px;
+          font-size: .6875rem;
           font-weight: 700;
-          line-height: 15px;
-          letter-spacing: 3.2799999713897705px;
+          line-height: .9375em;
+          letter-spacing: .205em;
           text-align: center;
-          padding: 27px 0px;
-          border-bottom: 3px solid transparent;
+          padding: 1.6875em 0em;
+          border-bottom: .1875em solid transparent;
         }
 
         li:hover {
           color: black;
-          border-bottom: 3px solid $color-primary;
+          border-bottom: .1875em solid $color-primary;
         }
       }
     }

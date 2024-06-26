@@ -2,8 +2,8 @@
 
 .section4 {
   display: inline-block;
-  padding: 20px 30px 0px;
-  width: 375px;
+  padding: 1.25rem 1.875rem 0rem;
+  width: 23.4375rem;
 
   p,
   a,
@@ -15,20 +15,18 @@
     margin: 0 auto;
     h1 {
       margin: 0;
-      width: 280px;
-      // height: 47px;
+      width: 17.5em;
       font-size: 40px;
       font-weight: 400;
-      line-height: 46.96px;
+      line-height: 2.935em;
     }
 
     &__subtitle {
       font-size: 16px;
       font-weight: 400;
-      line-height: 22px;
-      font-size: 16px;
+      line-height: 1.375em;
       font-weight: 500;
-      line-height: 25px;
+      line-height: 1.5625em;
     }
 
     &__contact {
@@ -42,7 +40,7 @@
         width: 100%;
 
         &__icon {
-          width: 20px;
+          width: 1.25rem;
         }
 
         &__text {
@@ -50,7 +48,7 @@
           position: absolute;
           top: 0;
           width: 80%;
-          left: 34.59px;
+          left: 2.1619em;
         }
       }
     }
@@ -64,19 +62,19 @@
       &__text {
         width: 100%;
         color: $color-primary;
-        font-size: 11px;
+        font-size: .6875rem;
         font-weight: 700;
-        line-height: 18px;
-        letter-spacing: 3.28px;
+        line-height: 1.125em;
+        letter-spacing: .205em;
       }
 
       input {
-        width: 312px;
-        margin: 30px 0px 35px;
+        width: 19.5em;
+        margin: 1.875em 0em 2.1875em;
         display: block;
-        width: 312px;
+        width: 19.5em;
         border: none;
-        border-bottom: 2px solid #cfd0d1;
+        border-bottom: .125em solid #cfd0d1;
       }
     }
 
@@ -88,10 +86,10 @@
 
       &__checkbox {
         appearance: none;
-        border: 1px solid #95989a;
-        border-radius: 3px;
-        padding: 12px;
-        width: 24px;
+        border: .0625em solid #95989a;
+        border-radius: .1875em;
+        padding: .75em;
+        width: 1.5em;
         font-size: 34;
         position: relative;
       }
@@ -107,25 +105,25 @@
         width: 90%;
         // height: 144;
         font-family: Open Sans;
-        font-size: 12px;
+        font-size: .75rem;
         font-weight: 400;
-        line-height: 16.34px;
+        line-height: 1.0212em;
         position: absolute;
-        left: 35px;
-        top: 0px;
+        left: 2.1875em;
+        top: 0em;
         color: #707070;
       }
 
       button {
         position: absolute;
-        top: 180px;
-        left: 85px;
-        padding: 18px 100px;
+        top: 11.25em;
+        left: 5.3125em;
+        padding: 1.125em 6.25em;
         background-color: $color-primary;
         font-family: $font-secondary;
-        font-size: 13px;
+        font-size: .8125rem;
         font-weight: 700;
-        line-height: 17.7px;
+        line-height: 1.1062em;
       }
     }
   }
@@ -137,29 +135,29 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 31.25em;
 
     .container4 {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 1626px;
-      padding-left: 20px;
+      width: 101.625em;
+      padding-left: 1.25em;
     }
     &__header {
       display: flex;
       flex-direction: column;
       width: 30%;
-      margin: 0 0px;
-      padding: 0px 0px 50px 30px;
+      margin: 0 0em;
+      padding: 0em 0em 3.125em 1.875em;
 
       h1 {
         width: 100%;
-        font-size: 49px;
+        font-size: 3.0625rem;
         font-weight: 400;
-        line-height: 57.53px;
+        line-height: 3.5956em;
         text-align: left;
-        padding-bottom: 30px;
+        padding-bottom: 1.875em;
       }
 
       &__contact {
@@ -170,9 +168,9 @@
           &__icon {
           }
           &__text {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 600;
-            line-height: 22px;
+            line-height: 1.375em;
             text-align: left;
           }
         }
@@ -183,8 +181,7 @@
       display: flex;
       flex-direction: column;
       width: 31%;
-      height: 450px;
-      padding: 75px 0 0px 15px;
+      padding: 4.6875em 0 0em .9375em;
 
       &__pack {
         input {
@@ -197,8 +194,8 @@
       }
 
       button {
-        top: 130px;
-        left: 220px;
+        top: 8.125em;
+        left: 13.75em;
       }
     }
   }

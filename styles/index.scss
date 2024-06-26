@@ -43,49 +43,49 @@ body {
 
   footer {
     width: 100%;
-    box-shadow: 0px -5px 40px 5px #00000033;
+    box-shadow: 0em -0.3125em 2.5em .3125em #00000033;
     position: relative;
-    margin: 250px 0px 0px;
-    padding: 10px 0 10px;
+    margin: 250px 0px;
+    padding: 10px 0;
 
     .pack {
       display: block;
       width: 60%;
       &__logoFooter {
         color: $color-primary;
-        font-size: 26px;
+        font-size: 1.625em;
         font-weight: 300;
-        line-height: 30px;
+        line-height: 1.875em;
         text-align: left;
-        margin: 0px 17px 0px;
-        padding: 10px 7px 0px;
+        margin: 0em 1.0625em 0em;
+        padding: .625em .4375em 0em;
       }
 
       &__copyright {
-        width: 187px;
-        padding: 0px 0px 10px;
+        width: 11.6875em;
+        padding: 0em 0em .625em;
         font-family: $font-secondary;
-        font-size: 11px;
+        font-size: .6875rem;
         font-weight: 400;
-        line-height: 14.98px;
-        margin-left: 25px;
+        line-height: .9363em;
+        margin-left: 1.5625em;
         color: #a5a5a5;
       }
     }
 
     .packLogos {
       position: absolute;
-      top: 30px;
-      left: 290px;
+      top: 1.875em;
+      left: 18.125em;
       display: inline-block;
 
       &__x {
-        margin-left: -20px;
-        padding: 0 15px;
+        margin-left: -1.25em;
+        padding: 0 .9375em;
       }
 
       &__facebook{
-        padding-right: 20px;
+        padding-right: 1.25em;
       }
     }
   }
@@ -100,7 +100,7 @@ body {
 
     footer {
       width: 100%;
-      margin-top: 60px;
+      margin-top: 3.75em;
       .limit {
         @include limit;
         flex-direction: row;
@@ -109,23 +109,23 @@ body {
         .pack {
           display: flex;
           flex-direction: column;
-          margin-left: 85px;
+          margin-left: 5.3125em;
           width: 40%;
 
           &__logoFooter {
             @include logo;
-            padding: 0px 15px;
-            font-size: 26px;
+            padding: 0 .9375em;
+            font-size: 1.625rem;
             font-weight: 300;
-            line-height: 30px;
+            line-height: 1.875em;
             text-align: left;
           }
 
           &__copyright {
-            margin: 0 18px;
-            font-size: 11px;
+            margin: 0 1.125em;
+            font-size: .6875rem;
             font-weight: 400;
-            line-height: 14.98px;
+            line-height: .9363em;
             text-align: left;
           
           }
@@ -134,12 +134,11 @@ body {
         .packLogos {
           display: flex;
           top: 0;
-          left: -100px;
-
+          left: -6.25em;
           position: relative;
-          width: 75px;
+          width: 4.6875em;
           justify-content: space-around;
-          margin-right: 40px;
+          margin-right: 2.5em;
         }
       }
     }

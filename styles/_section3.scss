@@ -5,37 +5,37 @@
   display: block;
   text-align: center;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 3.125em;
 
   h3 {
-    margin-bottom: 8px;
+    margin-bottom: .5em;
     display: block;
     font-size: 36px;
     font-weight: 400;
-    line-height: 42.26px;
+    line-height: 2.6412em;
   }
 
   &__card3 {
-    padding: 127px 150px;
-    border-radius: 18px;
+    padding: 7.9375em 9.375em;
+    border-radius: 1.125em;
     display: inline-block;
-    margin: 5px auto 55px;
+    margin: .3125em auto 3.4375em;
     position: relative;
 
     button {
-      padding: 13px 53px;
-      border-radius: 23px;
+      padding: .8125em 3.3125em;
+      border-radius: 1.4375em;
       position: absolute;
-      left: -70px;
-      top: 228px;
+      left: -4.375em;
+      top: 14.25em;
       font-family: $font-secondary;
       font-size: 13px;
       font-weight: 700;
-      line-height: 17.7px;
+      line-height: 1.1062em;
     }
 
     &:nth-of-type(1) /*basic card*/ {
-      border: 1px solid $color-quaternary;
+      border: .0625em solid $color-quaternary;
       button {
         background-color: $color-quaternary;
       }
@@ -45,21 +45,21 @@
       }
 
       &:nth-of-type(1):hover {
-        box-shadow: 2px 9px 50px -25px $color-quaternary;
+        box-shadow: .125em .5625em 3.125em -1.5625em $color-quaternary;
         transform: scale(110%);
 
         .section3__card3__containerPrice {
-          left: 0px;
+          left: 0em;
         }
 
         button {
-          box-shadow: 2px 9px 25px -10px $color-quaternary;
+          box-shadow: .125em .5625em 1.5625em -0.625em $color-quaternary;
         }
       }
     }
 
     &:nth-of-type(2) /*professional card*/ {
-      border: 1px solid $color-primary;
+      border: .0625em solid $color-primary;
 
       button {
         background-color: $color-primary;
@@ -67,7 +67,7 @@
 
       .section3__card3__containerPrice {
         left: 0;
-        padding-left: 20px;
+        padding-left: 1.25em;
       }
 
       .section3__card3__containerPrice__price {
@@ -75,34 +75,34 @@
       }
 
       &:nth-of-type(2):hover {
-        box-shadow: 2px 9px 50px -25px $color-primary;
+        box-shadow: .125em .5625em 3.125em -1.5625em $color-primary;
         transform: scale(110%);
 
         .section3__card3__containerPrice {
           left: 0;
-          padding-left: 0px;
+          padding-left: 0em;
         }
 
         .section3__card3__containerPrice {
-          left: 0px;
-          padding-left: 0px;
+          left: 0em;
+          padding-left: 0em;
         }
 
         button {
-          box-shadow: 2px 9px 25px -10px $color-primary;
+          box-shadow: .125em .5625em 1.5625em -0.625em $color-primary;
         }
       }
     }
 
     &:nth-of-type(3) /*premium card*/ {
-      border: 1px solid $color-tertiary;
+      border: .0625em solid $color-tertiary;
       button {
         background-color: $color-tertiary;
       }
 
       .section3__card3__containerPrice {
-        left: 35px;
-        padding-left: 0px;
+        left: 2.1875em;
+        padding-left: 0em;
       }
 
       .section3__card3__containerPrice__price {
@@ -110,19 +110,19 @@
       }
 
       &:nth-of-type(3):hover {
-        box-shadow: 2px 9px 50px -25px $color-tertiary;
+        box-shadow: .125em .5625em 3.125em -1.5625em $color-tertiary;
         transform: scale(110%);
 
         button {
-          box-shadow: 2px 9px 25px -10px $color-tertiary;
+          box-shadow: .125em .5625em 1.5625em -0.625em $color-tertiary;
         }
       }
     }
 
     &__containerPrice {
       position: absolute;
-      top: 75px;
-      left: 45px;
+      top: 4.6875em;
+      left: 2.8125em;
       display: block;
       margin: 0 auto;
 
@@ -130,26 +130,26 @@
         font-family: $font-primary;
         font-size: 20px;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 1.5em;
       }
 
       &__price {
         width: 59;
-        padding-top: 0px;
+        padding-top: 0em;
         font-family: $font-secondary;
         font-size: 46px;
         font-weight: 300;
-        line-height: 60px;
+        line-height: 3.75em;
         margin: 0 auto;
       }
 
       &__subtitle {
-        width: 74px;
+        width: 4.625em;
         margin: 0 auto;
         font-family: $font-primary;
         font-size: 12px;
         font-weight: 700;
-        line-height: 10.09px;
+        line-height: .6306em;
         color: #13253b;
       }
     }
@@ -158,19 +158,19 @@
       display: inline-block;
       width: 40%;
       position: absolute;
-      left: 150px;
+      left: 9.375em;
       top: 0;
-      padding-top: 18px;
-      right: 0px;
+      padding-top: 1.125em;
+      right: 0em;
       &__input {
         width: 10%;
         display: block;
         position: absolute;
-        padding-top: 12px;
+        padding-top: .75em;
 
         &__checkbox {
-          width: 11px;
-          margin: 0px auto 23px;
+          width: .6875em;
+          margin: 0em auto 1.4375em;
         }
       }
 
@@ -178,16 +178,16 @@
         display: block;
         position: absolute;
         width: 89%;
-        right: 0px;
-        padding-top: 8px;
+        right: 0em;
+        padding-top: .5em;
         &__title {
-          width: 115px;
-          left: 21px;
-          margin: 0 5px 19px;
+          width: 7.1875em;
+          left: 1.3125em;
+          margin: 0 .3125em 1.1875em;
           font-family: $font-secondary;
           font-size: 14px;
           font-weight: 400;
-          line-height: 19.07px;
+          line-height: 1.1919em;
           text-align: initial;
         }
       }
@@ -200,7 +200,7 @@
     }
     .section3__card3__containerFeature {
       width: 50%;
-      left: 145px;
+      left: 9.0625em;
     }
   }
 }
@@ -211,16 +211,15 @@
     flex-direction: column;
 
     h3 {
-      padding: 60px 0 0px;
-      font-size: 36px;
+      padding: 3.75em 0 0em;
+      font-size: 2.25rem;
       font-weight: 400;
-      line-height: 42px;
+      line-height: 2.625em;
       text-align: center;
     }
 
     .limit3 {
       @include limit;
-      height: 616px;
       display: flex;
       flex-direction: row;
     }
@@ -228,43 +227,43 @@
     .section3__card3 {
       display: flex;
       flex-direction: column;
-      height: 461px;
-      width: 400px;
+      height: 28.8125em;
+      width: 25em;
 
       button {
         display: none;
       }
 
       &__containerPrice {
-        top: 0px;
+        top: 0em;
         display: flex;
         flex-direction: column;
-        padding: 25px 75px;
+        padding: 1.5625em 4.6875em;
 
         &__basic {
           font-family: $font-primary;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-weight: 700;
-          line-height: 24px;
+          line-height: 1.5em;
         }
 
         &__price {
           width: 59;
-          padding-top: 0px;
+          padding-top: 0em;
           font-family: $font-secondary;
-          font-size: 46px;
+          font-size: 2.875rem;
           font-weight: 300;
-          line-height: 60px;
+          line-height: 3.75em;
           margin: 0 auto;
         }
 
         &__subtitle {
-          width: 74px;
+          width: 4.625em;
           margin: 0 auto;
           font-family: $font-primary;
-          font-size: 12px;
+          font-size: .75rem;
           font-weight: 700;
-          line-height: 10.09px;
+          line-height: .6306em;
           color: #13253b;
         }
       }
@@ -276,10 +275,10 @@
         // flex-wrap: wrap;
         width: 250%;
         position: relative;
-        left: 0px;
+        left: 0em;
         top: 0;
-        padding-top: 18px;
-        right: 0px;
+        padding-top: 1.125em;
+        right: 0em;
 
         &__pack {
           background-color: red;
@@ -292,8 +291,8 @@
             clear: absolute;
 
             &__checkbox {
-              width: 11px;
-              margin: 0px auto 23px;
+              width: .6875em;
+              margin: 0em auto 1.4375em;
             }
           }
 
@@ -301,17 +300,17 @@
             display: block;
             position: absolute;
             width: 70%;
-            right: 0px;
-            padding-top: 8px;
+            right: 0em;
+            padding-top: .5em;
 
             &__title {
-              width: 115px;
-              left: 21px;
-              margin: 0 5px 19px;
+              width: 7.1875em;
+              left: 1.3125em;
+              margin: 0 .3125em 1.1875em;
               font-family: $font-secondary;
-              font-size: 14px;
+              font-size: .875rem;
               font-weight: 400;
-              line-height: 19.07px;
+              line-height: 1.1919em;
               text-align: initial;
             }
           }
