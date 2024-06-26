@@ -1,13 +1,13 @@
 .section1 {
+  width: 100%;
   display: block;
-  padding-bottom: 3.125em;
+  padding-bottom: 3em;
 
-  h3 {
-    width: 18.4375em;
-    font-size: 30px;
+  h1 {
+    font-size: 30.4px;
     font-weight: 300;
-    line-height: 2.1875em;
-    margin: 0em auto 1.625em;
+    margin: 0em auto;
+    padding: 0em 1em 0.3em;
   }
 
   &__containerCard {
@@ -17,7 +17,7 @@
     &__card {
       display: block;
       width: 22.5em;
-      padding: .625em 0px 0px;
+      padding: .625em 0rem 0rem;
       margin: .625em 0;
 
       &__container {
@@ -35,7 +35,7 @@
         &__vectors {
           position: absolute;
           width: 2.7513em;
-          top: 0rem;
+          top: 0px;
 
           &__head {
             position: absolute;
@@ -107,7 +107,7 @@
 
       &__title {
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 20px;
         font-weight: 1000;
         line-height: 1.5em;
         letter-spacing: .3725em;
@@ -116,7 +116,7 @@
       }
 
       &__text {
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.25em;
         text-align: center;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .section1 {
     display: flex;
     flex-direction: column;
@@ -136,7 +136,7 @@
     align-items: center;
     h3 {
       width: 100%;
-      font-size: 2.25rem;
+      font-size: 36px;
       font-weight: 400;
       line-height: 2.625em;
       text-align: center;

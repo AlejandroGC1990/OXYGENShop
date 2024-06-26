@@ -5,25 +5,26 @@ header {
   text-align: center;
 
   h1 {
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 2.5681em;
-    margin: 2.1em auto 0;
+    margin: 2.1em auto 0em;
   }
 
   p {
+    text-align: center;
     font-family: $font-secondary;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    margin: 0 3em .4375em;
+    margin: 0 auto;
   }
 
   button {
     @include button;
     box-shadow: .3125em .625em .875em 0em #07ace64a;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
-    margin: 1.4375em auto 3.375em;
+    margin: 1.4375em auto 4em;
     padding: 1.375em 5.625em;
     background-color: $color-primary;
   }
