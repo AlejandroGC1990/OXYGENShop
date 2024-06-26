@@ -6,12 +6,12 @@ nav {
 }
 nav .logoNav {
   font-family: "Raleway", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 37px;
+  line-height: 2.3125em;
   color: #08a6e4;
-  margin: 0px 0px 0px;
-  padding: 18px 0px 18px 25px;
+  margin: 0;
+  padding: 1.125em 0em 1.125em 1.5625em;
   text-align: left;
 }
 nav .menu {
@@ -41,8 +41,8 @@ nav ul {
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    width: 1626px;
-    min-width: 1000px;
+    width: 101.625em;
+    min-width: 62.5em;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -298,9 +298,9 @@ header .header__container__img {
   padding: 1.5625rem 0 14.375rem;
 }
 .section2__card1 {
-  margin: 19px auto 18px;
-  width: 315px;
-  border-radius: 5px;
+  margin: 1.1875em auto 1.125em;
+  width: 19.6875em;
+  border-radius: 0.3125em;
   display: inline-block;
   background-color: #fff;
   border: 1px solid #e8e9ed;
@@ -340,7 +340,7 @@ header .header__container__img {
   left: 5.625rem;
 }
 .section2__card1__containerText1 {
-  padding-top: 170px;
+  padding-top: 10.625em;
   display: block;
   padding-top: 10.625rem;
   background-color: #fff;
@@ -349,9 +349,9 @@ header .header__container__img {
   width: 90%;
 }
 .section2__card1__containerText1__title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 35.22px;
+  line-height: 2.2012em;
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
@@ -360,15 +360,15 @@ header .header__container__img {
 .section2__card1__containerText1__text {
   margin: 0rem 1.25rem 2.1875rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.3125em;
   text-align: left;
 }
 .section2__card1__containerText1__title2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 35.22px;
+  line-height: 2.2012em;
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
@@ -376,16 +376,16 @@ header .header__container__img {
 }
 .section2__card1__containerText1__text2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.3125em;
   text-align: left;
   margin: 0rem 1rem 1.0625rem;
 }
 .section2__card2row {
-  margin: 19px auto 18px;
-  width: 315px;
-  border-radius: 5px;
+  margin: 1.1875em auto 1.125em;
+  width: 19.6875em;
+  border-radius: 0.3125em;
   display: inline-block;
   background-color: #fff;
   border: 0.0625rem solid #e8e9ed;
@@ -411,7 +411,7 @@ header .header__container__img {
   left: 5.625rem;
 }
 .section2__card2row__containerText1 {
-  padding-top: 170px;
+  padding-top: 10.625em;
   display: block;
   padding-top: 10.625rem;
   background-color: #fff;
@@ -420,9 +420,9 @@ header .header__container__img {
   width: 90%;
 }
 .section2__card2row__containerText1__title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 35.22px;
+  line-height: 2.2012em;
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
@@ -431,15 +431,15 @@ header .header__container__img {
 .section2__card2row__containerText1__text {
   margin: 0rem 1.25rem 2.1875rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.3125em;
   text-align: left;
 }
 .section2__card2row__containerText1__title2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 35.22px;
+  line-height: 2.2012em;
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
@@ -447,23 +447,23 @@ header .header__container__img {
 }
 .section2__card2row__containerText1__text2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.3125em;
   text-align: left;
   margin: 0rem 1rem 1.0625rem;
 }
 .section2__card2 {
-  margin: 19px auto 18px;
-  width: 315px;
-  border-radius: 5px;
+  margin: 1.1875em auto 1.125em;
+  width: 19.6875em;
+  border-radius: 0.3125em;
   display: inline-block;
   background-color: #fff;
   padding: 0rem 0 0.625rem;
   margin: 1.25rem 0 0rem;
 }
 .section2__card2__containerText2 {
-  padding-top: 170px;
+  padding-top: 10.625em;
   display: block;
   padding-top: 1.5625rem;
   background-color: #fff;
@@ -474,9 +474,9 @@ header .header__container__img {
   width: 90%;
 }
 .section2__card2__containerText2__title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 35.22px;
+  line-height: 2.2012em;
   text-align: left;
   font-family: "Raleway", sans-serif;
   width: 90%;
@@ -484,9 +484,9 @@ header .header__container__img {
 }
 .section2__card2__containerText2__text {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.3125em;
   text-align: left;
   margin: 1.25rem 1.25rem 1.5625rem;
   font-family: "Open Sans", sans-serif;
@@ -530,8 +530,8 @@ header .header__container__img {
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    width: 1626px;
-    min-width: 1000px;
+    width: 101.625em;
+    min-width: 62.5em;
     flex-direction: column;
     justify-content: space-between;
     padding: 5.625rem 0rem;
@@ -877,8 +877,8 @@ header .header__container__img {
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    width: 1626px;
-    min-width: 1000px;
+    width: 101.625em;
+    min-width: 62.5em;
     height: 616px;
     display: flex;
     flex-direction: row;
@@ -1230,8 +1230,8 @@ body footer .packLogos__facebook {
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    width: 1626px;
-    min-width: 1000px;
+    width: 101.625em;
+    min-width: 62.5em;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1243,12 +1243,12 @@ body footer .packLogos__facebook {
   }
   body footer .limit .pack__logoFooter {
     font-family: "Raleway", sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 37px;
+    line-height: 2.3125em;
     color: #08a6e4;
-    margin: 0px 0px 0px;
-    padding: 18px 0px 18px 25px;
+    margin: 0;
+    padding: 1.125em 0em 1.125em 1.5625em;
     text-align: left;
     padding: 0 0.9375em;
     font-size: 1.625rem;

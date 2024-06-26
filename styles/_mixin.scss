@@ -5,27 +5,27 @@
   justify-items: center;
   align-items: center;
   margin: 0 auto;
-  width: 1626px;
-  min-width: 1000px;
+  width: 101.625em;
+  min-width: 62.5em;
 }
 
 @mixin logo {
   font-family: $font-primary;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 37px;
+  line-height: 2.3125em;
   color: $color-primary;
-  margin: 0px 0px 0px;
-  padding: 18px 0px 18px 25px;
+  margin: 0;
+  padding: 1.125em 0em 1.125em 1.5625em;
   text-align: left;
 }
 
 //section2
 
 @mixin __card {
-  margin: 19px auto 18px;
-  width: 315px;
-  border-radius: 5px;
+  margin: 1.1875em auto 1.125em;
+  width: 19.6875em;
+  border-radius: .3125em;
   display: inline-block;
   background-color: #fff;
 }
@@ -36,7 +36,7 @@
 }
 
 @mixin containerText {
-  padding-top: 170px;
+  padding-top: 10.625em;
   display: block;
 
   p {
@@ -45,9 +45,9 @@
 }
 
 @mixin title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 35.22px;
+  line-height: 2.2012em;
   text-align: left;
   font-family: $font-primary;
   width: 90%;
@@ -55,8 +55,8 @@
 
 @mixin text {
   font-family: $font-secondary;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 1.3125em;
   text-align: left;
 }
