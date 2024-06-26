@@ -1,7 +1,7 @@
 nav {
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0em 0.1875em 0.375em 0em rgba(0, 0, 0, 0.2);
   display: inline-block;
-  width: 375px;
+  width: 100%;
   position: relative;
 }
 nav .logoNav {
@@ -16,21 +16,20 @@ nav .logoNav {
 }
 nav .menu {
   position: absolute;
-  top: 30px;
-  left: 330px;
-  width: 20px;
+  top: 1.875em;
+  left: 20.625em;
 }
 nav .menu__rectangle {
   position: absolute;
-  width: 20px;
+  width: 1.25rem;
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 0.1875em;
 }
 nav ul {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   nav {
     width: 100%;
     display: flex;
@@ -47,7 +46,7 @@ nav ul {
     justify-content: space-between;
   }
   nav .limit .logoNav {
-    margin-left: 85px;
+    margin-left: 5.3125em;
   }
   nav .limit .menu {
     display: none;
@@ -55,27 +54,27 @@ nav ul {
   nav .limit ul {
     display: flex;
     list-style: none;
-    min-width: 350px;
-    width: 600px;
-    margin-right: 65px;
+    min-width: 21.875em;
+    width: 37.5em;
+    margin-right: 4.0625em;
     justify-content: space-between;
   }
   nav .limit ul li {
     color: #a5a5a5;
-    width: 80px;
+    width: 5em;
     flex-direction: row;
     font-family: "Open Sans", sans-serif;
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 3.2799999714px;
+    line-height: 0.9375em;
+    letter-spacing: 0.205em;
     text-align: center;
-    padding: 27px 0px;
-    border-bottom: 3px solid transparent;
+    padding: 1.6875em 0em;
+    border-bottom: 0.1875em solid transparent;
   }
   nav .limit ul li:hover {
     color: black;
-    border-bottom: 3px solid #08a6e4;
+    border-bottom: 0.1875em solid #08a6e4;
   }
 }
 header {
@@ -86,7 +85,7 @@ header {
 }
 header h1 {
   width: 10.125em;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 400;
   line-height: 2.5681em;
   margin: 6.5625em auto 1.375em auto;
@@ -94,14 +93,14 @@ header h1 {
 header p {
   width: 17.8125em;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4375em;
   margin: 0 auto 0.4375em;
 }
 header button {
   box-shadow: 0.3125em 0.625em 0.875em 0em rgba(7, 172, 230, 0.2901960784);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin: 1.4375em auto 3.375em;
   padding: 1.375em 5.625em;
