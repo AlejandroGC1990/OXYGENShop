@@ -1,7 +1,7 @@
 @import "./variables.scss";
+@import "./mixin";
 @import "./nav.scss";
 @import "./header.scss";
-@import "./card.scss";
 @import "./section1.scss";
 @import "./section2.scss";
 @import "./section3.scss";
@@ -22,13 +22,8 @@ body {
   h1,
   h2,
   h3 {
-    text-align: center;
     font-family: $font-primary;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 42.26px;
-    margin-bottom: 30px;
-    width: 100%;
+    text-align: center;
   }
 
   button {
@@ -41,20 +36,6 @@ body {
     color: #fff;
   }
 
-  .logo_Oxygen {
-    width: 206px;
-    height: 37px;
-
-    font-family: $font-primary;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 37px;
-    color: $color-primary;
-
-    display: inline-block;
-    margin: 17px 0px 0px 25px;
-  }
-
   main {
     margin-top: 15px;
     display: block;
@@ -62,17 +43,27 @@ body {
 
   footer {
     width: 100%;
-    height: 89px;
     box-shadow: 0px -5px 40px 5px #00000033;
     position: relative;
-    margin: 260px 0px 0px;
+    margin: 250px 0px 0px;
+    padding: 10px 0 10px;
 
     .pack {
       display: block;
-      width: 90%;
+      width: 60%;
+      &__logoFooter {
+        color: $color-primary;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: left;
+        margin: 0px 17px 0px;
+        padding: 10px 7px 0px;
+      }
+
       &__copyright {
         width: 187px;
-        height: 15px;
+        padding: 0px 0px 10px;
         font-family: $font-secondary;
         font-size: 11px;
         font-weight: 400;
@@ -82,23 +73,75 @@ body {
       }
     }
 
-    .pack__logos {
+    .packLogos {
       position: absolute;
-      top: 25px;
-      left: 80%;
+      top: 30px;
+      left: 290px;
       display: inline-block;
+
+      &__x {
+        margin-left: -20px;
+        padding: 0 15px;
+      }
+
+      &__facebook{
+        padding-right: 20px;
+      }
     }
   }
-
 }
 
-// @media only screen and (min-width: 1000px) {
-//   body {
-//     background-color: greenyellow;
-//     max-width: 1626px;
-//     height: 70px;
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 
-//     width: 1626px;
-//     height: 4234px;
-//   }
-// }
+    footer {
+      width: 100%;
+      margin-top: 60px;
+      .limit {
+        @include limit;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .pack {
+          display: flex;
+          flex-direction: column;
+          margin-left: 85px;
+          width: 40%;
+
+          &__logoFooter {
+            @include logo;
+            padding: 0px 15px;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 30px;
+            text-align: left;
+          }
+
+          &__copyright {
+            margin: 0 18px;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 14.98px;
+            text-align: left;
+          
+          }
+        }
+
+        .packLogos {
+          display: flex;
+          top: 0;
+          left: -100px;
+
+          position: relative;
+          width: 75px;
+          justify-content: space-around;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}

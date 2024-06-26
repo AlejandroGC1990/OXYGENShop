@@ -1,43 +1,80 @@
+@import "./mixin";
+
 nav {
-  width: 375px;
-  height: 70px;
   box-shadow: 0px 3px 6px 0px $color-shadow;
+  display: inline-block;
+  width: 375px;
+  position: relative;
 
-  .menu {
-    width: 20px;
-    height: 12px;
-
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-left: 95px;
+  .logoNav{
+    @include logo;
   }
 
-  .rectangle-menu {
+  .menu {
+    position: absolute;
+    top: 30px;
+    left: 330px;
     width: 20px;
-    height: 2px;
-    display: block;
-    margin-bottom: 3px;
+
+    &__rectangle {
+      position: absolute;
+      width: 20px;
+      display: block;
+      margin-bottom: 3px;
+    }
   }
 
   ul {
     display: none;
   }
-
 }
 
-// @media only screen and (min-width: 980px) {
-//   nav {
-//     background-color: rgb(163, 146, 146);
-//     height: 70px;
-//     width: 100%;
+@media (min-width: 1000px) {
+  nav {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
 
-//     .menu {
-//       display: none;
-//     }
+    .limit {
+      @include limit;
+      flex-direction: row;
+      justify-content: space-between;
 
-//     ul {
-//       display: inline-block;
-      
-//     }
-//   }
-// }
+      .logoNav {
+        margin-left:85px;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        min-width: 350px;
+        width: 600px;
+        margin-right: 65px;
+        justify-content: space-between;
+
+        li {
+          color: $color-secondary;
+          width: 80px;
+          flex-direction: row;
+          font-family: $font-secondary;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 3.2799999713897705px;
+          text-align: center;
+          padding: 27px 0px;
+          border-bottom: 3px solid transparent;
+        }
+
+        li:hover {
+          color: black;
+          border-bottom: 3px solid $color-primary;
+        }
+      }
+    }
+  }
+}

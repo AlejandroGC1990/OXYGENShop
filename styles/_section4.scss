@@ -16,7 +16,7 @@
     h1 {
       margin: 0;
       width: 280px;
-      height: 47px;
+      // height: 47px;
       font-size: 40px;
       font-weight: 400;
       line-height: 46.96px;
@@ -34,17 +34,15 @@
     &__contact {
       display: inline-block;
       width: 100%;
-      margin: 35px auto 55px;
+      margin: 35px auto 20px;
       &__pack {
         margin: 4px;
         display: inline-block;
         position: relative;
-        height: 27px;
         width: 100%;
 
         &__icon {
           width: 20px;
-          height: 17px;
         }
 
         &__text {
@@ -53,7 +51,6 @@
           top: 0;
           width: 80%;
           left: 34.59px;
-          height: 27px;
         }
       }
     }
@@ -62,7 +59,6 @@
   &__form {
     display: block;
     position: relative;
-    height: auto;
 
     &__pack {
       &__text {
@@ -70,15 +66,13 @@
         color: $color-primary;
         font-size: 11px;
         font-weight: 700;
-        line-height: 14.98px;
+        line-height: 18px;
         letter-spacing: 3.28px;
       }
 
       input {
-        // background-color: red;
         width: 312px;
-        height: 40px;
-        margin-bottom: 20px;
+        margin: 30px 0px 35px;
         display: block;
         width: 312px;
         border: none;
@@ -88,7 +82,6 @@
 
     &__terms {
       width: 100%;
-      height: 144;
       display: inline-block;
       position: relative;
       direction: ltr;
@@ -97,7 +90,7 @@
         appearance: none;
         border: 1px solid #95989a;
         border-radius: 3px;
-        height: 24px;
+        padding: 12px;
         width: 24px;
         font-size: 34;
         position: relative;
@@ -112,7 +105,7 @@
 
       &__text {
         width: 90%;
-        height: 144;
+        // height: 144;
         font-family: Open Sans;
         font-size: 12px;
         font-weight: 400;
@@ -127,12 +120,85 @@
         position: absolute;
         top: 180px;
         left: 85px;
-        padding: 20px 100px ;
+        padding: 18px 100px;
         background-color: $color-primary;
         font-family: $font-secondary;
         font-size: 13px;
         font-weight: 700;
         line-height: 17.7px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+
+    .container4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 1626px;
+      padding-left: 20px;
+    }
+    &__header {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin: 0 0px;
+      padding: 0px 0px 50px 30px;
+
+      h1 {
+        width: 100%;
+        font-size: 49px;
+        font-weight: 400;
+        line-height: 57.53px;
+        text-align: left;
+        padding-bottom: 30px;
+      }
+
+      &__contact {
+        width: 100%;
+        &__pack {
+          display: flex;
+          flex-wrap: wrap;
+          &__icon {
+          }
+          &__text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 31%;
+      height: 450px;
+      padding: 75px 0 0px 15px;
+
+      &__pack {
+        input {
+          width: 96%;
+        }
+      }
+
+      &__terms {
+        width: 98%;
+      }
+
+      button {
+        top: 130px;
+        left: 220px;
       }
     }
   }
