@@ -4,20 +4,18 @@
   display: block;
   text-align: center;
   background-color: #f7f7f7;
-  padding: 1.5625rem 0 14.375rem;
+  padding: 1.48em 0em 12em;
 
   &__card1 {
     @include __card;
-    border: 1px solid #e8e9ed;
 
     &__containerImg1 {
       @include containerImg;
-      background-color: #fff;
 
       &__rectangleMobile {
         position: absolute;
         width: 90.12px;
-        top: .9375rem;
+        top: .9rem;
       }
 
       &__rectanglePc {
@@ -27,62 +25,29 @@
       &__pc {
         position: absolute;
         width: 192.76px;
-        top: 2.3194em;
+        top: 2.35em;
         left: 3.4544em;
-      }
-
-      &__circleBlue {
-        position: absolute;
-        width: 131.88px;
-        top: 1.0625em;
-        left: 5.625em;
-      }
-
-      &__circleBluePc {
-        display: none;
-      }
-
-      &__mobile {
-        position: absolute;
-        width: 160px;
-        top: 1.5631em;
-        left: 5.625em;
       }
     }
 
-    &__containerText1 {
+    &__containerText {
       @include containerText;
-      padding-top: 10.625em;
-      background-color: #fff;
 
       &__title {
         @include title;
-        margin: 0em 1.25em 3.125em;
       }
 
       &__text {
-        margin: 0em 1.25em 2.1875em;
         @include text;
-      }
-
-      &__title2 {
-        @include title;
-        margin: .4375em 1.0625em .9375em;
-      }
-
-      &__text2 {
-        @include text;
-        margin: 0em 1em 1.0625em;
       }
     }
   }
 
   &__card2row {
     @include __card;
-    border: .0625em solid #e8e9ed;
+
     &__containerImg1 {
       @include containerImg;
-      background-color: #fff;
 
       &__circleBlue {
         position: absolute;
@@ -97,45 +62,30 @@
 
       &__mobile {
         position: absolute;
-        width: 160px;
+        width: 175px;
         top: 1.5631em;
         left: 5.625em;
       }
     }
 
-    &__containerText1 {
+    &__containerText {
       @include containerText;
-      padding-top: 10.625em;
-      background-color: #fff;
 
       &__title {
         @include title;
-        margin: 0em 1.25em 3.125em;
+        margin-bottom: 0.74em;
       }
 
       &__text {
-        margin: 0em 1.25em 2.1875em;
         @include text;
-      }
-
-      &__title2 {
-        @include title;
-        margin: .4375em 1.0625em .9375em;
-      }
-
-      &__text2 {
-        @include text;
-        margin: 0em 1em 1.0625em;
       }
     }
   }
 
-  &__card2 {
+  &__card3 {
     @include __card;
-    padding: 0em 0 .625em;
-    margin: 1.25em 0 0em;
 
-    &__containerText2 {
+    &__containerText {
       @include containerText;
       padding-top: 1.5625em;
       background-color: #fff;
@@ -149,7 +99,6 @@
 
       &__text {
         @include text;
-        margin: 1.25em 1.25em 1.5625em;
         font-family: $font-secondary;
         font-size: 1rem;
         font-weight: 400;
@@ -157,15 +106,11 @@
       }
     }
 
-    &__containerImg2 {
+    &__containerImg {
       @include containerImg;
       border: .0625em solid #e8e9ed;
       border-radius: .3125em;
       position: relative;
-
-      // &__backgroundGreenPC {
-      //   display: none;
-      // }
 
       &__backgroundGreen {
         border-radius: .3125em;
@@ -173,13 +118,14 @@
         position: absolute;
         padding: 0em;
         left: 0em;
-        top: -0.125em;
+        top: -0.9em;
+        height: 195px;
       }
 
       &__megaphone {
         z-index: 1;
         position: absolute;
-        top: 1.5em;
+        top: 0.5em;
         right: 1.875em;
         padding: 0;
         margin: 0em;
@@ -283,17 +229,17 @@
       flex-wrap: nowrap;
       background-color: #fff;
       border: .0625em solid #e8e9ed;
-      
+
       .section2__card2row__containerImg1 {
         width: 50%;
-        
+
         .section2__card2row__containerImg1__circleBlue {
           z-index: 1;
           width: 60%;
           top: .625em;
           left: 1.25em;
         }
-        
+
         &__mobile {
           z-index: 2;
           width: 80%;
@@ -301,7 +247,7 @@
           left: 5%;
         }
       }
-      
+
       &__containerText1 {
         width: 41%;
         padding: 8em 0em;
@@ -325,7 +271,7 @@
         width: 38.75em;
         height: 23.125em;
         margin-left: 12.5em;
-        
+
         &__title {
           margin: 0 1.25em;
           width: 70%;
