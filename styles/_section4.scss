@@ -117,9 +117,9 @@
       button {
         @include button;
         position: absolute;
-        top: 13.25em;
+        top: 14em;
         left: 7.3125em;
-        padding: 1.5em 7.5em;
+        padding: 1.4em 7.5em;
         background-color: $color-primary;
         font-family: $font-secondary;
         font-size: 13px;
@@ -164,8 +164,7 @@
       &__contact {
         width: 100%;
         &__pack {
-          display: flex;
-          flex-wrap: wrap;
+          display:block;
           // &__icon {
           // }
           &__text {
