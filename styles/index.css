@@ -685,7 +685,7 @@ header .header__container__img {
   padding: 2.7em 0 2.7em;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
-  transform: translate(0, -20%);
+  transform: translate(0, -43%);
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover button {
   top: 20em;
@@ -863,9 +863,11 @@ header .header__container__img {
   }
 }
 .section4 {
+  width: 100%;
   display: inline-block;
-  padding: 1.25rem 1.875rem 0rem;
-  width: 23.4375rem;
+  text-align: left;
+  margin-top: 1.3em;
+  padding: 0em 1.8em;
 }
 .section4 p,
 .section4 a,
@@ -877,30 +879,28 @@ header .header__container__img {
 }
 .section4__header h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 2.935em;
+  text-align: start;
 }
 .section4__header__subtitle {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.375em;
   font-weight: 500;
-  line-height: 1.5625em;
 }
 .section4__header__contact {
   display: inline-block;
   width: 100%;
-  margin: 35px auto 20px;
+  margin: 2.1875rem auto 1.25rem;
 }
 .section4__header__contact__pack {
-  margin: 4px;
+  margin: 0.25rem;
   display: inline-block;
   position: relative;
   width: 100%;
 }
 .section4__header__contact__pack__icon {
-  width: 1.25rem;
+  width: 20px;
 }
 .section4__header__contact__pack__text {
   color: #a5a5a5;
@@ -912,11 +912,13 @@ header .header__container__img {
 .section4__form {
   display: block;
   position: relative;
+  width: 100%;
+  padding: 0.5em 0;
 }
 .section4__form__pack__text {
   width: 100%;
   color: #08a6e4;
-  font-size: 0.6875rem;
+  font-size: 11px;
   font-weight: 700;
   line-height: 1.125em;
   letter-spacing: 0.205em;
@@ -927,7 +929,7 @@ header .header__container__img {
   display: block;
   width: 19.5em;
   border: none;
-  border-bottom: 0.125em solid #cfd0d1;
+  border-bottom: 0.125em solid #95989A;
 }
 .section4__form__terms {
   width: 100%;
@@ -953,27 +955,34 @@ header .header__container__img {
 .section4__form__terms__text {
   width: 90%;
   font-family: Open Sans;
-  font-size: 0.75rem;
+  font-size: 0.79rem;
   font-weight: 400;
-  line-height: 1.0212em;
+  line-height: 1.23em;
   position: absolute;
   left: 2.1875em;
   top: 0em;
   color: #707070;
 }
 .section4__form__terms button {
+  border-radius: 25%;
+  font-family: "Open Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
   position: absolute;
-  top: 11.25em;
-  left: 5.3125em;
-  padding: 1.125em 6.25em;
+  top: 13.25em;
+  left: 7.3125em;
+  padding: 1.5em 7.5em;
   background-color: #08a6e4;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8125rem;
+  font-size: 13px;
   font-weight: 700;
-  line-height: 1.1062em;
+  box-shadow: 0.125em 0.5625em 1.5625em -0.625em #08a6e4;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .section4 {
     display: flex;
     justify-content: center;
@@ -997,7 +1006,7 @@ header .header__container__img {
   }
   .section4__header h1 {
     width: 100%;
-    font-size: 3.0625rem;
+    font-size: 49px;
     font-weight: 400;
     line-height: 3.5956em;
     text-align: left;
@@ -1011,7 +1020,7 @@ header .header__container__img {
     flex-wrap: wrap;
   }
   .section4__header__contact__pack__text {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.375em;
     text-align: left;

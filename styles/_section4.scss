@@ -1,9 +1,11 @@
 @import "./variables";
 
 .section4 {
+  width: 100%;
   display: inline-block;
-  padding: 1.25rem 1.875rem 0rem;
-  width: 23.4375rem;
+  text-align: left;
+  margin-top: 1.3em;
+  padding: 0em 1.8em;
 
   p,
   a,
@@ -15,31 +17,29 @@
     margin: 0 auto;
     h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 2.5rem;
       font-weight: 400;
-      line-height: 2.935em;
+      text-align: start;
     }
 
     &__subtitle {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 400;
-      line-height: 1.375em;
       font-weight: 500;
-      line-height: 1.5625em;
     }
 
     &__contact {
       display: inline-block;
       width: 100%;
-      margin: 35px auto 20px;
+      margin: 2.1875rem auto 1.25rem;
       &__pack {
-        margin: 4px;
+        margin: .25rem;
         display: inline-block;
         position: relative;
         width: 100%;
 
         &__icon {
-          width: 1.25rem;
+          width: 20px;
         }
 
         &__text {
@@ -56,12 +56,14 @@
   &__form {
     display: block;
     position: relative;
+    width: 100%;
+    padding: 0.5em 0;
 
     &__pack {
       &__text {
         width: 100%;
         color: $color-primary;
-        font-size: .6875rem;
+        font-size: 11px;
         font-weight: 700;
         line-height: 1.125em;
         letter-spacing: .205em;
@@ -73,7 +75,7 @@
         display: block;
         width: 19.5em;
         border: none;
-        border-bottom: .125em solid #cfd0d1;
+        border-bottom: .125em solid #95989A;
       }
     }
 
@@ -102,11 +104,10 @@
 
       &__text {
         width: 90%;
-        // height: 144;
         font-family: Open Sans;
-        font-size: .75rem;
+        font-size: 0.79rem;
         font-weight: 400;
-        line-height: 1.0212em;
+        line-height: 1.23em;
         position: absolute;
         left: 2.1875em;
         top: 0em;
@@ -114,21 +115,22 @@
       }
 
       button {
+        @include button;
         position: absolute;
-        top: 11.25em;
-        left: 5.3125em;
-        padding: 1.125em 6.25em;
+        top: 13.25em;
+        left: 7.3125em;
+        padding: 1.5em 7.5em;
         background-color: $color-primary;
         font-family: $font-secondary;
-        font-size: .8125rem;
+        font-size: 13px;
         font-weight: 700;
-        line-height: 1.1062em;
+        box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
       }
     }
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .section4 {
     display: flex;
     justify-content: center;
@@ -152,7 +154,7 @@
 
       h1 {
         width: 100%;
-        font-size: 3.0625rem;
+        font-size: 49px;
         font-weight: 400;
         line-height: 3.5956em;
         text-align: left;
@@ -167,7 +169,7 @@
           // &__icon {
           // }
           &__text {
-            font-size: 1rem;
+            font-size: 16px;
             font-weight: 600;
             line-height: 1.375em;
             text-align: left;
