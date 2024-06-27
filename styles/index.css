@@ -973,7 +973,6 @@ header .header__container__img {
     width: 100%;
   }
   .section4__header {
-    background-color: pink;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -991,13 +990,17 @@ header .header__container__img {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5em;
+    gap: 0em;
   }
   .section4__header__contact__pack {
     width: 85%;
   }
   .section4__header__contact__pack:nth-child(1) {
     grid-column: span 2;
+    margin: 0.21em;
+  }
+  .section4__header__contact__pack:nth-child(2) {
+    margin-left: -6.5em;
   }
   .section4__header__contact__pack__icon {
     width: 1.5em;

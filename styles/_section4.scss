@@ -132,16 +132,7 @@
     align-items: center;
     width: 100%;
 
-    // .container4 {
-    //   background-color: red;
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: center;
-    //   width: 101.625em;
-    //   padding-left: 1.25em;
-    // }
     &__header {
-      background-color: pink;
       display: flex;
       flex-direction: column;
       width: 30%;
@@ -160,12 +151,16 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.5em;
+        gap: 0em;
 
         &__pack {
           width: 85%;
           &:nth-child(1) {
             grid-column: span 2;
+            margin: 0.21em;
+          }
+          &:nth-child(2) {
+            margin-left: -6.5em;
           }
 
           &__icon {
