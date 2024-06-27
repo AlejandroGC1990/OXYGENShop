@@ -16,22 +16,23 @@
 
   button {
     @include button;
-    padding: 1em 5em;
-    border-radius: 1.4375em;
+    padding: 1em 4em;
+    border-radius: 1.7em;
     position: absolute;
-    top: 18em;
-    right: 4.5em;
+    top: 15.5em;
+    right: 5em;
     font-family: $font-secondary;
     font-size: 0.8125rem;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   &__card3 {
     // background-color: red;
     border-radius: 1.125em;
-    margin: 1em 1.8em 3.4375em;
-    padding: 1.5em 0em 1.8em;
+    margin: 1em auto 3.4em;
+    padding: 1.5em 0em 2em;
     position: relative;
+    width: 75%;
 
     &:nth-of-type(1) /*basic card*/ {
       border: 0.0625em solid $color-quaternary;
@@ -66,10 +67,17 @@
 
       &:nth-of-type(2):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
-        transform: scale(110%);
+        // transform: scale(110%);
+        width: 85%;
+        padding: 2.7em 0 2.7em;
 
+        .section3__card3__containerPrice {
+          transform: translate(0, -20%);
+        }
         button {
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
+          top: 17.5em;
+          right: 6.8em;
         }
       }
     }
@@ -88,6 +96,7 @@
       &:nth-of-type(3):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
         transform: scale(110%);
+        margin: 1em 0;
 
         button {
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
@@ -100,18 +109,18 @@
       text-align: center;
       display: inline-block;
       width: 45%;
-      transform: translate(0, -30%);
+      transform: translate(0, -13%);
 
       &__basic {
         font-family: $font-primary;
-        font-size: 1.3rem;
-        font-weight: 700;
+        font-size: 1.2rem;
+        font-weight: 800;
         margin: 0 auto;
       }
 
       &__price {
         font-family: $font-secondary;
-        font-size: 2.875rem;
+        font-size: 2.7rem;
         font-weight: 300;
         margin: 0 auto;
       }
@@ -129,37 +138,24 @@
     &__containerFeature {
       // background-color: greenyellow;
       display: inline-block;
-      width: 53%;
+      width: 49%;
       list-style: none;
       text-align: left;
 
       li {
         // background-color: aqua;
-        margin: 0em 0 0.5em 0em;
         font-size: 0.875rem;
         text-align: left;
         font-weight: 400;
         font-family: $font-secondary;
-        padding: 0em 0.1em 1em 0em;
+        padding: 0em 0em 1em 0em;
 
         img {
-          margin-right:0.5em;
+          margin: 0 0.3em 0 0.2em;
         }
       }
     }
   }
-
-  // &__card3:hover {
-  //   .section3__card3__containerPrice {
-  //     width: 50%;
-
-
-  //   }
-  //   .section3__card3__containerFeature {
-  //     left: 5.0625em;
-  //   }
-  //   transform: scale(1em);
-  // }
 }
 
 @media (min-width: 62.5rem) {
