@@ -27,7 +27,6 @@
   }
 
   &__card3 {
-    // background-color: red;
     border-radius: 1.125em;
     margin: 1em auto 3.4em;
     padding: 1.5em 0em 2em;
@@ -46,9 +45,16 @@
 
       &:nth-of-type(1):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-quaternary;
-        transform: scale(110%);
+        width: 85%;
+        padding: 2.7em 0 2.7em;
+
+        .section3__card3__containerPrice {
+          transform: translate(0, -20%);
+        }
 
         button {
+          top: 17.5em;
+          right: 6.8em;
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-quaternary;
         }
       }
@@ -67,17 +73,18 @@
 
       &:nth-of-type(2):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
-        // transform: scale(110%);
+        
         width: 85%;
         padding: 2.7em 0 2.7em;
 
         .section3__card3__containerPrice {
           transform: translate(0, -20%);
         }
+
         button {
-          box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
           top: 17.5em;
           right: 6.8em;
+          box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
         }
       }
     }
@@ -95,10 +102,16 @@
 
       &:nth-of-type(3):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
-        transform: scale(110%);
-        margin: 1em 0;
+        width: 85%;
+        padding: 2.7em 0 2.7em;
+
+        .section3__card3__containerPrice {
+          transform: translate(0, -20%);
+        }
 
         button {
+          top: 17.5em;
+          right: 6.8em;
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
         }
       }
