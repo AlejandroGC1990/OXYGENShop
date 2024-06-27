@@ -38,6 +38,7 @@ nav {
       @include limit;
       flex-direction: row;
       justify-content: space-between;
+      // background-color: aqua;
 
       .logoNav {
         margin-left: 4.3em;
@@ -51,22 +52,22 @@ nav {
         display: flex;
         flex-direction: row;
         list-style: none;
+        padding: 0;
+        margin: 0;
 
         li {
           color: $color-secondary;
           font-family: $font-secondary;
           font-size: .75rem;
           font-weight: 600;
-          line-height: 0.9375em;
           letter-spacing: 0.205em;
           text-align: center;
-          padding: .875em 8.5em .875em 0em;
-          border-bottom: 0.1875em solid transparent;
+          margin: 0em 8.5em 0em 0em;
         }
 
         li:hover {
-          color: black;
-          border-bottom: 0.1875em solid $color-primary;
+          margin-bottom: -2.5em;
+          border-bottom: 0.4em solid $color-primary;
         }
       }
     }

@@ -54,21 +54,21 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
   nav .limit ul li {
     color: #a5a5a5;
     font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
-    line-height: 0.9375em;
     letter-spacing: 0.205em;
     text-align: center;
-    padding: 0.875em 8.5em 0.875em 0em;
-    border-bottom: 0.1875em solid transparent;
+    margin: 0em 8.5em 0em 0em;
   }
   nav .limit ul li:hover {
-    color: black;
-    border-bottom: 0.1875em solid #08a6e4;
+    margin-bottom: -2.5em;
+    border-bottom: 0.4em solid #08a6e4;
   }
 }
 header {
