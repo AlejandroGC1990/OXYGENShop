@@ -5,37 +5,36 @@
   display: block;
   text-align: center;
   margin: 0 auto;
-  padding-top: 3.125em;
+  padding: 0;
 
   h3 {
-    margin-bottom: .5em;
+    margin: 1.4em 0 0.2em;
     display: block;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
-    line-height: 2.6412em;
+  }
+
+  button {
+    @include button;
+    padding: 1em 5em;
+    border-radius: 1.4375em;
+    position: absolute;
+    top: 18em;
+    right: 4.5em;
+    font-family: $font-secondary;
+    font-size: 0.8125rem;
+    font-weight: 700;
   }
 
   &__card3 {
-    padding: 7.9375em 9.375em;
+    // background-color: red;
     border-radius: 1.125em;
-    display: inline-block;
-    margin: .3125em auto 3.4375em;
+    margin: 1em 1.8em 3.4375em;
+    padding: 1.5em 0em 1.8em;
     position: relative;
 
-    button {
-      padding: .8125em 3.3125em;
-      border-radius: 1.4375em;
-      position: absolute;
-      left: -4.375em;
-      top: 14.25em;
-      font-family: $font-secondary;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 1.1062em;
-    }
-
     &:nth-of-type(1) /*basic card*/ {
-      border: .0625em solid $color-quaternary;
+      border: 0.0625em solid $color-quaternary;
       button {
         background-color: $color-quaternary;
       }
@@ -45,29 +44,20 @@
       }
 
       &:nth-of-type(1):hover {
-        box-shadow: .125em .5625em 3.125em -1.5625em $color-quaternary;
+        box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-quaternary;
         transform: scale(110%);
 
-        .section3__card3__containerPrice {
-          left: 0em;
-        }
-
         button {
-          box-shadow: .125em .5625em 1.5625em -0.625em $color-quaternary;
+          box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-quaternary;
         }
       }
     }
 
     &:nth-of-type(2) /*professional card*/ {
-      border: .0625em solid $color-primary;
+      border: 0.0625em solid $color-primary;
 
       button {
         background-color: $color-primary;
-      }
-
-      .section3__card3__containerPrice {
-        left: 0;
-        padding-left: 1.25em;
       }
 
       .section3__card3__containerPrice__price {
@@ -75,34 +65,20 @@
       }
 
       &:nth-of-type(2):hover {
-        box-shadow: .125em .5625em 3.125em -1.5625em $color-primary;
+        box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
         transform: scale(110%);
 
-        .section3__card3__containerPrice {
-          left: 0;
-          padding-left: 0em;
-        }
-
-        .section3__card3__containerPrice {
-          left: 0em;
-          padding-left: 0em;
-        }
-
         button {
-          box-shadow: .125em .5625em 1.5625em -0.625em $color-primary;
+          box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
         }
       }
     }
 
     &:nth-of-type(3) /*premium card*/ {
-      border: .0625em solid $color-tertiary;
+      border: 0.0625em solid $color-tertiary;
+
       button {
         background-color: $color-tertiary;
-      }
-
-      .section3__card3__containerPrice {
-        left: 2.1875em;
-        padding-left: 0em;
       }
 
       .section3__card3__containerPrice__price {
@@ -110,109 +86,90 @@
       }
 
       &:nth-of-type(3):hover {
-        box-shadow: .125em .5625em 3.125em -1.5625em $color-tertiary;
+        box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
         transform: scale(110%);
 
         button {
-          box-shadow: .125em .5625em 1.5625em -0.625em $color-tertiary;
+          box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
         }
       }
     }
 
     &__containerPrice {
-      position: absolute;
-      top: 4.6875em;
-      left: 2.8125em;
-      display: block;
-      margin: 0 auto;
+      // background-color: blue;
+      text-align: center;
+      display: inline-block;
+      width: 45%;
+      transform: translate(0, -30%);
 
       &__basic {
         font-family: $font-primary;
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 700;
-        line-height: 1.5em;
+        margin: 0 auto;
       }
 
       &__price {
-        width: 59;
-        padding-top: 0em;
         font-family: $font-secondary;
-        font-size: 46px;
+        font-size: 2.875rem;
         font-weight: 300;
-        line-height: 3.75em;
         margin: 0 auto;
       }
 
       &__subtitle {
-        width: 4.625em;
+        text-align: center;
         margin: 0 auto;
         font-family: $font-primary;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
-        line-height: .6306em;
         color: #13253b;
       }
     }
 
     &__containerFeature {
+      // background-color: greenyellow;
       display: inline-block;
-      width: 40%;
-      position: absolute;
-      left: 9.375em;
-      top: 0;
-      padding-top: 1.125em;
-      right: 0em;
-      &__input {
-        width: 10%;
-        display: block;
-        position: absolute;
-        padding-top: .75em;
+      width: 53%;
+      list-style: none;
+      text-align: left;
 
-        &__checkbox {
-          width: .6875em;
-          margin: 0em auto 1.4375em;
-        }
-      }
+      li {
+        // background-color: aqua;
+        margin: 0em 0 0.5em 0em;
+        font-size: 0.875rem;
+        text-align: left;
+        font-weight: 400;
+        font-family: $font-secondary;
+        padding: 0em 0.1em 1em 0em;
 
-      &__text {
-        display: block;
-        position: absolute;
-        width: 89%;
-        right: 0em;
-        padding-top: .5em;
-        &__title {
-          width: 7.1875em;
-          left: 1.3125em;
-          margin: 0 .3125em 1.1875em;
-          font-family: $font-secondary;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 1.1919em;
-          text-align: initial;
+        img {
+          margin-right:0.5em;
         }
       }
     }
   }
 
-  &__card3:hover {
-    .section3__card3__containerPrice {
-      width: 50%;
-    }
-    .section3__card3__containerFeature {
-      width: 50%;
-      left: 9.0625em;
-    }
-  }
+  // &__card3:hover {
+  //   .section3__card3__containerPrice {
+  //     width: 50%;
+
+
+  //   }
+  //   .section3__card3__containerFeature {
+  //     left: 5.0625em;
+  //   }
+  //   transform: scale(1em);
+  // }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) {
   .section3 {
     display: flex;
     flex-direction: column;
 
     h3 {
       padding: 3.75em 0 0em;
-      font-size: 2.25rem;
+      font-size: 36px;
       font-weight: 400;
       line-height: 2.625em;
       text-align: center;
@@ -242,7 +199,7 @@
 
         &__basic {
           font-family: $font-primary;
-          font-size: 1.25rem;
+          font-size: 20px;
           font-weight: 700;
           line-height: 1.5em;
         }
@@ -251,7 +208,7 @@
           width: 59;
           padding-top: 0em;
           font-family: $font-secondary;
-          font-size: 2.875rem;
+          font-size: 46px;
           font-weight: 300;
           line-height: 3.75em;
           margin: 0 auto;
@@ -261,9 +218,9 @@
           width: 4.625em;
           margin: 0 auto;
           font-family: $font-primary;
-          font-size: .75rem;
+          font-size: 12px;
           font-weight: 700;
-          line-height: .6306em;
+          line-height: 0.6306em;
           color: #13253b;
         }
       }
@@ -291,7 +248,7 @@
             clear: absolute;
 
             &__checkbox {
-              width: .6875em;
+              width: 0.6875em;
               margin: 0em auto 1.4375em;
             }
           }
@@ -301,14 +258,14 @@
             position: absolute;
             width: 70%;
             right: 0em;
-            padding-top: .5em;
+            padding-top: 0.5em;
 
             &__title {
               width: 7.1875em;
               left: 1.3125em;
-              margin: 0 .3125em 1.1875em;
+              margin: 0 0.3125em 1.1875em;
               font-family: $font-secondary;
-              font-size: .875rem;
+              font-size: 14px;
               font-weight: 400;
               line-height: 1.1919em;
               text-align: initial;
