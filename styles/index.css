@@ -86,9 +86,10 @@ header h1 {
 header p {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 auto;
+  padding: 0 3em;
 }
 header button {
   border-radius: 25%;
@@ -162,7 +163,7 @@ header .header__container__img {
   padding-bottom: 3em;
 }
 .section1 h1 {
-  font-size: 30.4px;
+  font-size: 1.9rem;
   font-weight: 300;
   margin: 0em auto;
   padding: 0em 1em 0.3em;
@@ -251,7 +252,7 @@ header .header__container__img {
 }
 .section1__containerCard__card__title {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 1000;
   line-height: 1.5em;
   letter-spacing: 0.3725em;
@@ -259,7 +260,7 @@ header .header__container__img {
   padding: 0.5em 0 1.375em;
 }
 .section1__containerCard__card__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.25em;
   text-align: center;
@@ -277,7 +278,7 @@ header .header__container__img {
   }
   .section1 h3 {
     width: 100%;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 2.625em;
     text-align: center;
@@ -338,7 +339,7 @@ header .header__container__img {
   line-height: 1.3125em;
   text-align: left;
 }
-.section2__card2row {
+.section2__card2 {
   margin: 1.1875em auto 1.125em;
   width: 19.7em;
   border-radius: 0.3125em;
@@ -346,30 +347,30 @@ header .header__container__img {
   border: 0.0625em solid #e8e9ed;
   background-color: #fff;
 }
-.section2__card2row__containerImg1 {
+.section2__card2__containerImg2 {
   margin: 0em auto 0.75em;
   position: relative;
 }
-.section2__card2row__containerImg1__circleBlue {
+.section2__card2__containerImg2__circleBlue {
   position: absolute;
   width: 131.88px;
   top: 1.0625em;
   left: 5.625em;
 }
-.section2__card2row__containerImg1__circleBluePc {
+.section2__card2__containerImg2__circleBluePc {
   display: none;
 }
-.section2__card2row__containerImg1__mobile {
+.section2__card2__containerImg2__mobile {
   position: absolute;
   width: 175px;
   top: 1.5631em;
   left: 5.625em;
 }
-.section2__card2row__containerText {
+.section2__card2__containerText {
   display: block;
   padding: 9.3em 1em 1.6em 1em;
 }
-.section2__card2row__containerText__title {
+.section2__card2__containerText__title {
   font-size: 1.875rem;
   font-weight: 400;
   margin: 0.5em 0 1.6em;
@@ -377,7 +378,7 @@ header .header__container__img {
   font-family: "Raleway", sans-serif;
   margin-bottom: 0.74em;
 }
-.section2__card2row__containerText__text {
+.section2__card2__containerText__text {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
@@ -449,6 +450,7 @@ header .header__container__img {
     width: 100%;
     display: flex;
     margin: 0 auto;
+    align-items: center;
     padding: 0;
   }
   .section2__limit {
@@ -470,7 +472,8 @@ header .header__container__img {
     background-color: #fff;
   }
   .section2 .section2__card1__containerImg1 {
-    width: 40%;
+    width: 60%;
+    margin-right: 0;
   }
   .section2 .section2__card1__containerImg1__rectangleMobile {
     display: none;
@@ -478,126 +481,124 @@ header .header__container__img {
   .section2 .section2__card1__containerImg1__rectanglePc {
     display: block;
     position: absolute;
-    width: 40%;
-    top: 3.75em;
-    left: 17.5em;
+    width: 35%;
+    top: 3em;
+    left: 20em;
   }
   .section2 .section2__card1__containerImg1__pc {
     flex: 1;
     position: absolute;
-    width: 86%;
-    top: 7.1875em;
-    right: 1.875em;
+    width: 60%;
+    top: 7em;
+    left: 8em;
   }
-  .section2 .section2__card1__containerImg1__mobile {
-    z-index: 2;
-    width: 93%;
-    top: 1.5625em;
-    left: 5%;
-  }
-  .section2 .section2__card1__containerImg1__circleBlue {
-    position: absolute;
-    width: 70%;
-    top: 0.625em;
-    left: 1.25em;
-  }
-  .section2 .section2__card1__containerText1 {
+  .section2 .section2__card1__containerText {
     width: 45%;
-    padding: 5em 2.5em;
+    padding: 5.5em 2em 3em;
   }
-  .section2 .section2__card1__containerText1__title {
+  .section2 .section2__card1__containerText__title {
     font-size: 2.25rem;
-    font-weight: 400;
-    line-height: 2.625em;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
   }
-  .section2 .section2__card1__containerText1__text {
+  .section2 .section2__card1__containerText__text {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375em;
     text-align: left;
+    margin: 2em 0 3.1em;
+    font-size: 1rem;
+    font-weight: 500;
   }
-  .section2 .section2__card1__containerText1__linePink {
+  .section2 .section2__card1__containerText__linePink {
     background-color: #eb476e;
     height: 0.25em;
     width: 70%;
-    margin: 2em 5em 0em;
-  }
-  .section2 .section2__card1__containerText1__lineBlue {
-    background-color: #08a6e4;
-    height: 0.25em;
-    width: 70%;
-    margin: 2em 5em 0em;
-  }
-  .section2 .section2__card2row {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #fff;
-    border: 0.0625em solid #e8e9ed;
-  }
-  .section2 .section2__card2row .section2__card2row__containerImg1 {
-    width: 50%;
-  }
-  .section2 .section2__card2row .section2__card2row__containerImg1 .section2__card2row__containerImg1__circleBlue {
-    z-index: 1;
-    width: 60%;
-    top: 0.625em;
-    left: 1.25em;
-  }
-  .section2 .section2__card2row .section2__card2row__containerImg1__mobile {
-    z-index: 2;
-    width: 80%;
-    top: 1.5625em;
-    left: 5%;
-  }
-  .section2 .section2__card2row__containerText1 {
-    width: 41%;
-    padding: 8em 0em;
-  }
-  .section2 .section2__card2row__containerText1__lineBlue {
-    background-color: #08a6e4;
-    height: 0.25rem;
-    width: 70%;
-    margin: 10em 5em 0rem;
+    margin: 0em 0em 2.5em;
   }
   .section2 .section2__card2 {
     display: flex;
+    width: 70.25em;
+    flex-direction: row;
+    background-color: #fff;
+  }
+  .section2 .section2__card2__containerImg2 {
+    margin-left: 0;
+    width: 27.5em;
+  }
+  .section2 .section2__card2__containerImg2__circleBlue {
+    display: block;
+    position: absolute;
+    width: 19rem;
+    left: 4em;
+    top: 0.625em;
+  }
+  .section2 .section2__card2__containerImg2__mobile {
+    position: absolute;
+    width: 26.7rem;
+    top: 1.6em;
+    left: 4.4em;
+  }
+  .section2 .section2__card2__containerText {
+    justify-content: center;
+    width: 41%;
+    padding: 4.5em 1em 3.5em 0;
+  }
+  .section2 .section2__card2__containerText__title {
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-align: left;
+  }
+  .section2 .section2__card2__containerText__text {
+    margin: 2.5em 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .section2 .section2__card2__containerText__lineBlue {
+    background-color: #08a6e4;
+    height: 0.25em;
+    width: 70%;
+    margin: 2em 0em 0em;
+  }
+  .section2 .section2__card3 {
+    display: flex;
+    width: 70.25em;
+    flex-direction: row;
     background-color: transparent;
-    width: 95.25em;
-    height: 23.125em;
+    border: none;
   }
-  .section2 .section2__card2__containerText2 {
-    width: 38.75em;
-    height: 23.125em;
-    margin-left: 12.5em;
+  .section2 .section2__card3__containerText {
+    width: 55%;
+    padding: 4.4em 2em 0;
   }
-  .section2 .section2__card2__containerText2__title {
-    margin: 0 1.25em;
+  .section2 .section2__card3__containerText__title {
+    margin: 0em;
     width: 70%;
     text-align: left;
     font-size: 2.25rem;
     font-weight: 400;
-    line-height: 2.625em;
   }
-  .section2 .section2__card2__containerText2__text {
+  .section2 .section2__card3__containerText__text {
     width: 75%;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.375em;
     text-align: left;
+    margin: 2em 0 3em;
   }
-  .section2 .section2__card2__containerText2__lineGreen {
+  .section2 .section2__card3__containerText__lineGreen {
     background-color: #55dfb4;
     height: 0.25em;
-    width: 56%;
-    margin: 10em 4em 0em;
+    width: 60%;
+    margin: 0em 0em 0em;
   }
-  .section2 .section2__card2__containerImg2 {
+  .section2 .section2__card3__containerImg {
     width: 27.5em;
     height: 23.125em;
     margin-left: 3.75em;
     position: relative;
   }
-  .section2 .section2__card2__containerImg2__backgroundGreen {
+  .section2 .section2__card3__containerImg__backgroundGreen {
     display: absolute;
     padding: 0em;
     top: 0em;
@@ -605,7 +606,7 @@ header .header__container__img {
     width: 100%;
     height: 100%;
   }
-  .section2 .section2__card2__containerImg2__megaphone {
+  .section2 .section2__card3__containerImg__megaphone {
     position: absolute;
     left: 10%;
     top: 6.25em;
@@ -764,7 +765,7 @@ header .header__container__img {
   }
   .section3 h3 {
     padding: 3.75em 0 0em;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 2.625em;
     text-align: center;
@@ -797,7 +798,7 @@ header .header__container__img {
   }
   .section3 .section3__card3__containerPrice__basic {
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.5em;
   }
@@ -805,7 +806,7 @@ header .header__container__img {
     width: 59;
     padding-top: 0em;
     font-family: "Open Sans", sans-serif;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 300;
     line-height: 3.75em;
     margin: 0 auto;
@@ -814,7 +815,7 @@ header .header__container__img {
     width: 4.625em;
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     line-height: 0.6306em;
     color: #13253b;
@@ -856,7 +857,7 @@ header .header__container__img {
     left: 1.3125em;
     margin: 0 0.3125em 1.1875em;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.1919em;
     text-align: initial;
@@ -918,7 +919,7 @@ header .header__container__img {
 .section4__form__pack__text {
   width: 100%;
   color: #08a6e4;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
   line-height: 1.125em;
   letter-spacing: 0.205em;
@@ -943,7 +944,7 @@ header .header__container__img {
   border-radius: 0.1875em;
   padding: 0.75em;
   width: 1.5em;
-  font-size: 34;
+  font-size: 2.125rem;
   position: relative;
 }
 .section4__form__terms__checkbox:checked {
@@ -977,7 +978,7 @@ header .header__container__img {
   padding: 1.4em 7.5em;
   background-color: #08a6e4;
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 700;
   box-shadow: 0.125em 0.5625em 1.5625em -0.625em #08a6e4;
 }
@@ -1006,7 +1007,7 @@ header .header__container__img {
   }
   .section4__header h1 {
     width: 100%;
-    font-size: 49px;
+    font-size: 3.0625rem;
     font-weight: 400;
     line-height: 3.5956em;
     text-align: left;
@@ -1019,7 +1020,7 @@ header .header__container__img {
     display: block;
   }
   .section4__header__contact__pack__text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.375em;
     text-align: left;
@@ -1054,7 +1055,7 @@ footer .pack {
 }
 footer .pack__logoFooter {
   color: #08a6e4;
-  font-size: 1.625em;
+  font-size: 1.625rem;
   font-weight: 300;
   text-align: left;
 }

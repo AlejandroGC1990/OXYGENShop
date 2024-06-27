@@ -14,9 +14,10 @@ header {
   p {
     text-align: center;
     font-family: $font-secondary;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0 auto;
+    padding: 0 3em;
   }
 
   button {
