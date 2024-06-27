@@ -32,6 +32,7 @@
     padding: 1.5em 0em 1.7em;
     position: relative;
     width: 80%;
+    box-sizing: border-box;
 
     &:nth-of-type(1) /*basic card*/ {
       border: 0.0625em solid $color-quaternary;
@@ -73,7 +74,7 @@
 
       &:nth-of-type(2):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
-        
+
         width: 85%;
         padding: 2.7em 0 2.7em;
 
@@ -175,42 +176,56 @@
   .section3 {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 
     h3 {
-      padding: 3.75em 0 0em;
+      margin: 0;
+      padding: 3em 0 1em;
       font-size: 2.25rem;
       font-weight: 400;
-      line-height: 2.625em;
       text-align: center;
     }
 
     .limit3 {
       @include limit;
       display: flex;
+      width: 90%;
       flex-direction: row;
+      justify-content:space-between;  
+      padding: 3em 0em; 
     }
 
     .section3__card3 {
+      margin: 0 5em;
       display: flex;
       flex-direction: column;
       height: 28.8125em;
-      width: 25em;
+      width: 23em;
+      align-items: center;
+      justify-content: center;
+      padding: 1.75em 0 0;
+      margin: 0 0;
 
       button {
-        display: none;
+        display: block;
+        clear: absolute;
+        transform: translate(-22%, 430%);
       }
 
       &__containerPrice {
-        top: 0em;
         display: flex;
         flex-direction: column;
-        padding: 1.5625em 4.6875em;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0em 0em;
 
         &__basic {
           font-family: $font-primary;
           font-size: 1.25rem;
           font-weight: 700;
-          line-height: 1.5em;
+          padding-bottom: 0.75em;
         }
 
         &__price {
@@ -219,69 +234,38 @@
           font-family: $font-secondary;
           font-size: 2.875rem;
           font-weight: 300;
-          line-height: 3.75em;
           margin: 0 auto;
         }
 
         &__subtitle {
-          width: 4.625em;
+          width: 8em;
           margin: 0 auto;
-          font-family: $font-primary;
-          font-size: .75rem;
+          font-size: 0.75rem;
           font-weight: 700;
-          line-height: 0.6306em;
+          text-align: center;
           color: #13253b;
         }
       }
 
-      &__containerInputsFeature {
-        background-color: aqua;
+      &__containerFeature {
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
-        width: 250%;
-        position: relative;
-        left: 0em;
-        top: 0;
-        padding-top: 1.125em;
-        right: 0em;
+        text-align: center;
+        padding: 0em;
+        text-align: center;
+        margin: 0 auto;
 
-        &__pack {
-          background-color: red;
+        li {
+          margin: 0 auto;
           display: flex;
-          flex-direction: row;
+          align-items: center;
 
-          &__input {
-            width: 10%;
-            display: flex;
-            clear: absolute;
-
-            &__checkbox {
-              width: 0.6875em;
-              margin: 0em auto 1.4375em;
-            }
-          }
-
-          &__text {
-            display: block;
-            position: absolute;
-            width: 70%;
-            right: 0em;
-            padding-top: 0.5em;
-
-            &__title {
-              width: 7.1875em;
-              left: 1.3125em;
-              margin: 0 0.3125em 1.1875em;
-              font-family: $font-secondary;
-              font-size: .875rem;
-              font-weight: 400;
-              line-height: 1.1919em;
-              text-align: initial;
-            }
+          img {
+            margin: 0.5em;
           }
         }
       }
     }
+
   }
 }
