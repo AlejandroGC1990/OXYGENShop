@@ -635,18 +635,18 @@ header .header__container__img {
   padding: 1em 4em;
   border-radius: 1.7em;
   position: absolute;
-  top: 15.5em;
-  right: 5em;
+  top: 17.5em;
+  right: 5.9em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
 }
 .section3__card3 {
   border-radius: 1.125em;
-  margin: 1em auto 3.4em;
-  padding: 1.5em 0em 2em;
+  margin: 1em auto 3.2em;
+  padding: 1.5em 0em 1.7em;
   position: relative;
-  width: 75%;
+  width: 80%;
 }
 .section3__card3:nth-of-type(1) {
   border: 0.0625em solid #eb476e;
@@ -688,7 +688,7 @@ header .header__container__img {
   transform: translate(0, -20%);
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover button {
-  top: 17.5em;
+  top: 20em;
   right: 6.8em;
   box-shadow: 0.125em 0.5625em 1.5625em -0.625em #08a6e4;
 }
@@ -718,7 +718,7 @@ header .header__container__img {
   text-align: center;
   display: inline-block;
   width: 45%;
-  transform: translate(0, -13%);
+  transform: translate(0, -40%);
 }
 .section3__card3__containerPrice__basic {
   font-family: "Raleway", sans-serif;
@@ -751,7 +751,7 @@ header .header__container__img {
   text-align: left;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  padding: 0em 0em 1em 0em;
+  padding: 0em 0em 1.5em 0em;
 }
 .section3__card3__containerFeature li img {
   margin: 0 0.3em 0 0.2em;
@@ -877,7 +877,6 @@ header .header__container__img {
 }
 .section4__header h1 {
   margin: 0;
-  width: 17.5em;
   font-size: 40px;
   font-weight: 400;
   line-height: 2.935em;

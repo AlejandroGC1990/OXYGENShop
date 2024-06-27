@@ -19,8 +19,8 @@
     padding: 1em 4em;
     border-radius: 1.7em;
     position: absolute;
-    top: 15.5em;
-    right: 5em;
+    top: 17.5em;
+    right: 5.9em;
     font-family: $font-secondary;
     font-size: 0.8125rem;
     font-weight: 400;
@@ -28,10 +28,10 @@
 
   &__card3 {
     border-radius: 1.125em;
-    margin: 1em auto 3.4em;
-    padding: 1.5em 0em 2em;
+    margin: 1em auto 3.2em;
+    padding: 1.5em 0em 1.7em;
     position: relative;
-    width: 75%;
+    width: 80%;
 
     &:nth-of-type(1) /*basic card*/ {
       border: 0.0625em solid $color-quaternary;
@@ -82,7 +82,7 @@
         }
 
         button {
-          top: 17.5em;
+          top: 20em;
           right: 6.8em;
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
         }
@@ -122,7 +122,7 @@
       text-align: center;
       display: inline-block;
       width: 45%;
-      transform: translate(0, -13%);
+      transform: translate(0, -40%);
 
       &__basic {
         font-family: $font-primary;
@@ -161,7 +161,7 @@
         text-align: left;
         font-weight: 400;
         font-family: $font-secondary;
-        padding: 0em 0em 1em 0em;
+        padding: 0em 0em 1.5em 0em;
 
         img {
           margin: 0 0.3em 0 0.2em;
