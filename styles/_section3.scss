@@ -32,6 +32,7 @@
     padding: 1.5em 0em 1.7em;
     position: relative;
     width: 80%;
+    box-sizing: border-box;
 
     &:nth-of-type(1) /*basic card*/ {
       border: 0.0625em solid $color-quaternary;
@@ -73,7 +74,7 @@
 
       &:nth-of-type(2):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
-        
+
         width: 85%;
         padding: 2.7em 0 2.7em;
 
@@ -103,14 +104,14 @@
       &:nth-of-type(3):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
         width: 85%;
-        padding: 2.7em 0 2.7em;
+        padding: 4em 0 2.7em;
 
         .section3__card3__containerPrice {
-          transform: translate(0, -43%);
+          transform: translate(0, -45%);
         }
 
         button {
-          top: 20em;
+          top: 21em;
           right: 6.8em;
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
         }
@@ -149,14 +150,12 @@
     }
 
     &__containerFeature {
-      // background-color: greenyellow;
       display: inline-block;
       width: 49%;
       list-style: none;
       text-align: left;
 
       li {
-        // background-color: aqua;
         font-size: 0.875rem;
         text-align: left;
         font-weight: 400;
@@ -175,110 +174,176 @@
   .section3 {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 
     h3 {
-      padding: 3.75em 0 0em;
-      font-size: 36px;
+      margin: 0;
+      padding: 3em 0 1em;
+      font-size: 2.25rem;
       font-weight: 400;
-      line-height: 2.625em;
       text-align: center;
     }
 
     .limit3 {
       @include limit;
       display: flex;
+      width: 90%;
       flex-direction: row;
+      justify-content: space-between;
+      padding: 3em 0em;
     }
 
     .section3__card3 {
+      margin: 0 5em;
       display: flex;
       flex-direction: column;
-      height: 28.8125em;
+      align-items: center;
+      justify-content: center;
       width: 25em;
+      padding: 4em 0 4em;
+      margin: 0 0;
 
       button {
-        display: none;
+        display: block;
+        clear: absolute;
+        transform: translate(-30%, 475%);
       }
 
       &__containerPrice {
-        top: 0em;
         display: flex;
         flex-direction: column;
-        padding: 1.5625em 4.6875em;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0em 0em;
 
         &__basic {
           font-family: $font-primary;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-weight: 700;
-          line-height: 1.5em;
+          padding-bottom: 0.75em;
         }
 
         &__price {
           width: 59;
           padding-top: 0em;
           font-family: $font-secondary;
-          font-size: 46px;
+          font-size: 2.875rem;
           font-weight: 300;
-          line-height: 3.75em;
           margin: 0 auto;
         }
 
         &__subtitle {
-          width: 4.625em;
+          width: 8em;
           margin: 0 auto;
-          font-family: $font-primary;
-          font-size: 12px;
+          font-size: 0.75rem;
           font-weight: 700;
-          line-height: 0.6306em;
+          text-align: center;
           color: #13253b;
         }
       }
 
-      &__containerInputsFeature {
-        background-color: aqua;
+      &__containerFeature {
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
-        width: 250%;
-        position: relative;
-        left: 0em;
-        top: 0;
-        padding-top: 1.125em;
-        right: 0em;
+        text-align: center;
+        padding: 0em;
+        text-align: center;
+        margin: 0 auto;
 
-        &__pack {
-          background-color: red;
+        li {
+          margin: 0 auto;
           display: flex;
-          flex-direction: row;
+          align-items: center;
 
-          &__input {
-            width: 10%;
-            display: flex;
-            clear: absolute;
+          img {
+            margin: 0.5em;
+          }
+        }
+      }
 
-            &__checkbox {
-              width: 0.6875em;
-              margin: 0em auto 1.4375em;
-            }
+      &:nth-of-type(1) /*basic card*/ {
+        border: 0.0625em solid $color-quaternary;
+        button {
+          background-color: $color-quaternary;
+        }
+
+        .section3__card3__containerPrice__price {
+          color: $color-quaternary;
+        }
+
+        &:nth-of-type(1):hover {
+          box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-quaternary;
+          width: 30%;
+          transform: scale(110%);
+
+          .section3__card3__containerPrice {
+            transform: translate(0, -20%);
           }
 
-          &__text {
-            display: block;
-            position: absolute;
-            width: 70%;
-            right: 0em;
-            padding-top: 0.5em;
+          button {
+            top: 15em;
+            right: 8em;
+            box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-quaternary;
+          }
+        }
+      }
 
-            &__title {
-              width: 7.1875em;
-              left: 1.3125em;
-              margin: 0 0.3125em 1.1875em;
-              font-family: $font-secondary;
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 1.1919em;
-              text-align: initial;
-            }
+      &:nth-of-type(2) /*professional card*/ {
+        border: 0.0625em solid $color-primary;
+
+        button {
+          background-color: $color-primary;
+        }
+
+        .section3__card3__containerPrice__price {
+          color: $color-primary;
+        }
+
+        &:nth-of-type(2):hover {
+          box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
+
+          width: 30%;
+          transform: scale(110%);
+
+          .section3__card3__containerPrice {
+            transform: translate(0, -20%);
+          }
+
+          button {
+            top: 15em;
+            right: 8em;
+            box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
+          }
+        }
+      }
+
+      &:nth-of-type(3) /*premium card*/ {
+        border: 0.0625em solid $color-tertiary;
+
+        button {
+          background-color: $color-tertiary;
+        }
+
+        .section3__card3__containerPrice__price {
+          color: $color-tertiary;
+        }
+
+        &:nth-of-type(3):hover {
+          box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
+          
+          width: 30%;
+          transform: scale(110%);
+
+          .section3__card3__containerPrice {
+            transform: translate(0, -43%);
+          }
+
+          button {
+            top: 15em;
+            right: 8em;
+            box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
           }
         }
       }
