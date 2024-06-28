@@ -104,14 +104,14 @@
       &:nth-of-type(3):hover {
         box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
         width: 85%;
-        padding: 2.7em 0 2.7em;
+        padding: 4em 0 2.7em;
 
         .section3__card3__containerPrice {
-          transform: translate(0, -43%);
+          transform: translate(0, -45%);
         }
 
         button {
-          top: 20em;
+          top: 21em;
           right: 6.8em;
           box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
         }
@@ -150,14 +150,12 @@
     }
 
     &__containerFeature {
-      // background-color: greenyellow;
       display: inline-block;
       width: 49%;
       list-style: none;
       text-align: left;
 
       li {
-        // background-color: aqua;
         font-size: 0.875rem;
         text-align: left;
         font-weight: 400;
@@ -192,25 +190,24 @@
       display: flex;
       width: 90%;
       flex-direction: row;
-      justify-content:space-between;  
-      padding: 3em 0em; 
+      justify-content: space-between;
+      padding: 3em 0em;
     }
 
     .section3__card3 {
       margin: 0 5em;
       display: flex;
       flex-direction: column;
-      height: 28.8125em;
-      width: 23em;
       align-items: center;
       justify-content: center;
-      padding: 1.75em 0 0;
+      width: 25em;
+      padding: 4em 0 4em;
       margin: 0 0;
 
       button {
         display: block;
         clear: absolute;
-        transform: translate(-22%, 430%);
+        transform: translate(-30%, 475%);
       }
 
       &__containerPrice {
@@ -265,7 +262,91 @@
           }
         }
       }
-    }
 
+      &:nth-of-type(1) /*basic card*/ {
+        border: 0.0625em solid $color-quaternary;
+        button {
+          background-color: $color-quaternary;
+        }
+
+        .section3__card3__containerPrice__price {
+          color: $color-quaternary;
+        }
+
+        &:nth-of-type(1):hover {
+          box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-quaternary;
+          width: 30%;
+          transform: scale(110%);
+
+          .section3__card3__containerPrice {
+            transform: translate(0, -20%);
+          }
+
+          button {
+            top: 15em;
+            right: 8em;
+            box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-quaternary;
+          }
+        }
+      }
+
+      &:nth-of-type(2) /*professional card*/ {
+        border: 0.0625em solid $color-primary;
+
+        button {
+          background-color: $color-primary;
+        }
+
+        .section3__card3__containerPrice__price {
+          color: $color-primary;
+        }
+
+        &:nth-of-type(2):hover {
+          box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-primary;
+
+          width: 30%;
+          transform: scale(110%);
+
+          .section3__card3__containerPrice {
+            transform: translate(0, -20%);
+          }
+
+          button {
+            top: 15em;
+            right: 8em;
+            box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
+          }
+        }
+      }
+
+      &:nth-of-type(3) /*premium card*/ {
+        border: 0.0625em solid $color-tertiary;
+
+        button {
+          background-color: $color-tertiary;
+        }
+
+        .section3__card3__containerPrice__price {
+          color: $color-tertiary;
+        }
+
+        &:nth-of-type(3):hover {
+          box-shadow: 0.125em 0.5625em 3.125em -1.5625em $color-tertiary;
+          
+          width: 30%;
+          transform: scale(110%);
+
+          .section3__card3__containerPrice {
+            transform: translate(0, -43%);
+          }
+
+          button {
+            top: 15em;
+            right: 8em;
+            box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-tertiary;
+          }
+        }
+      }
+    }
   }
 }
