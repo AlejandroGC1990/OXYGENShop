@@ -48,8 +48,10 @@ footer {
   footer {
     width: 100%;
     margin-top: 3.75em;
+
     .limit {
       @include limit;
+      width: 101.625rem;
       flex-direction: row;
       justify-content: space-between;
 

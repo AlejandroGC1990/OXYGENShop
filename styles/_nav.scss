@@ -52,8 +52,8 @@ nav {
         display: flex;
         flex-direction: row;
         list-style: none;
-        padding: 0;
         margin: 0;
+        padding: 0 5em 0 0;
 
         li {
           color: $color-secondary;
@@ -61,8 +61,8 @@ nav {
           font-size: .75rem;
           font-weight: 600;
           letter-spacing: 0.205em;
-          text-align: center;
-          margin: 0em 8.5em 0em 0em;
+          padding: 0 0.88em;
+          margin: 0em 0em 0em 9em;
         }
 
         li:hover {

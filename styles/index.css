@@ -54,8 +54,8 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0 5em 0 0;
   }
   nav .limit ul li {
     color: #a5a5a5;
@@ -63,8 +63,8 @@ nav ul {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.205em;
-    text-align: center;
-    margin: 0em 8.5em 0em 0em;
+    padding: 0 0.88em;
+    margin: 0em 0em 0em 9em;
   }
   nav .limit ul li:hover {
     margin-bottom: -2.5em;
@@ -74,7 +74,7 @@ nav ul {
 header {
   display: block;
   width: 100%;
-  margin: 0px auto;
+  margin: 0rem auto;
   text-align: center;
 }
 header h1 {
@@ -117,7 +117,7 @@ header .header__container__img {
   height: 16.6875rem;
   display: block;
   object-fit: cover;
-  margin: 0px auto;
+  margin: 0rem auto;
 }
 
 @media (min-width: 62.5rem) {
@@ -126,14 +126,14 @@ header .header__container__img {
   }
   header h1 {
     width: 15.125em;
-    font-size: 49px;
+    font-size: 3.0625rem;
     font-weight: 400;
     text-align: center;
   }
   header p {
     width: 25em;
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.375em;
     padding: 0em 0 1.5em;
@@ -141,13 +141,13 @@ header .header__container__img {
   header button {
     line-height: 1.375em;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     margin: 1.4375em auto 0em;
     padding: 1.375em 9.6875em;
   }
   header .header__container {
-    width: 100%;
+    width: 101.625rem;
   }
   header .header__container__img {
     width: 100%;
@@ -663,6 +663,7 @@ header .header__container__img {
   box-shadow: 0.125em 0.5625em 3.125em -1.5625em #eb476e;
   width: 85%;
   padding: 2.7em 0 2.7em;
+  padding: 4em 0 2.7em;
 }
 .section3__card3:nth-of-type(1):nth-of-type(1):hover .section3__card3__containerPrice {
   transform: translate(0, -20%);
@@ -685,6 +686,7 @@ header .header__container__img {
   box-shadow: 0.125em 0.5625em 3.125em -1.5625em #08a6e4;
   width: 85%;
   padding: 2.7em 0 2.7em;
+  padding: 4em 0 2.7em;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
   transform: translate(0, -43%);
@@ -712,7 +714,7 @@ header .header__container__img {
   transform: translate(0, -45%);
 }
 .section3__card3:nth-of-type(3):nth-of-type(3):hover button {
-  top: 21em;
+  top: 20em;
   right: 6.8em;
   box-shadow: 0.125em 0.5625em 1.5625em -0.625em #55dfb4;
 }
@@ -782,20 +784,19 @@ header .header__container__img {
     min-width: 62.5em;
     box-sizing: border-box;
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 3em 0em;
   }
   .section3 .section3__card3 {
-    margin: 0 5em;
+    margin: 0 2.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25em;
+    width: 23.5em;
     padding: 4em 0 4em;
-    margin: 0 0;
   }
   .section3 .section3__card3 button {
     display: block;
@@ -859,8 +860,7 @@ header .header__container__img {
   }
   .section3 .section3__card3:nth-of-type(1):nth-of-type(1):hover {
     box-shadow: 0.125em 0.5625em 3.125em -1.5625em #eb476e;
-    width: 30%;
-    transform: scale(110%);
+    width: 27em;
   }
   .section3 .section3__card3:nth-of-type(1):nth-of-type(1):hover .section3__card3__containerPrice {
     transform: translate(0, -20%);
@@ -881,8 +881,8 @@ header .header__container__img {
   }
   .section3 .section3__card3:nth-of-type(2):nth-of-type(2):hover {
     box-shadow: 0.125em 0.5625em 3.125em -1.5625em #08a6e4;
-    width: 30%;
-    transform: scale(110%);
+    width: 25em;
+    margin: 0 1.45em;
   }
   .section3 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
     transform: translate(0, -20%);
@@ -1150,6 +1150,7 @@ footer .packLogos__facebook {
     width: 101.625em;
     min-width: 62.5em;
     box-sizing: border-box;
+    width: 101.625rem;
     flex-direction: row;
     justify-content: space-between;
   }
