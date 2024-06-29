@@ -111,6 +111,7 @@ header .header__container {
   display: block;
   overflow: hidden;
   width: 23.4375em;
+  width: 100%;
 }
 header .header__container__img {
   width: 100%;
@@ -160,6 +161,7 @@ header .header__container__img {
 .section1 {
   width: 100%;
   display: block;
+  padding-top: 1em;
   padding-bottom: 3em;
 }
 .section1 h1 {
@@ -663,7 +665,6 @@ header .header__container__img {
   box-shadow: 0.125em 0.5625em 3.125em -1.5625em #eb476e;
   width: 85%;
   padding: 2.7em 0 2.7em;
-  padding: 4em 0 2.7em;
 }
 .section3__card3:nth-of-type(1):nth-of-type(1):hover .section3__card3__containerPrice {
   transform: translate(0, -20%);
@@ -686,7 +687,6 @@ header .header__container__img {
   box-shadow: 0.125em 0.5625em 3.125em -1.5625em #08a6e4;
   width: 85%;
   padding: 2.7em 0 2.7em;
-  padding: 4em 0 2.7em;
 }
 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
   transform: translate(0, -43%);
@@ -708,10 +708,10 @@ header .header__container__img {
 .section3__card3:nth-of-type(3):nth-of-type(3):hover {
   box-shadow: 0.125em 0.5625em 3.125em -1.5625em #55dfb4;
   width: 85%;
-  padding: 4em 0 2.7em;
+  padding: 2.7em 0 2.7em;
 }
 .section3__card3:nth-of-type(3):nth-of-type(3):hover .section3__card3__containerPrice {
-  transform: translate(0, -45%);
+  transform: translate(0, -43%);
 }
 .section3__card3:nth-of-type(3):nth-of-type(3):hover button {
   top: 20em;
@@ -790,7 +790,7 @@ header .header__container__img {
     padding: 3em 0em;
   }
   .section3 .section3__card3 {
-    margin: 0 2.2em;
+    margin: 0 2.15em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -799,9 +799,11 @@ header .header__container__img {
     padding: 4em 0 4em;
   }
   .section3 .section3__card3 button {
+    padding: 1em 5em;
     display: block;
     clear: absolute;
     transform: translate(-30%, 475%);
+    transform: translate(-18%, 465%);
   }
   .section3 .section3__card3__containerPrice {
     display: flex;
@@ -849,70 +851,41 @@ header .header__container__img {
   .section3 .section3__card3__containerFeature li img {
     margin: 0.5em;
   }
-  .section3 .section3__card3:nth-of-type(1) {
-    border: 0.0625em solid #eb476e;
-  }
-  .section3 .section3__card3:nth-of-type(1) button {
-    background-color: #eb476e;
-  }
-  .section3 .section3__card3:nth-of-type(1) .section3__card3__containerPrice__price {
-    color: #eb476e;
-  }
   .section3 .section3__card3:nth-of-type(1):nth-of-type(1):hover {
-    box-shadow: 0.125em 0.5625em 3.125em -1.5625em #eb476e;
-    width: 27em;
+    width: 25em;
+    transform: scale(104%, 115%);
+    margin: 0 1.4em;
   }
   .section3 .section3__card3:nth-of-type(1):nth-of-type(1):hover .section3__card3__containerPrice {
-    transform: translate(0, -20%);
+    transform: translate(0, -30%);
   }
   .section3 .section3__card3:nth-of-type(1):nth-of-type(1):hover button {
-    top: 15em;
-    right: 8em;
-    box-shadow: 0.125em 0.5625em 1.5625em -0.625em #eb476e;
-  }
-  .section3 .section3__card3:nth-of-type(2) {
-    border: 0.0625em solid #08a6e4;
-  }
-  .section3 .section3__card3:nth-of-type(2) button {
-    background-color: #08a6e4;
-  }
-  .section3 .section3__card3:nth-of-type(2) .section3__card3__containerPrice__price {
-    color: #08a6e4;
+    top: 14em;
+    right: 6.5em;
   }
   .section3 .section3__card3:nth-of-type(2):nth-of-type(2):hover {
-    box-shadow: 0.125em 0.5625em 3.125em -1.5625em #08a6e4;
     width: 25em;
-    margin: 0 1.45em;
+    transform: scale(104%, 115%);
+    margin: 0 1.4em;
   }
   .section3 .section3__card3:nth-of-type(2):nth-of-type(2):hover .section3__card3__containerPrice {
-    transform: translate(0, -20%);
+    transform: translate(0, -30%);
   }
   .section3 .section3__card3:nth-of-type(2):nth-of-type(2):hover button {
-    top: 15em;
-    right: 8em;
-    box-shadow: 0.125em 0.5625em 1.5625em -0.625em #08a6e4;
-  }
-  .section3 .section3__card3:nth-of-type(3) {
-    border: 0.0625em solid #55dfb4;
-  }
-  .section3 .section3__card3:nth-of-type(3) button {
-    background-color: #55dfb4;
-  }
-  .section3 .section3__card3:nth-of-type(3) .section3__card3__containerPrice__price {
-    color: #55dfb4;
+    top: 14em;
+    right: 6.5em;
   }
   .section3 .section3__card3:nth-of-type(3):nth-of-type(3):hover {
-    box-shadow: 0.125em 0.5625em 3.125em -1.5625em #55dfb4;
-    width: 30%;
-    transform: scale(110%);
+    width: 25em;
+    transform: scale(104%, 115%);
+    margin: 0 1.4em;
   }
   .section3 .section3__card3:nth-of-type(3):nth-of-type(3):hover .section3__card3__containerPrice {
-    transform: translate(0, -43%);
+    transform: translate(0, -30%);
   }
   .section3 .section3__card3:nth-of-type(3):nth-of-type(3):hover button {
-    top: 15em;
-    right: 8em;
-    box-shadow: 0.125em 0.5625em 1.5625em -0.625em #55dfb4;
+    top: 14em;
+    right: 6.5em;
   }
 }
 .section4 {
