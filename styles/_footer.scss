@@ -30,7 +30,7 @@ footer {
   .packLogos {
     position: absolute;
     top: 1.875em;
-    left: 18.125em;
+    left: 15.125em;
     display: inline-block;
 
     &__x {
@@ -41,6 +41,10 @@ footer {
     &__facebook {
       padding-right: 1.25em;
     }
+
+    &__linkedin {
+      width: 1.5em;
+    }
   }
 }
 
@@ -48,8 +52,10 @@ footer {
   footer {
     width: 100%;
     margin-top: 3.75em;
+
     .limit {
       @include limit;
+      width: 101.625rem;
       flex-direction: row;
       justify-content: space-between;
 
