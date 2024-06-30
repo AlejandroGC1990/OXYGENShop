@@ -31,23 +31,27 @@
     &__contact {
       display: inline-block;
       width: 100%;
-      margin: 2.1875rem auto 1.25rem;
+      text-align: left;
+      margin: 2.1875em auto 1.25em;
+
       &__pack {
-        margin: .25rem;
-        display: inline-block;
-        position: relative;
+        display: inline;
         width: 100%;
 
         &__icon {
-          width: 1.25rem;
+          display: inline;
+          width: 1.25em;
+          margin: 0.5em 0.2em 0;
+          padding: 0;
         }
 
         &__text {
+          margin: 0em 0.2em;
+          display: inline;
+          margin: 0;
+          padding: 0;
+          text-align: left;
           color: $color-secondary;
-          position: absolute;
-          top: 0;
-          width: 80%;
-          left: 2.1619em;
         }
       }
     }
@@ -63,9 +67,9 @@
       &__text {
         width: 100%;
         color: $color-primary;
-        font-size: .6875rem;
+        font-size: 0.6875rem;
         font-weight: 700;
-        letter-spacing: .205em;
+        letter-spacing: 0.205em;
       }
 
       input {
@@ -74,7 +78,7 @@
         display: block;
         width: 19.5em;
         border: none;
-        border-bottom: .125em solid #95989A;
+        border-bottom: 0.125em solid #95989a;
       }
     }
 
@@ -86,10 +90,10 @@
 
       &__checkbox {
         appearance: none;
-        border: .0625em solid #95989a;
-        border-radius: .1875em;
+        border: 0.0625em solid #95989a;
+        border-radius: 0.1875em;
         padding: 0.75rem;
-        position: relative;;
+        position: relative;
       }
 
       &__checkbox:checked {
@@ -101,7 +105,7 @@
 
       &__text {
         width: 90%;
-        font-size: .79rem;
+        font-size: 0.79rem;
         font-weight: 400;
         position: absolute;
         left: 2.1875em;
@@ -117,7 +121,7 @@
         padding: 1.4em 7.5em;
         background-color: $color-primary;
         font-family: $font-secondary;
-        font-size: .8125rem;
+        font-size: 0.8125rem;
         font-weight: 700;
         box-shadow: 0.125em 0.5625em 1.5625em -0.625em $color-primary;
       }
@@ -149,24 +153,37 @@
 
       &__contact {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0em;
+        display: flex;
+        flex-direction: column;
+        margin-left: -0.9em;
 
         &__pack {
-          width: 85%;
-          &:nth-child(1) {
-            grid-column: span 2;
-            margin: 0.21em;
-          }
-          &:nth-child(2) {
-            margin-left: -6.5em;
-          }
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 0.25em;
 
           &__icon {
-            width: 1.5em;
-            max-width: 100%;
+            margin: 0.25em 0.5em;
           }
+
+          &__text {
+            margin-top: 0.25em;
+            // background-color: bisque;
+          }
+          // // width: 85%;
+          // &:nth-child(1) {
+          //   grid-column: span 2;
+          //   margin: 0.21em;
+          // }
+          // &:nth-child(2) {
+          //   margin-left: -6.5em;
+          // }
+
+          // &__icon {
+          //   width: 1.5em;
+          //   max-width: 100%;
+          // }
 
           &__text {
             display: block;
@@ -192,12 +209,11 @@
         }
       }
 
-      
       &__terms {
         margin: 0 0.6em;
         width: 97.5%;
 
-        &__checkbox{
+        &__checkbox {
           margin: 0 0 0 -0.8em;
         }
       }
