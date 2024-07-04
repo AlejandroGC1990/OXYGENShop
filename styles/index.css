@@ -1,5 +1,7 @@
 nav {
+  position: fixed;
   width: 100%;
+  top: 0;
   box-shadow: 0em 0.1875em 0.375em 0em rgba(0, 0, 0, 0.2);
 }
 nav .logoNav {
@@ -12,7 +14,11 @@ nav .logoNav {
   display: inline;
   margin-right: 3.7em;
 }
-nav .menu {
+nav button {
+  border: none;
+  background-color: #fff;
+}
+nav__burguer {
   display: inline;
   position: absolute;
   top: 0.9em;
@@ -20,11 +26,38 @@ nav .menu {
   margin-bottom: 0.5em;
   padding: 1em;
 }
-nav .menu__rectangle {
-  display: inline-block;
+nav__close {
+  display: none;
+  position: absolute;
+  top: 2em;
+  right: 2em;
 }
 nav ul {
   display: none;
+}
+nav .open {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  z-index: 999;
+}
+nav .noVisible {
+  display: none;
+}
+nav li {
+  display: block;
+  color: #a5a5a5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.205em;
+  text-align: left;
+  margin: 0em 0 1em 2em;
+}
+nav li:hover {
+  color: black;
+  font-weight: 700;
 }
 
 @media (min-width: 1000px) {
@@ -32,6 +65,7 @@ nav ul {
     width: 100%;
     display: flex;
     margin: 0 auto;
+    position: relative;
   }
   nav .limit {
     display: flex;
@@ -47,7 +81,7 @@ nav ul {
   nav .limit .logoNav {
     margin-left: 4.3em;
   }
-  nav .limit .menu {
+  nav .limit .burger {
     display: none;
   }
   nav .limit ul {
@@ -74,7 +108,7 @@ nav ul {
 header {
   display: block;
   width: 100%;
-  margin: 0rem auto;
+  margin: 8.5em auto 0;
   text-align: center;
 }
 header h1 {

@@ -18,10 +18,13 @@
     <nav>
       <div class="limit">
         <h2 class="logoNav">OXYGEN Shop</h2>
-        <figure class="menu">
-          <img class="menu__rectangle" src="./images/nav_menu.png" />
-        </figure>
-        <ul>
+        <button class="burger" id="open" >
+          <img src="./images/nav_menu.png" />
+        </button>
+        <button class="close noVisible" id="close">
+          <img src="./images/icon_x_cierre.png" />
+        </button>
+        <ul class="menu" id="menu">
           <li><a>WHY US</a></li>
           <li><a>BENEFITS</a></li>
           <li><a>PRICES</a></li>
@@ -456,17 +459,13 @@
         <div class="packLogos">
           <img class="packLogos__x" src="./images/icon_x.png" />
           <img class="packLogos__facebook" src="./images/icon_facebook.png" />
-          
-          <a
-          
-          href="https://www.linkedin.com/in/alejandrogarciacarmona/"
-          >
-            <img
-            class="packLogos__linkedin"
-            src="./images/icon_linkedin.jpg"
+
+          <a href="https://www.linkedin.com/in/alejandrogarciacarmona/">
+            <img class="packLogos__linkedin" src="./images/icon_linkedin.jpg"
           /></a>
         </div>
       </div>
     </footer>
+    <script src="./scripts/nav.js"></script>
   </body>
 </html>

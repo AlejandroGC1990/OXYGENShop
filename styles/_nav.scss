@@ -1,7 +1,9 @@
 @import "./mixin";
 
 nav {
+  position: fixed;
   width: 100%;
+  top: 0;
   box-shadow: 0em 0.1875em 0.375em 0em $color-shadow;
 
   .logoNav {
@@ -10,21 +12,57 @@ nav {
     margin-right: 3.7em;
   }
 
-  .menu {
+  button {
+    border: none;
+    background-color: #fff;
+  }
+
+  &__burguer {
     display: inline;
     position: absolute;
     top: 0.9em;
     right: 0.7em;
     margin-bottom: 0.5em;
     padding: 1em;
-
-    &__rectangle {
-      display: inline-block;
-    }
   }
 
-  ul {
+  &__close {
     display: none;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+  }
+
+  ul { //nav
+    display: none;
+  }
+
+  .open {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background-color: #fff;
+    z-index: 999;
+  }
+
+  .noVisible {
+    display: none;
+  }
+
+  li {
+    display: block;
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.205em;
+    text-align: left;
+    margin: 0em 0 1em 2em;
+  }
+
+  li:hover {
+    color: black;
+    font-weight: 700;
   }
 }
 
@@ -33,18 +71,18 @@ nav {
     width: 100%;
     display: flex;
     margin: 0 auto;
+    position: relative;
 
     .limit {
       @include limit;
       flex-direction: row;
       justify-content: space-between;
-      // background-color: aqua;
 
       .logoNav {
         margin-left: 4.3em;
       }
 
-      .menu {
+      .burger {
         display: none;
       }
 
@@ -58,7 +96,7 @@ nav {
         li {
           color: $color-secondary;
           font-family: $font-secondary;
-          font-size: .75rem;
+          font-size: 0.75rem;
           font-weight: 600;
           letter-spacing: 0.205em;
           padding: 0 0.88em;
