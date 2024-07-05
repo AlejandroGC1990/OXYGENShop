@@ -1,5 +1,33 @@
+.scrollerBar {
+  width: 100%;
+  height: 1em;
+  position: relative;
+  z-index: 5;
+}
+.scrollerBar__bar {
+  position: fixed;
+  width: 0%;
+  height: 0.5em;
+  background-color: #08a6e4;
+}
+
+.container_icon {
+  position: fixed;
+  bottom: 3.5em;
+  right: 1.75em;
+  margin: 0;
+  padding: 0.25em;
+  border-radius: 50%;
+  background-color: #a5a5a5;
+  cursor: pointer;
+  z-index: 50;
+}
+.container_icon__arrowUp {
+  width: 1em;
+}
+
 nav {
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   background-color: #fff;
@@ -38,6 +66,8 @@ nav ul {
   display: none;
 }
 nav .open {
+  box-shadow: 0em 0.3875em 0.375em 0em rgba(0, 0, 0, 0.2);
+  position: absolute;
   display: block;
   width: 100%;
   padding: 1em;
@@ -46,6 +76,9 @@ nav .open {
 }
 nav .noVisible {
   display: none;
+}
+nav menu {
+  position: absolute;
 }
 nav li {
   display: block;
@@ -67,7 +100,7 @@ nav li:hover {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    position: sticky;
+    position: fixed;
   }
   nav .limit {
     display: flex;
@@ -110,28 +143,26 @@ nav li:hover {
 header {
   display: block;
   width: 100%;
-  margin: 8.5em auto 0;
   text-align: center;
 }
 header h1 {
   font-size: 2rem;
   font-weight: 400;
-  line-height: 2.5681em;
-  margin: 2.1em auto 0em;
+  line-height: 2.3em;
+  margin: 4.1em auto 0em;
 }
 header p {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   padding: 0 4em;
 }
 header button {
-  border-radius: 25%;
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -664,10 +695,9 @@ header .header__container__img {
   font-weight: 400;
 }
 .section3 button {
-  border-radius: 25%;
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -1024,10 +1054,9 @@ header .header__container__img {
   color: #707070;
 }
 .section4__form__terms button {
-  border-radius: 25%;
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -1201,19 +1230,6 @@ footer .packLogos__linkedin {
     margin-right: 2.5em;
   }
 }
-.scrollerBar {
-  width: 100%;
-  height: 1em;
-  position: relative;
-  z-index: 5;
-}
-.scrollerBar__bar {
-  position: fixed;
-  width: 0%;
-  height: 1em;
-  background-color: #08a6e4;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
