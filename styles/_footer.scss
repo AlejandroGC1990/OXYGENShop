@@ -82,13 +82,14 @@ footer {
       }
 
       .packLogos {
-        display: flex;
+        display: absolute;
         top: 0;
-        left: -6.25em;
+        left: -20.8em;
         position: relative;
         width: 4.6875em;
+        width: 7em;
         justify-content: space-around;
-        margin-right: 2.5em;
+        // margin-right: 2.5em;
       }
     }
   }

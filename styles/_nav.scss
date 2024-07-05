@@ -11,21 +11,19 @@ nav {
   .logoNav {
     @include logo;
     display: inline;
-    margin-right: 3.7em;
+    margin-right: 3em;
   }
 
   button {
     border: none;
     background-color: #fff;
+    position: absolute;
+    top: 2em;
+    right: 2em;
   }
 
   &__burguer {
     display: inline;
-    position: absolute;
-    top: 0.9em;
-    right: 0.7em;
-    margin-bottom: 0.5em;
-    padding: 1em;
   }
 
   &__close {
@@ -38,7 +36,7 @@ nav {
   ul {
     display: none;
   }
-  
+
   .open {
     box-shadow: 0em 0.3875em 0.375em 0em $color-shadow;
     position: absolute;
@@ -48,16 +46,15 @@ nav {
     background-color: #fff;
     z-index: 999;
   }
-  
+
   .noVisible {
     display: none;
   }
-  
+
   menu {
     position: absolute;
-    // margin-bottom: 8em;
   }
-  
+
   li {
     display: block;
     color: $color-secondary;
@@ -91,31 +88,33 @@ nav {
         margin-left: 4.3em;
       }
 
-      .burger {
+      .burger,
+      .open,
+      .close {
         display: none;
       }
 
-      ul {
+      .menu {
         display: flex;
         flex-direction: row;
         list-style: none;
         margin: 0;
         padding: 0 5em 0 0;
+      }
 
-        li {
-          color: $color-secondary;
-          font-family: $font-secondary;
-          font-size: 0.75rem;
-          font-weight: 600;
-          letter-spacing: 0.205em;
-          padding: 0 0.88em;
-          margin: 0em 0em 0em 9em;
-        }
+      li {
+        color: $color-secondary;
+        font-family: $font-secondary;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.205em;
+        padding: 0 0.88em;
+        margin: 0em 0em 0em 9em;
+      }
 
-        li:hover {
-          margin-bottom: -2.5em;
-          border-bottom: 0.4em solid $color-primary;
-        }
+      li:hover {
+        margin-bottom: -2.5em;
+        border-bottom: 0.4em solid $color-primary;
       }
     }
   }
