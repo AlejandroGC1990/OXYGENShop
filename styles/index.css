@@ -1032,7 +1032,20 @@ header .header__container__img {
   display: block;
   width: 19.5em;
   border: none;
+  border-color: transparent;
   border-bottom: 0.125em solid #95989a;
+  outline: none;
+}
+.section4__form__pack input:focus {
+  outline: none;
+  box-shadow: 1em 1em 3.125em -1.5625em #08a6e4;
+}
+.section4__form__pack input:invalid {
+  border-bottom: 1px solid red;
+}
+.section4__form__pack input:invalid:required {
+  border-radius: 0.1875em;
+  border-bottom: 1px solid red;
 }
 .section4__form__terms {
   width: 100%;

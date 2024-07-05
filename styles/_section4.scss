@@ -78,8 +78,25 @@
         display: block;
         width: 19.5em;
         border: none;
+        border-color: transparent;
         border-bottom: 0.125em solid #95989a;
+        outline: none;
       }
+
+      input:focus {
+        outline: none;
+        box-shadow: 1em 1em 3.125em -1.5625em $color-primary;
+      }
+
+      input:invalid {
+        border-bottom: 1px solid red;
+      }
+
+      input:invalid:required{
+        border-radius: 0.1875em;
+        border-bottom: 1px solid red;
+      }
+
     }
 
     &__terms {

@@ -428,16 +428,16 @@
         <div class="section4__form">
           <form>
             <div class="section4__form__pack">
-              <label class="section4__form__pack__text">NAME</label>
-              <input />
+              <label for="name" class="section4__form__pack__text" minlength="2" maxlength="100">NAME</label>
+              <input id="name" name="name" required/>
             </div>
             <div class="section4__form__pack">
-              <label class="section4__form__pack__text">EMAIL:</label>
-              <input />
+              <label for="email" class="section4__form__pack__text">EMAIL:</label>
+              <input id="email" name="email" required/>
             </div>
 
             <div class="section4__form__terms">
-              <input class="section4__form__terms__checkbox" type="checkbox" />
+              <input class="section4__form__terms__checkbox" type="checkbox" required />
               <p class="section4__form__terms__text">
                 I hereby give consent for my personal data included in my
                 application to be processed for the purposes of the recruitment
