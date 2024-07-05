@@ -1,7 +1,9 @@
 nav {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
+  background-color: #fff;
+  z-index: 5;
   box-shadow: 0em 0.1875em 0.375em 0em rgba(0, 0, 0, 0.2);
 }
 nav .logoNav {
@@ -65,7 +67,7 @@ nav li:hover {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    position: relative;
+    position: sticky;
   }
   nav .limit {
     display: flex;
@@ -1199,6 +1201,19 @@ footer .packLogos__linkedin {
     margin-right: 2.5em;
   }
 }
+.scrollerBar {
+  width: 100%;
+  height: 1em;
+  position: relative;
+  z-index: 5;
+}
+.scrollerBar__bar {
+  position: fixed;
+  width: 0%;
+  height: 1em;
+  background-color: #08a6e4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

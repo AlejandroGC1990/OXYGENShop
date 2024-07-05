@@ -3,9 +3,9 @@ const open = document.querySelector("#open");
 const close = document.querySelector("#close");
 
 open.addEventListener("click", () => {
-    menu.classList.add("open");
-    open.classList.add("noVisible");
-    close.classList.remove("noVisible");
+    menu.classList.add("open"); //se puede ver el <ul>
+    open.classList.add("noVisible"); //no se puede ver el icono burger
+    close.classList.remove("noVisible"); //quito la clase noVisible al icono X para que se vea
 });
 
 close.addEventListener("click", () => {
