@@ -1040,11 +1040,7 @@ header .header__container__img {
   outline: none;
   box-shadow: 1em 1em 3.125em -1.5625em #08a6e4;
 }
-.section4__form__pack input:invalid {
-  border-bottom: 1px solid red;
-}
-.section4__form__pack input:invalid:required {
-  border-radius: 0.1875em;
+.section4__form__pack .invalid {
   border-bottom: 1px solid red;
 }
 .section4__form__terms {

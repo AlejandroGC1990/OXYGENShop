@@ -426,14 +426,14 @@
         </div>
 
         <div class="section4__form">
-          <form>
+          <form id="contact_form">
             <div class="section4__form__pack">
               <label for="name" class="section4__form__pack__text" minlength="2" maxlength="100">NAME</label>
-              <input id="name" name="name" required/>
+              <input id="name" name="name" type="text" required/>
             </div>
             <div class="section4__form__pack">
               <label for="email" class="section4__form__pack__text">EMAIL:</label>
-              <input id="email" name="email" required/>
+              <input id="email" name="email" type="email" required/>
             </div>
 
             <div class="section4__form__terms">
@@ -447,7 +447,7 @@
                 data and on the free movement of such data, and repealing
                 Directive 95/46/EC (Data Protection Directive)
               </p>
-              <button>Send</button>
+              <button type="submit">Send</button>
             </div>
           </form>
         </div>
@@ -480,5 +480,6 @@
     <script src="./scripts/nav.js"></script>
     <script src="./scripts/components/percentageScroller.js"></script>
     <script src="./scripts/components/butomToUp.js"></script>
+    <script src="./scripts/components/form.js"></script>
   </body>
 </html>

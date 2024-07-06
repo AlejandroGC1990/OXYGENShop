@@ -88,12 +88,7 @@
         box-shadow: 1em 1em 3.125em -1.5625em $color-primary;
       }
 
-      input:invalid {
-        border-bottom: 1px solid red;
-      }
-
-      input:invalid:required{
-        border-radius: 0.1875em;
+      .invalid {
         border-bottom: 1px solid red;
       }
 
