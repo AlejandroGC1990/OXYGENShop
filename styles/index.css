@@ -1036,12 +1036,23 @@ header .header__container__img {
   border-bottom: 0.125em solid #95989a;
   outline: none;
 }
-.section4__form__pack input:focus {
-  outline: none;
-  box-shadow: 1em 1em 3.125em -1.5625em #08a6e4;
-}
 .section4__form__pack .invalid {
-  border-bottom: 1px solid red;
+  border-bottom: 0.0625em solid red;
+}
+.section4__form__pack input:focus.invalid {
+  outline: none;
+}
+.section4__form__pack .error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+  box-sizing: border-box;
+}
+.section4__form__pack .error.active {
+  padding: 0.3em;
 }
 .section4__form__terms {
   width: 100%;
