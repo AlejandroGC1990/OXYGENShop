@@ -1047,11 +1047,12 @@ header .header__container__img {
   width: 100%;
   font-size: 80%;
   color: white;
-  background-color: #900;
-  border-radius: 0 0 0.3125rem 0.3125rem;
+  background-color: tomato;
+  margin-bottom: 0.5em;
+  border-radius: 0.3125em 0.3125em;
   box-sizing: border-box;
 }
-.section4__form .error .active {
+.section4__form .active {
   display: block;
 }
 .section4__form__terms {
