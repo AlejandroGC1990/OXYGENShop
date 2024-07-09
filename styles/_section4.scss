@@ -96,20 +96,19 @@
     
     .error {
       display: none;
-      width: 100%;
-      font-size: 80%;
+      width: 20em;
+      font-size: 0.9em;
       color: white;
-      background-color: #900;
-      border-radius: 0 0 .3125rem .3125rem;
+      background-color: tomato;
+      margin-bottom: 0.5em;
+      border-radius: 0.3125em 0.3125em;
       box-sizing: border-box;
-
-      .active {
-        display: block;
-      }
     }
     
+    .active {
+      display: block;
+    }
     
-
     &__terms {
       width: 100%;
       display: inline-block;
