@@ -17,12 +17,12 @@ form.addEventListener('submit', (event) => {
   
   //Validar nameField
   const nameField = event.target.elements["nameField"];
-  const nameFieldError = nameField.nextElementSibling;
+  // const nameFieldError = nameField.nextElementSibling;
   
   // if (!numberPattern.test(nameField.value) || nameField.value.length < 2 || nameField.value.length > 100){
   if (nameField.value.length < 2 || nameField.value.length > 100){
     nameField.classList.add("invalid");
-    nameFieldError.classList.add(" active");
+    // nameFieldError.classList.add(" active");
   } else {
     // nameFieldError.classList.remove("active");
     nameField.classList.remove("invalid");
