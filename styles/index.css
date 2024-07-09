@@ -1043,6 +1043,7 @@ header .header__container__img {
   outline: none;
 }
 .section4__form .error {
+  display: none;
   width: 100%;
   font-size: 80%;
   color: white;
@@ -1050,11 +1051,8 @@ header .header__container__img {
   border-radius: 0 0 0.3125rem 0.3125rem;
   box-sizing: border-box;
 }
-.section4__form .notVisible {
-  display: none;
-}
-.section4__form .error.active {
-  padding: 0.3em;
+.section4__form .error .active {
+  display: block;
 }
 .section4__form__terms {
   width: 100%;
