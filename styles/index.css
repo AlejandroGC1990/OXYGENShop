@@ -1044,8 +1044,8 @@ header .header__container__img {
 }
 .section4__form .error {
   display: none;
-  width: 100%;
-  font-size: 80%;
+  width: 20em;
+  font-size: 0.9em;
   color: white;
   background-color: tomato;
   margin-bottom: 0.5em;
