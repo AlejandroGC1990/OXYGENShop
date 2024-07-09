@@ -1,14 +1,15 @@
 header {
   display: block;
   width: 100%;
-  margin: 0rem auto;
   text-align: center;
+  margin-bottom: 0.5em;
 
   h1 {
     font-size: 2rem;
     font-weight: 400;
-    line-height: 2.5681em;
-    margin: 2.1em auto 0em;
+    line-height: 2.3em;
+    margin: 4.1em auto 0em;
+    // margin: 2em auto 1em;
   }
 
   p {
@@ -16,12 +17,12 @@ header {
     font-family: $font-secondary;
     font-size: 1rem;
     font-weight: 400;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     padding: 0 4em;
   }
 
   button {
-    @include button;
+    @include buttonG;
     box-shadow: .3125em .625em .875em 0em #07ace64a;
     font-size: 1em;
     font-weight: 700;
@@ -42,7 +43,7 @@ header {
       height: 16.6875rem;
       display: block;
       object-fit: cover;
-      margin: 0rem auto;
+      margin: 0em auto;
     }
   }
 }

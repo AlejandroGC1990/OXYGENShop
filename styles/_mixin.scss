@@ -19,11 +19,10 @@
   text-align: left;
 }
 
-@mixin button {
-  border-radius: 25%;
+@mixin buttonG {
   font-family: $font-secondary;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -58,7 +57,6 @@
   text-align: left;
   font-family: $font-primary;
 }
-
 
 @mixin text {
   font-family: $font-secondary;

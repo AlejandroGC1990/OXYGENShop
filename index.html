@@ -18,10 +18,13 @@
     <nav>
       <div class="limit">
         <h2 class="logoNav">OXYGEN Shop</h2>
-        <figure class="menu">
-          <img class="menu__rectangle" src="./images/nav_menu.png" />
-        </figure>
-        <ul>
+        <button class="burger" id="open">
+          <img src="./images/nav_menu.png" />
+        </button>
+        <button class="close noVisible" id="close">
+          <img src="./images/icon_x_cierre.png" />
+        </button>
+        <ul class="menu" id="menu">
           <li><a>WHY US</a></li>
           <li><a>BENEFITS</a></li>
           <li><a>PRICES</a></li>
@@ -29,6 +32,10 @@
         </ul>
       </div>
     </nav>
+
+    <div class="scrollerBar">
+      <div id="scrollerBar__bar" class="scrollerBar__bar"></div>
+    </div>
 
     <header>
       <h1>Sell More!</h1>
@@ -419,18 +426,22 @@
         </div>
 
         <div class="section4__form">
-          <form>
+          <form id="contact_form">
             <div class="section4__form__pack">
-              <label class="section4__form__pack__text">NAME</label>
-              <input />
+              <label for="nameField" class="section4__form__pack__text">NAME</label>
+              <span id="nameFieldError" class="error" aria-live="polite">The name must be between 2 and 100 characters and not have numbers.</span>
+              <input id="nameField " name="nameField" type="text" class="section4__form__pack__input"/>      
             </div>
+            
             <div class="section4__form__pack">
-              <label class="section4__form__pack__text">EMAIL:</label>
-              <input />
+              <label for="email" class="section4__form__pack__text">EMAIL:</label>
+              <span class="error" id="nameFieldError" aria-live="polite">Please enter a valid email.</span>
+              <input id="email" name="email" type="text" class="section4__form__pack__input"/>
+              <span class="error" id="nameFieldError" aria-live="polite">You must agree to terms and conditions.</span>
             </div>
-
+            
             <div class="section4__form__terms">
-              <input class="section4__form__terms__checkbox" type="checkbox" />
+              <input id="terms" class="section4__form__terms__checkbox" type="checkbox"/>
               <p class="section4__form__terms__text">
                 I hereby give consent for my personal data included in my
                 application to be processed for the purposes of the recruitment
@@ -440,11 +451,17 @@
                 data and on the free movement of such data, and repealing
                 Directive 95/46/EC (Data Protection Directive)
               </p>
-              <button>Send</button>
+              <button type="submit">Send</button>
             </div>
           </form>
         </div>
       </section>
+      <button class="container_icon" id="arrow_icon">
+        <img
+          class="container_icon__arrowUp"
+          src="./images/icon_arrow_up.png"
+        />
+      </button>
     </main>
 
     <footer>
@@ -456,17 +473,17 @@
         <div class="packLogos">
           <img class="packLogos__x" src="./images/icon_x.png" />
           <img class="packLogos__facebook" src="./images/icon_facebook.png" />
-          
-          <a
-          
-          href="https://www.linkedin.com/in/alejandrogarciacarmona/"
-          >
-            <img
-            class="packLogos__linkedin"
-            src="./images/icon_linkedin.jpg"
-          /></a>
+
+          <a href="https://www.linkedin.com/in/alejandrogarciacarmona/">
+            <img class="packLogos__linkedin" src="./images/icon_linkedin.jpg" />
+          </a>
         </div>
       </div>
     </footer>
+
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/components/percentageScroller.js"></script>
+    <script src="./scripts/components/butomToUp.js"></script>
+    <script src="./scripts/components/form.js"></script>
   </body>
 </html>

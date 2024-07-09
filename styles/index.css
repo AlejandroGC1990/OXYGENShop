@@ -1,5 +1,45 @@
-nav {
+.scrollerBar {
   width: 100%;
+  height: 1em;
+  position: relative;
+  z-index: 5;
+}
+.scrollerBar__bar {
+  position: fixed;
+  top: 4.2em;
+  width: 0%;
+  height: 0.5em;
+  background-color: #08a6e4;
+}
+
+.container_icon {
+  position: fixed;
+  bottom: 4.5em;
+  right: 2em;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: #a5a5a5;
+  cursor: pointer;
+  z-index: 50;
+  border: transparent;
+}
+.container_icon__arrowUp {
+  width: 1em;
+}
+
+@media (min-width: 1000px) {
+  .container_icon {
+    bottom: 2.4em;
+    right: 4em;
+  }
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
   box-shadow: 0em 0.1875em 0.375em 0em rgba(0, 0, 0, 0.2);
 }
 nav .logoNav {
@@ -10,21 +50,55 @@ nav .logoNav {
   color: #08a6e4;
   text-align: left;
   display: inline;
-  margin-right: 3.7em;
+  margin-right: 3em;
 }
-nav .menu {
-  display: inline;
+nav button {
+  border: none;
+  background-color: #fff;
   position: absolute;
-  top: 0.9em;
-  right: 0.7em;
-  margin-bottom: 0.5em;
-  padding: 1em;
+  top: 2em;
+  right: 2em;
 }
-nav .menu__rectangle {
-  display: inline-block;
+nav__burguer {
+  display: inline;
+}
+nav__close {
+  display: none;
+  position: absolute;
+  top: 2em;
+  right: 2em;
 }
 nav ul {
   display: none;
+}
+nav .open {
+  box-shadow: 0em 0.3875em 0.375em 0em rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  z-index: 999;
+}
+nav .noVisible {
+  display: none;
+}
+nav menu {
+  position: absolute;
+}
+nav li {
+  display: block;
+  color: #a5a5a5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.205em;
+  text-align: left;
+  margin: 0em 0 1em 2em;
+}
+nav li:hover {
+  color: black;
+  font-weight: 700;
 }
 
 @media (min-width: 1000px) {
@@ -32,6 +106,7 @@ nav ul {
     width: 100%;
     display: flex;
     margin: 0 auto;
+    position: fixed;
   }
   nav .limit {
     display: flex;
@@ -47,17 +122,19 @@ nav ul {
   nav .limit .logoNav {
     margin-left: 4.3em;
   }
-  nav .limit .menu {
+  nav .limit .burger,
+  nav .limit .open,
+  nav .limit .close {
     display: none;
   }
-  nav .limit ul {
+  nav .limit .menu {
     display: flex;
     flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0 5em 0 0;
   }
-  nav .limit ul li {
+  nav .limit li {
     color: #a5a5a5;
     font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
@@ -66,7 +143,7 @@ nav ul {
     padding: 0 0.88em;
     margin: 0em 0em 0em 9em;
   }
-  nav .limit ul li:hover {
+  nav .limit li:hover {
     margin-bottom: -2.5em;
     border-bottom: 0.4em solid #08a6e4;
   }
@@ -74,28 +151,27 @@ nav ul {
 header {
   display: block;
   width: 100%;
-  margin: 0rem auto;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 header h1 {
   font-size: 2rem;
   font-weight: 400;
-  line-height: 2.5681em;
-  margin: 2.1em auto 0em;
+  line-height: 2.3em;
+  margin: 4.1em auto 0em;
 }
 header p {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   padding: 0 4em;
 }
 header button {
-  border-radius: 25%;
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -118,7 +194,7 @@ header .header__container__img {
   height: 16.6875rem;
   display: block;
   object-fit: cover;
-  margin: 0rem auto;
+  margin: 0em auto;
 }
 
 @media (min-width: 62.5rem) {
@@ -628,10 +704,9 @@ header .header__container__img {
   font-weight: 400;
 }
 .section3 button {
-  border-radius: 25%;
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -951,13 +1026,33 @@ header .header__container__img {
   font-weight: 700;
   letter-spacing: 0.205em;
 }
-.section4__form__pack input {
+.section4__form__pack__input {
   width: 19.5em;
   margin: 1.875em 0em 2.1875em;
   display: block;
   width: 19.5em;
   border: none;
+  border-color: transparent;
   border-bottom: 0.125em solid #95989a;
+  outline: none;
+}
+.section4__form__pack .invalid {
+  border-bottom: 0.0625em solid red;
+}
+.section4__form__pack input:focus.invalid {
+  outline: none;
+}
+.section4__form .error {
+  display: none;
+  width: 100%;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+  box-sizing: border-box;
+}
+.section4__form .error .active {
+  display: block;
 }
 .section4__form__terms {
   width: 100%;
@@ -978,6 +1073,9 @@ header .header__container__img {
   background-size: 1rem;
   background-position: center;
 }
+.section4__form__terms .invalidCheckbox {
+  border: 0.0625em solid red;
+}
 .section4__form__terms__text {
   width: 90%;
   font-size: 0.79rem;
@@ -988,10 +1086,9 @@ header .header__container__img {
   color: #707070;
 }
 .section4__form__terms button {
-  border-radius: 25%;
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   display: inline-block;
   cursor: pointer;
   color: #fff;
@@ -1156,13 +1253,13 @@ footer .packLogos__linkedin {
     text-align: left;
   }
   footer .limit .packLogos {
-    display: flex;
+    display: absolute;
     top: 0;
-    left: -6.25em;
+    left: -20.8em;
     position: relative;
     width: 4.6875em;
+    width: 7em;
     justify-content: space-around;
-    margin-right: 2.5em;
   }
 }
 * {

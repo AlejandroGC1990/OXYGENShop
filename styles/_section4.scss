@@ -64,6 +64,7 @@
     padding: 0.5em 0;
 
     &__pack {
+
       &__text {
         width: 100%;
         color: $color-primary;
@@ -72,15 +73,42 @@
         letter-spacing: 0.205em;
       }
 
-      input {
+      
+      &__input {
         width: 19.5em;
         margin: 1.875em 0em 2.1875em;
         display: block;
         width: 19.5em;
         border: none;
+        border-color: transparent;
         border-bottom: 0.125em solid #95989a;
+        outline: none;
+      }
+
+      .invalid {
+        border-bottom: .0625em solid red;
+      }
+
+      input:focus.invalid {
+        outline: none;
       }
     }
+    
+    .error {
+      display: none;
+      width: 100%;
+      font-size: 80%;
+      color: white;
+      background-color: #900;
+      border-radius: 0 0 .3125rem .3125rem;
+      box-sizing: border-box;
+
+      .active {
+        display: block;
+      }
+    }
+    
+    
 
     &__terms {
       width: 100%;
@@ -95,12 +123,16 @@
         padding: 0.75rem;
         position: relative;
       }
-
+      
       &__checkbox:checked {
         background: no-repeat;
         background-image: url("../images/check.png");
         background-size: 1rem;
         background-position: center;
+      }
+      
+      .invalidCheckbox {
+        border: 0.0625em solid red;
       }
 
       &__text {
@@ -114,7 +146,7 @@
       }
 
       button {
-        @include button;
+        @include buttonG;
         position: absolute;
         top: 14em;
         left: 7.3125em;
