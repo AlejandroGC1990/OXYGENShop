@@ -429,18 +429,19 @@
           <form id="contact_form">
             <div class="section4__form__pack">
               <label for="nameField" class="section4__form__pack__text">NAME</label>
-              <input id="nameField " name="nameField" type="text" minlength="2" maxlength="100"/>      
-              <span class="error" aria-live="polite"></span>
+              <!-- <span id="nameFieldError" class="error notVisible" aria-live="polite">The name must be between 2 and 100 characters and not have numbers.</span> -->
+              <input id="nameField " name="nameField" type="text" class="section4__form__pack__input"/>      
             </div>
-
+            
             <div class="section4__form__pack">
               <label for="email" class="section4__form__pack__text">EMAIL:</label>
-              <input id="email" name="email" type="text"/>
-              <span class="error" aria-live="polite"></span>
+              <!-- <span class="error" id="nameFieldError" aria-live="polite">Please enter a valid email.</span> -->
+              <input id="email" name="email" type="text" class="section4__form__pack__input"/>
+              <!-- <span class="error" id="nameFieldError" aria-live="polite">You must agree to terms and conditions.</span> -->
             </div>
-
+            
             <div class="section4__form__terms">
-              <input id="terms" class="section4__form__terms__checkbox" type="checkbox" />
+              <input id="terms" class="section4__form__terms__checkbox" type="checkbox"/>
               <p class="section4__form__terms__text">
                 I hereby give consent for my personal data included in my
                 application to be processed for the purposes of the recruitment

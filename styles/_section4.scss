@@ -64,6 +64,7 @@
     padding: 0.5em 0;
 
     &__pack {
+
       &__text {
         width: 100%;
         color: $color-primary;
@@ -72,7 +73,8 @@
         letter-spacing: 0.205em;
       }
 
-      input {
+      
+      &__input {
         width: 19.5em;
         margin: 1.875em 0em 2.1875em;
         display: block;
@@ -83,7 +85,6 @@
         outline: none;
       }
 
-
       .invalid {
         border-bottom: .0625em solid red;
       }
@@ -91,23 +92,23 @@
       input:focus.invalid {
         outline: none;
       }
-
-      .error {
-        width: 100%;
-        padding: 0;
-      
-        font-size: 80%;
-        color: white;
-        background-color: #900;
-        border-radius: 0 0 .3125rem .3125rem;
-      
-        box-sizing: border-box;
-      }
-      
-      .error.active {
-        padding: 0.3em;
-      }
-
+    }
+    
+    .error {
+      width: 100%;
+      font-size: 80%;
+      color: white;
+      background-color: #900;
+      border-radius: 0 0 .3125rem .3125rem;
+      box-sizing: border-box;
+    }
+    
+    .notVisible{
+      display: none;
+    }
+    
+    .error.active {
+      padding: 0.3em;
     }
 
     &__terms {
@@ -123,12 +124,16 @@
         padding: 0.75rem;
         position: relative;
       }
-
+      
       &__checkbox:checked {
         background: no-repeat;
         background-image: url("../images/check.png");
         background-size: 1rem;
         background-position: center;
+      }
+      
+      .invalidCheckbox {
+        border: 0.0625em solid red;
       }
 
       &__text {

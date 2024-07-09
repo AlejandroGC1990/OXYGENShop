@@ -194,7 +194,7 @@ header .header__container__img {
   height: 16.6875rem;
   display: block;
   object-fit: cover;
-  margin: 0rem auto;
+  margin: 0em auto;
 }
 
 @media (min-width: 62.5rem) {
@@ -1026,7 +1026,7 @@ header .header__container__img {
   font-weight: 700;
   letter-spacing: 0.205em;
 }
-.section4__form__pack input {
+.section4__form__pack__input {
   width: 19.5em;
   margin: 1.875em 0em 2.1875em;
   display: block;
@@ -1042,16 +1042,18 @@ header .header__container__img {
 .section4__form__pack input:focus.invalid {
   outline: none;
 }
-.section4__form__pack .error {
+.section4__form .error {
   width: 100%;
-  padding: 0;
   font-size: 80%;
   color: white;
   background-color: #900;
   border-radius: 0 0 0.3125rem 0.3125rem;
   box-sizing: border-box;
 }
-.section4__form__pack .error.active {
+.section4__form .notVisible {
+  display: none;
+}
+.section4__form .error.active {
   padding: 0.3em;
 }
 .section4__form__terms {
@@ -1072,6 +1074,9 @@ header .header__container__img {
   background-image: url("../images/check.png");
   background-size: 1rem;
   background-position: center;
+}
+.section4__form__terms .invalidCheckbox {
+  border: 0.0625em solid red;
 }
 .section4__form__terms__text {
   width: 90%;
