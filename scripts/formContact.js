@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const form = document.getElementById("contact_form");
 
   //VALIDACIÓN DEL FORMULARIO SECCIÓN4
@@ -52,29 +51,38 @@ document.addEventListener("DOMContentLoaded", () => {
       termsError.classList.remove("active");
     }
 
-    //ENVIAR DATOS DE CONTACTO DEL FORMULARIO
-    const apiTesting = "https://jsonplaceholder.typicode.com/posts";
+    //VALIDACIÓN DEL FORMULARIO PARA SU ENVIO
+    if (
+      nameContact.value.length > 1 &&
+      emailContactPattern.test(emailContact.value) &&
+      terms.checked
+    ) {
+      //ENVIAR DATOS DE CONTACTO DEL FORMULARIO A LA TEST API
+      const apiTesting = "https://jsonplaceholder.typicode.com/posts";
 
-    const formData = {
-      name: nameContact.value,
-      email: emailContact.value,
-    };
+      const formData = {
+        name: nameContact.value,
+        email: emailContact.value,
+      };
 
-    fetch(apiTesting, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((json) => { 
-        alert("Data sent correctly.");
-        console.log(json);
+      fetch(apiTesting, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       })
-      .catch((error) => {
-        alert("Error sending data. Please try again.");
-        console.error("Error:", error);
-      });
+        .then((response) => response.json())
+        .then((json) => {
+          alert("Data sent correctly.");
+          console.log(json);
+        })
+        .catch((error) => {
+          alert("Error sending data. Please try again.");
+          console.error("Error:", error);
+        });
+    } else {
+      alert("Error sending data. Please try again.");
+    }
   });
 });
