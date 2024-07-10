@@ -695,10 +695,10 @@ header .header__container__img {
   display: block;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0em;
 }
 .section3 h3 {
-  margin: 1.4em 0 0.2em;
+  margin: 1.4em 0 1em;
   display: block;
   font-size: 2.25rem;
   font-weight: 400;
@@ -710,11 +710,7 @@ header .header__container__img {
   display: inline-block;
   cursor: pointer;
   color: #fff;
-  padding: 1em 4em;
   border-radius: 1.7em;
-  position: absolute;
-  top: 17.5em;
-  right: 5.9em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
@@ -726,6 +722,18 @@ header .header__container__img {
   position: relative;
   width: 80%;
   box-sizing: border-box;
+}
+.section3__card3 button {
+  font-family: "Open Sans", sans-serif;
+  border-color: transparent;
+  border-radius: 2.5rem;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 17.5em;
+  right: 5.9em;
+  padding: 1em 4em;
 }
 .section3__card3:nth-of-type(1) {
   border: 0.0625em solid #eb476e;
@@ -834,6 +842,22 @@ header .header__container__img {
 }
 .section3__card3__containerFeature li img {
   margin: 0 0.3em 0 0.2em;
+}
+.section3__currencySelector {
+  display: block;
+}
+.section3__currencySelector label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+.section3__currencySelector__buttonContainer {
+  display: block;
+}
+.section3__currencySelector__buttonContainer__buttonSelector {
+  position: none;
+  padding: 0.5em 1em;
+  margin: 1em 1em;
+  background-color: #08a6e4;
 }
 
 @media (min-width: 62.5rem) {
