@@ -1,4 +1,6 @@
 @import "../variables";
+@import "../mixin";
+@import "../section4";
 
 //! SCROLLER BAR
 
@@ -36,10 +38,86 @@
   }
 }
 
+//! POP UP
+
+.back {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  display: none;
+
+  &.Up {
+    display: block !important;
+  }
+
+  &__modal {
+    background-color: #fff;
+    border: none;
+    border-radius: 1em;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 2em 2em;
+
+    &.Up {
+      display: block !important;
+    }
+
+    &__closeModalX {
+      display: block;
+
+      transform: translate(3250%, -150%);
+      border: none;
+      background-color: #fff;
+    }
+
+    h3 {
+      margin: 0 auto;
+      font-family: $font-secondary;
+      width: 15em;
+    }
+
+    input {
+      width: 20em;
+      border: none;
+      border-color: transparent;
+      border-bottom: 0.125em solid #95989a;
+      outline: none;
+      margin: 2em auto;
+    }
+
+    .send {
+      @include buttonG;
+      background-color: $color-primary;
+      padding: 1em 3em;
+      margin: 1em auto;
+    }
+  }
+}
+
 @media (min-width: 1000px) {
+  //! BUTTON TO UP
+
   .container_icon {
     bottom: 2.4em;
 
     right: 4em;
+  }
+
+  //!MODAL
+
+  .back {
+    &__modal {
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }

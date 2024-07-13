@@ -37,6 +37,20 @@
       <div id="scrollerBar__bar" class="scrollerBar__bar"></div>
     </div>
 
+    <section id="modalPopUp" class="back">
+      <dialog class="back__modal">
+        <button id="closeModalX" class="back__modal__closeModalX">X</button>
+        <form id="modalForm">
+          <h3>Subscribe to our newsletter</h3>
+          <input type="email" id="emailContact" placeholder="Your mail here..." required/>
+          <!-- <span class="error" id="emailContactError" aria-live="polite"
+                >Please enter a valid emailContact.</span
+              > -->
+          <button type="submit" class="send">Send</button>
+        </form>
+      </dialog>
+    </section>
+
     <header>
       <h1>Sell More!</h1>
       <p>Open shop on our platform and increase your sales</p>
@@ -232,10 +246,25 @@
         <div class="section3__currencySelector">
           <p>Choose a currency:</p>
           <div class="section3__currencySelector__buttonContainer">
-            <button class="section3__currencySelector__buttonContainer__buttonSelector" value="eur">EUR</button>
-            <button class="section3__currencySelector__buttonContainer__buttonSelector" value="usd">USD</button>
-            <button class="section3__currencySelector__buttonContainer__buttonSelector" value="gbp">GBP</button>
-          </div> 
+            <button
+              class="section3__currencySelector__buttonContainer__buttonSelector"
+              value="eur"
+            >
+              EUR
+            </button>
+            <button
+              class="section3__currencySelector__buttonContainer__buttonSelector"
+              value="usd"
+            >
+              USD
+            </button>
+            <button
+              class="section3__currencySelector__buttonContainer__buttonSelector"
+              value="gbp"
+            >
+              GBP
+            </button>
+          </div>
         </div>
 
         <div class="limit3">
@@ -390,8 +419,6 @@
             <button class="section3__card3__button">Begin</button>
           </article>
         </div>
-
-        
       </section>
 
       <section class="section4">
@@ -439,20 +466,49 @@
         <div class="section4__form">
           <form id="contact_form">
             <div class="section4__form__pack">
-              <p><label for="nameContact" class="section4__form__pack__text">NAME</label></p>
-              <span id="nameContactError" class="error" aria-live="polite">The name must be between 2 and 100 characters and not have numbers.</span>
-              <input id="nameContact" name="nameContact" type="text" class="section4__form__pack__input"/>      
+              <p>
+                <label for="nameContact" class="section4__form__pack__text"
+                  >NAME</label
+                >
+              </p>
+              <span id="nameContactError" class="error" aria-live="polite"
+                >The name must be between 2 and 100 characters and not have
+                numbers.</span
+              >
+              <input
+                id="nameContact"
+                name="nameContact"
+                type="text"
+                class="section4__form__pack__input"
+              />
             </div>
-            
+
             <div class="section4__form__pack">
-              <p><label for="emailContact" class="section4__form__pack__text">EMAIL:</label></p>
-              <span class="error" id="emailContactError" aria-live="polite">Please enter a valid emailContact.</span>
-              <input id="emailContact" name="emailContact" type="text" class="section4__form__pack__input"/>
-              <span class="error" id="termsError" aria-live="polite">You must agree to terms and conditions.</span>
+              <p>
+                <label for="emailContact" class="section4__form__pack__text"
+                  >EMAIL:</label
+                >
+              </p>
+              <span class="error" id="emailContactError" aria-live="polite"
+                >Please enter a valid emailContact.</span
+              >
+              <input
+                id="emailContact"
+                name="emailContact"
+                type="text"
+                class="section4__form__pack__input"
+              />
+              <span class="error" id="termsError" aria-live="polite"
+                >You must agree to terms and conditions.</span
+              >
             </div>
-            
+
             <div class="section4__form__terms">
-              <input id="terms" class="section4__form__terms__checkbox" type="checkbox"/>
+              <input
+                id="terms"
+                class="section4__form__terms__checkbox"
+                type="checkbox"
+              />
               <p class="section4__form__terms__text">
                 I hereby give consent for my personal data included in my
                 application to be processed for the purposes of the recruitment
@@ -467,11 +523,9 @@
           </form>
         </div>
       </section>
+
       <button class="container_icon" id="arrow_icon">
-        <img
-          class="container_icon__arrowUp"
-          src="./images/icon_arrow_up.png"
-        />
+        <img class="container_icon__arrowUp" src="./images/icon_arrow_up.png" />
       </button>
     </main>
 
@@ -493,6 +547,7 @@
     </footer>
 
     <script src="./scripts/nav.js"></script>
+    <script src="./scripts/components/modal.js"></script>
     <script src="./scripts/formContact.js"></script>
     <script src="./scripts/components/percentageScroller.js"></script>
     <script src="./scripts/components/butomToUp.js"></script>
