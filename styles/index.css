@@ -255,7 +255,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-70%, -100%);
   z-index: 10;
   padding: 2em 2em;
 }
@@ -293,6 +293,41 @@
   margin: 1em auto;
 }
 
+.slider {
+  position: relative;
+  display: inline-block;
+}
+.slider button {
+  border: none;
+  background-color: #fff;
+  width: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 2em;
+  height: 2em;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.slider button .left {
+  left: 0;
+}
+.slider button .right {
+  right: 0;
+}
+.slider img {
+  width: 100%;
+}
+
+.screen {
+  width: 20em;
+  position: relative;
+  z-index: 1;
+}
 @media (min-width: 1000px) {
   .container_icon {
     bottom: 2.4em;
@@ -560,7 +595,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-70%, -100%);
   z-index: 10;
   padding: 2em 2em;
 }
@@ -598,6 +633,41 @@
   margin: 1em auto;
 }
 
+.slider {
+  position: relative;
+  display: inline-block;
+}
+.slider button {
+  border: none;
+  background-color: #fff;
+  width: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 2em;
+  height: 2em;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.slider button .left {
+  left: 0;
+}
+.slider button .right {
+  right: 0;
+}
+.slider img {
+  width: 100%;
+}
+
+.screen {
+  width: 20em;
+  position: relative;
+  z-index: 1;
+}
 @media (min-width: 1000px) {
   .container_icon {
     bottom: 2.4em;
@@ -615,6 +685,7 @@ nav {
   background-color: #fff;
   z-index: 5;
   box-shadow: 0em 0.1875em 0.375em 0em rgba(0, 0, 0, 0.2);
+  padding-left: -3em;
 }
 nav .logoNav {
   font-family: "Raleway", sans-serif;
@@ -624,6 +695,7 @@ nav .logoNav {
   color: #08a6e4;
   text-align: left;
   display: inline;
+  position: relative;
   margin-right: 3em;
 }
 nav button {

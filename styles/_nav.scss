@@ -7,10 +7,12 @@ nav {
   background-color: #fff;
   z-index: 5;
   box-shadow: 0em 0.1875em 0.375em 0em $color-shadow;
-
+  padding-left: -3em;
+  
   .logoNav {
     @include logo;
     display: inline;
+    position: relative;
     margin-right: 3em;
   }
 
