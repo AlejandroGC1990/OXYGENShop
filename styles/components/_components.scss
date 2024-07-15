@@ -102,25 +102,21 @@
 }
 
 //! SLIDER
-
 .slider {
-  margin: 3em 0 2em;
+  margin: 1em auto;
   padding: 0;
   display: block;
   position: relative;
-  background-color: red;
-  // max-width: 9em;
+  width: 20em;
 
   button {
     background-color: transparent;
     position: absolute;
     top: 50%;
-    // transform: translateY(-50%);
+    transform: translateY(-50%);
     border: none;
     width: 2em;
     height: 2em;
-    // align-items: center;
-    // justify-content: center;
     cursor: pointer;
     z-index: 2;
     background-color: $color-secondary;
@@ -130,7 +126,6 @@
     img {
       width: 100%;
     }
-    
   }
   
   .left{
@@ -140,15 +135,15 @@
   .right{
     right: 0;
   }
-
+  
   &__screen {
-    // width: 4.5em;
+    width: 100%;
     display: block;
     position: relative;
     z-index: 1;
     
     img {
-      width: 100px;
+      width: 100%;
     }
   }
 }
@@ -158,10 +153,9 @@
   //! BUTTON TO UP
   .container_icon {
     bottom: 2.4em;
-
     right: 4em;
   }
-
+  
   //! MODAL
   .back {
     &__modal {
@@ -171,16 +165,11 @@
       }
     }
   }
-}
-
-//! SLIDER
-.slider {
-  @include limit;
-  margin: 3em 0 0;
-  align-content: center;
-  flex-direction: column;
-    
-  &__screen {
-    width: 60%;
+  
+  //! SLIDER
+  .slider {
+    @include limit;
+    width: 24em;
+    margin-top: 2em;
   }
 }
