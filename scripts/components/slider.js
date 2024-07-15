@@ -1,3 +1,6 @@
+//meterle los puntos de previsualización de cantidad de fotos
+//que se cambien las fotos cada 5 segundos
+
 let img = [
     "../../images/slider_img1.jpg",
     "../../images/slider_img2.jpg",
