@@ -4,28 +4,28 @@ const currencySymbols = {
   usd: "$",
   gbp: "£",
 };
-
-// Función para obtener los tipos de cambio desde la API
-async function fetchExchangeRates(baseCurrency) {
-  const apiEndpoint = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json`;
-
-  try {
-    const response = await fetch(apiEndpoint);
-    if (!response.ok) {
-      throw new Error("Failed to fetch exchange rates");
-    }
-    const data = await response.json();
-    return data.eur;
-  } catch (error) {
-    console.error("Error fetching exchange rates:", error.message);
-    return null;
-  }
-}
-
 //selección de los botones de moneda
 const currencyButtons = document.querySelectorAll(
   ".section3__currencySelector__buttonContainer__buttonSelector"
 );
+
+// Función para obtener los tipos de cambio desde la API
+function fetchExchangeRates(baseCurrency) {
+  const apiEndpoint = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json`;
+
+  return fetch(apiEndpoint)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch exchange rates");
+      }
+      return response.json();
+    })
+    .then((data) => data.eur)
+    .catch((error) => {
+      console.error("Error fetching exchange rates:", error.message);
+      return null;
+    });
+}
 
 //Función actualizar precios
 function updatePrices(exchangeRates, baseCurrency) {
@@ -48,17 +48,18 @@ function updatePrices(exchangeRates, baseCurrency) {
 }
 
 //función para manejar el clic en los botones
-async function handleCurrencyChangeSelector(event) {
+function handleCurrencyChangeSelector(event) {
   const baseCurrency = event.target.value;
 
-  try {
-    const exchangeRates = await fetchExchangeRates();
-    if (exchangeRates) {
-      updatePrices(exchangeRates, baseCurrency);
-    }
-  } catch (error) {
-    console.error("Error", error);
-  }
+  fetchExchangeRates()
+    .then((exchangeRates) => {
+      if (exchangeRates) {
+        updatePrices(exchangeRates, baseCurrency);
+      }
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
 }
 
 //agregar evento click a cada botón de moneda
