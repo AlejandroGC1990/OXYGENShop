@@ -301,7 +301,6 @@
   width: 20em;
 }
 .slider button {
-  background-color: transparent;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -331,6 +330,22 @@
 }
 .slider__screen img {
   width: 100%;
+}
+.slider__indicatorsContainer {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.slider__indicatorsContainer__indicator {
+  background-color: #a5a5a5;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+.slider__indicatorsContainer__indicator.active {
+  background-color: #08a6e4;
 }
 
 @media (min-width: 1000px) {

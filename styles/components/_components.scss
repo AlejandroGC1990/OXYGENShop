@@ -108,9 +108,8 @@
   display: block;
   position: relative;
   width: 20em;
-
+  
   button {
-    background-color: transparent;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -144,6 +143,25 @@
     
     img {
       width: 100%;
+    }
+  }
+
+  &__indicatorsContainer{
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+    &__indicator{
+      background-color: $color-secondary;
+      display: inline-block;
+      border-radius: 50%;
+      padding: 0.5em;
+      margin: 0.5em;
+      cursor: pointer;
+
+      &.active {
+        background-color: $color-primary;  
+      }
     }
   }
 }
