@@ -1,6 +1,83 @@
-//meterle los puntos de previsualización de cantidad de fotos
-//que se cambien las fotos cada 5 segundos
+class Slider {
+  constructor(images, slideClass, slidesClass, indicatorsClass) {
+    this.images = images;
+    this.currentIndex = 0;
+    this.slideImg = document.querySelector(slideClass);
+    this.indicatorsContainer = document.querySelector(indicatorsClass);
+    this.initSlider();
+    this.autoSlider = setInterval(() => this.moveRight(), 5000);
+    this.addEventListeners();
+  }
 
+  initSlider() {
+    // Iniciar con la primera imagen
+    this.slideImg.src = this.images[this.currentIndex];
+
+    // Crear indicadores
+    this.images.forEach((image, index) => {
+      let indicator = document.createElement("div");
+      indicator.classList.add("slider__indicatorsContainer__indicator");
+      if (index === this.currentIndex) {
+        indicator.classList.add("active");
+      }
+      indicator.addEventListener("click", () => {
+        this.currentIndex = index;
+        this.updateSlider();
+        clearInterval(this.autoSlider);
+        this.autoSlider = setInterval(() => this.moveRight(), 5000);
+      });
+      this.indicatorsContainer.appendChild(indicator);
+    });
+
+    this.updateIndicators();
+  }
+
+  addEventListeners() {
+    document.querySelector(".left").addEventListener("click", () => {
+      clearInterval(this.autoSlider);
+      this.moveLeft();
+      this.autoSlider = setInterval(() => this.moveRight(), 5000);
+    });
+
+    document.querySelector(".right").addEventListener("click", () => {
+      clearInterval(this.autoSlider);
+      this.moveRight();
+      this.autoSlider = setInterval(() => this.moveRight(), 5000);
+    });
+  }
+
+  updateSlider() {
+    this.slideImg.src = this.images[this.currentIndex];
+    this.updateIndicators();
+  }
+
+  updateIndicators() {
+    let indicators = document.querySelectorAll(
+      ".slider__indicatorsContainer__indicator"
+    );
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle("active", index === this.currentIndex);
+    });
+  }
+
+  moveRight() {
+    this.currentIndex++;
+    if (this.currentIndex >= this.images.length) {
+      this.currentIndex = 0;
+    }
+    this.updateSlider();
+  }
+
+  moveLeft() {
+    this.currentIndex--;
+    if (this.currentIndex < 0) {
+      this.currentIndex = this.images.length - 1;
+    }
+    this.updateSlider();
+  }
+}
+
+// Uso del slider
 let img = [
   "../../images/slider_img1.jpg",
   "../../images/slider_img2.jpg",
@@ -10,91 +87,9 @@ let img = [
   "../../images/slider_img6.jpg",
 ];
 
-document.querySelector(".slider__screen img").src = img[0];
-
-let counter = 0;
-let sliderRight = document.querySelector(".right");
-let sliderLeft = document.querySelector(".left");
-let sliderImg = document.querySelector(".slider__screen img");
-let indicatorsContainer = document.querySelector(
+const mySlider = new Slider(
+  img,
+  ".slider__screen img",
+  ".slider__screen",
   ".slider__indicatorsContainer"
 );
-
-//actualizar slider
-const updateSlider = () => {
-  sliderImg.src = img[counter];
-  let indicators = document.querySelectorAll(
-    ".slider__indicatorsContainer__indicator"
-  );
-  indicators.forEach((indicator, index) => {
-    indicator.classList.toggle("active", index === counter);
-  });
-};
-
-// añadir indicadores
-for (let i = 0; i < img.length; i++) {
-  let indicator = document.createElement("div");
-  indicator.classList.add("slider__indicatorsContainer__indicator");
-
-  if (i === 0) {
-    indicator.classList.add("active");
-  }
-
-  indicator.addEventListener("click", () => {
-    counter = i;
-    updateSlider();
-    clearInterval(autoSlider);
-    autoSlider = setInterval(moveRight, 5000);
-  });
-  indicatorsContainer.appendChild(indicator);
-}
-
-const indicators = document.querySelectorAll(
-  ".slider__indicatorsContainer__indicator"
-);
-
-// reiniciar el intervalo al hacer clic en el botón izquierdo
-sliderLeft.addEventListener("click", () => {
-  clearInterval(autoSlider);
-  moveLeft();
-  autoSlider = setInterval(moveRight, 5000);
-});
-
-//reiniciar el intervalo al hacer clic en el botón derecha
-sliderRight.addEventListener("click", () => {
-  clearInterval(autoSlider);
-  moveRight();
-  autoSlider = setInterval(() => {
-    moveRight();
-  }, 5000);
-});
-
-//mover a la siguiente imagen
-const moveRight = () => {
-  counter++;
-  console.log(counter);
-  if (counter >= img.length) {
-    counter = 0;
-  }
-
-  sliderImg.src = img[counter];
-};
-
-//mover a la imagen anterior
-const moveLeft = () => {
-  counter--;
-  console.log(counter);
-  if (counter < 0) {
-    counter = img.length - 1;
-  }
-
-  sliderImg.src = img[counter];
-};
-
-// Cambiar las fotos cada 5 segundos
-let autoSlider = setInterval(() => {
-  moveRight();
-}, 10000);
-
-sliderRight.addEventListener("click", moveRight);
-sliderLeft.addEventListener("click", moveLeft);
