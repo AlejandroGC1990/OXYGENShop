@@ -71,7 +71,6 @@
 
     &__closeModalX {
       display: block;
-
       transform: translate(3250%, -150%);
       border: none;
       background-color: #fff;
@@ -143,6 +142,7 @@
     
     img {
       width: 100%;
+      aspect-ratio: 16 / 9;
     }
   }
 
@@ -166,7 +166,6 @@
   }
 }
 
-
 @media (min-width: 1000px) {
   //! BUTTON TO UP
   .container_icon {
@@ -187,6 +186,7 @@
   //! SLIDER
   .slider {
     @include limit;
+    display: block;
     width: 24em;
     margin-top: 2em;
   }

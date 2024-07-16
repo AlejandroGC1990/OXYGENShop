@@ -330,6 +330,7 @@
 }
 .slider__screen img {
   width: 100%;
+  aspect-ratio: 16/9;
 }
 .slider__indicatorsContainer {
   display: block;
@@ -365,6 +366,7 @@
     width: 101.625em;
     min-width: 62.5em;
     box-sizing: border-box;
+    display: block;
     width: 24em;
     margin-top: 2em;
   }
