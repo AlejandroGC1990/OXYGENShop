@@ -79,12 +79,12 @@ class Slider {
 
 // Uso del slider
 let img = [
-  "../../images/slider_img1.jpg",
-  "../../images/slider_img2.jpg",
-  "../../images/slider_img3.jpg",
-  "../../images/slider_img4.jpg",
-  "../../images/slider_img5.jpg",
-  "../../images/slider_img6.jpg",
+  "/images/slider_img1.jpg",
+  "/images/slider_img2.jpg",
+  "/images/slider_img3.jpg",
+  "/images/slider_img4.jpg",
+  "/images/slider_img5.jpg",
+  "/images/slider_img6.jpg",
 ];
 
 const mySlider = new Slider(
