@@ -1,6 +1,6 @@
 class Slider {
-  constructor(images, slideClass, slidesClass, indicatorsClass) {
-    this.images = images;
+  constructor(img, slideClass, slidesClass, indicatorsClass) {
+    this.img = img;
     this.currentIndex = 0;
     this.slideImg = document.querySelector(slideClass);
     this.indicatorsContainer = document.querySelector(indicatorsClass);
@@ -11,10 +11,10 @@ class Slider {
 
   initSlider() {
     // Iniciar con la primera imagen
-    this.slideImg.src = this.images[this.currentIndex];
+    this.slideImg.src = this.img[this.currentIndex];
 
     // Crear indicadores
-    this.images.forEach((image, index) => {
+    this.img.forEach((image, index) => {
       let indicator = document.createElement("div");
       indicator.classList.add("slider__indicatorsContainer__indicator");
       if (index === this.currentIndex) {
@@ -46,11 +46,6 @@ class Slider {
     });
   }
 
-  updateSlider() {
-    this.slideImg.src = this.images[this.currentIndex];
-    this.updateIndicators();
-  }
-
   updateIndicators() {
     let indicators = document.querySelectorAll(
       ".slider__indicatorsContainer__indicator"
@@ -60,9 +55,14 @@ class Slider {
     });
   }
 
+  updateSlider() {
+    this.slideImg.src = this.img[this.currentIndex];
+    this.updateIndicators();
+  }
+
   moveRight() {
     this.currentIndex++;
-    if (this.currentIndex >= this.images.length) {
+    if (this.currentIndex >= this.img.length) {
       this.currentIndex = 0;
     }
     this.updateSlider();
@@ -71,7 +71,7 @@ class Slider {
   moveLeft() {
     this.currentIndex--;
     if (this.currentIndex < 0) {
-      this.currentIndex = this.images.length - 1;
+      this.currentIndex = this.img.length - 1;
     }
     this.updateSlider();
   }
@@ -79,12 +79,12 @@ class Slider {
 
 // Uso del slider
 let img = [
-  "/images/slider_img1.jpg",
-  "/images/slider_img2.jpg",
-  "/images/slider_img3.jpg",
-  "/images/slider_img4.jpg",
-  "/images/slider_img5.jpg",
-  "/images/slider_img6.jpg",
+  "./images/slider_img1.jpg",
+  "./images/slider_img2.jpg",
+  "./images/slider_img3.jpg",
+  "./images/slider_img4.jpg",
+  "./images/slider_img5.jpg",
+  "./images/slider_img6.jpg",
 ];
 
 const mySlider = new Slider(
