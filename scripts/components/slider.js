@@ -46,11 +46,6 @@ class Slider {
     });
   }
 
-  updateSlider() {
-    this.slideImg.src = this.img[this.currentIndex];
-    this.updateIndicators();
-  }
-
   updateIndicators() {
     let indicators = document.querySelectorAll(
       ".slider__indicatorsContainer__indicator"
@@ -58,6 +53,11 @@ class Slider {
     indicators.forEach((indicator, index) => {
       indicator.classList.toggle("active", index === this.currentIndex);
     });
+  }
+
+  updateSlider() {
+    this.slideImg.src = this.img[this.currentIndex];
+    this.updateIndicators();
   }
 
   moveRight() {
