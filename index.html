@@ -44,13 +44,13 @@
           <h3>Subscribe to our newsletter</h3>
           <input
             type="email"
-            id="emailContact"
+            id="emailContactPopUp"
             placeholder="Your mail here..."
             required
           />
-          <!-- <span class="error" id="emailContactError" aria-live="polite"
-                >Please enter a valid emailContact.</span
-              > -->
+          <span class="error" id="emailContactErrorPopUp" aria-live="polite">
+            Please enter a valid emailContact.
+          </span>
           <button type="submit" class="send">Send</button>
         </form>
       </dialog>
@@ -436,8 +436,7 @@
         <button class="right">
           <img src="./images/slider_right.png" />
         </button>
-        <div class="slider__indicatorsContainer">
-        </div>
+        <div class="slider__indicatorsContainer"></div>
       </section>
 
       <section class="section4">
@@ -504,22 +503,22 @@
 
             <div class="section4__form__pack">
               <p>
-                <label for="emailContact" class="section4__form__pack__text"
-                  >EMAIL:</label
-                >
+                <label for="emailContact" class="section4__form__pack__text">
+                  EMAIL:
+                </label>
               </p>
-              <span class="error" id="emailContactError" aria-live="polite"
-                >Please enter a valid emailContact.</span
-              >
+              <span class="error" id="emailContactError" aria-live="polite">
+                Please enter a valid emailContact.
+              </span>
               <input
                 id="emailContact"
                 name="emailContact"
                 type="text"
                 class="section4__form__pack__input"
               />
-              <span class="error" id="termsError" aria-live="polite"
-                >You must agree to terms and conditions.</span
-              >
+              <span class="error" id="termsError" aria-live="polite">
+                You must agree to terms and conditions.
+              </span>
             </div>
 
             <div class="section4__form__terms">

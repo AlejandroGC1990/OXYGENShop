@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector("#modalPopUp .back__modal");
   const closeModalX = document.getElementById("closeModalX");
   const form = document.getElementById("modalForm");
-  const emailInput = document.getElementById("emailContact");
+  const emailInput = document.getElementById("emailContactPopUp");
 
-  //mostrar modal
+  // Mostrar modal
   const showModal = () => {
     if (!sessionStorage.getItem("modalClosed")) {
       back.classList.add("Up");
@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  //cerrar modal y almacenar sessionStorage
+  // Cerrar modal y almacenar en sessionStorage
   const closeModal = () => {
     back.classList.remove("Up");
     modal.classList.remove("Up");
     sessionStorage.setItem("modalClosed", "true");
   };
 
-  //mostrar modal tras 5s
+  // Mostrar modal tras 5s
   setTimeout(showModal, 5000);
 
-  //mostrar modal tras scrolear 25% de la página
+  // Mostrar modal tras scrolear 25% de la página
   window.addEventListener("scroll", () => {
     if (
       window.innerHeight + window.scrollY >=
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //cerrar modal
+  // Cerrar modal
   const handleCloseModal = (event) => {
     if (
       (event.type === "click" &&
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  //escuchadores de eventos
+  // Escuchadores de eventos
   closeModalX.addEventListener("click", handleCloseModal);
   window.addEventListener("click", handleCloseModal);
   document.addEventListener("keydown", handleCloseModal);
@@ -57,8 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Validar emailContact
     const emailContact = emailInput.value.trim();
-    const emailContactError = document.getElementById("emailContactError");
-
+    const emailContactError = document.getElementById("emailContactErrorPopUp");
     const emailContactPattern =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 

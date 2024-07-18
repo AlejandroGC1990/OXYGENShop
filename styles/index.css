@@ -281,6 +281,26 @@
   outline: none;
   margin: 2em auto;
 }
+.back__modal .invalid {
+  border-bottom: 0.0625em solid red;
+}
+.back__modal input:focus.invalid {
+  outline: none;
+}
+.back__modal .error {
+  display: none;
+  width: 14em;
+  margin: 0 auto;
+  font-size: 0.9em;
+  color: white;
+  background-color: tomato;
+  margin-bottom: 0.5em;
+  border-radius: 0.3125em 0.3125em;
+  box-sizing: border-box;
+}
+.back__modal .active {
+  display: block;
+}
 .back__modal .send {
   font-family: "Open Sans", sans-serif;
   border-color: transparent;
