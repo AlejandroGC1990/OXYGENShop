@@ -25,7 +25,6 @@ form.addEventListener("submit", (event) => {
   //Validar emailContact
   const emailContact = event.target.elements["emailContact"];
   const emailContactError = document.getElementById("emailContactError");
-
   const emailContactPattern =
     /*Regex para comprobar si el email es válido*/
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -65,8 +64,8 @@ form.addEventListener("submit", (event) => {
       },
       body: JSON.stringify({
         name: nameContact.value,
-        email: emailContact.value
-      })
+        email: emailContact.value,
+      }),
     })
       .then((response) => response.json())
       .then((json) => {
