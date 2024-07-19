@@ -72,12 +72,11 @@
         font-weight: 700;
         letter-spacing: 0.205em;
       }
-
-      
+ 
       &__input {
         margin: 1.875em 0em 2.1875em;
         display: block;
-        width: 19.5em;
+        width: 24.5em;
         border: none;
         border-color: transparent;
         border-bottom: 0.125em solid #95989a;
@@ -138,15 +137,15 @@
         font-size: 0.79rem;
         font-weight: 400;
         position: absolute;
-        left: 2.1875em;
-        top: 0em;
+        left: 3em;
+        top: -0.3em;
         color: #707070;
       }
 
       button {
         @include buttonG;
         position: absolute;
-        top: 14em;
+        top: 14.5em;
         left: 7.3125em;
         padding: 1.4em 7.5em;
         background-color: $color-primary;
