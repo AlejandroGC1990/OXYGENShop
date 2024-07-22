@@ -222,17 +222,18 @@
 .container_icon {
   position: fixed;
   bottom: 4.5em;
-  right: 2em;
+  right: 1.5em;
   margin: 0;
   padding: 0.5em;
   border-radius: 50%;
-  background-color: #a5a5a5;
+  box-shadow: 0em 0.3em 0.4em 0.4em #a5a5a5;
   cursor: pointer;
   z-index: 50;
   border: transparent;
+  background-color: #08a6e4;
 }
 .container_icon__arrowUp {
-  width: 1em;
+  width: 2em;
 }
 
 .back {
