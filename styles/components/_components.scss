@@ -24,17 +24,18 @@
 .container_icon {
   position: fixed;
   bottom: 4.5em;
-  right: 2em;
+  right: 1.5em;
   margin: 0;
   padding: 0.5em;
   border-radius: 50%;
-  background-color: $color-secondary;
+  box-shadow: 0em 0.3em 0.4em 0.4em $color-secondary;
   cursor: pointer;
   z-index: 50;
   border: transparent;
+  background-color: $color-primary;
 
   &__arrowUp {
-    width: 1em;
+    width: 2em;
   }
 }
 
