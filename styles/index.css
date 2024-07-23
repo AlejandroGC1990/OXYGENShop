@@ -411,6 +411,7 @@ nav .logoNav {
   display: inline;
   position: relative;
   margin-right: 3em;
+  padding-right: 0.5em;
 }
 nav button {
   border: none;
@@ -480,7 +481,7 @@ nav li:hover {
     justify-content: space-between;
   }
   nav .limit .logoNav {
-    margin-left: 4.3em;
+    margin-left: 4em;
   }
   nav .limit .burger,
   nav .limit .open,
@@ -492,7 +493,7 @@ nav li:hover {
     flex-direction: row;
     list-style: none;
     margin: 0;
-    padding: 0 5em 0 0;
+    padding: 0 6.75em 0 0;
   }
   nav .limit li {
     color: #a5a5a5;
@@ -500,8 +501,8 @@ nav li:hover {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.205em;
-    padding: 0 0.88em;
-    margin: 0em 0em 0em 9em;
+    padding: 0 0em;
+    margin: 0em 0em 0em 8.5em;
   }
   nav .limit li:hover {
     margin-bottom: -2.5em;
@@ -1563,7 +1564,7 @@ footer {
 }
 footer .pack {
   display: block;
-  margin-left: 1.0625em;
+  margin-left: 1em;
 }
 footer .pack__logoFooter {
   color: #08a6e4;
@@ -1615,7 +1616,7 @@ footer .packLogos__linkedin {
   footer .limit .pack {
     display: flex;
     flex-direction: column;
-    margin-left: 5.3125em;
+    margin-left: 8.4em;
     width: 40%;
   }
   footer .limit .pack__logoFooter {
@@ -1639,9 +1640,8 @@ footer .packLogos__linkedin {
   footer .limit .packLogos {
     display: absolute;
     top: 0;
-    left: -20.8em;
+    left: -8.75em;
     position: relative;
-    width: 4.6875em;
     width: 7em;
     justify-content: space-around;
   }

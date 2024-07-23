@@ -9,7 +9,7 @@ footer {
 
   .pack {
     display: block;
-    margin-left: 1.0625em;
+    margin-left: 1em;
 
     &__logoFooter {
       color: $color-primary;
@@ -62,7 +62,7 @@ footer {
       .pack {
         display: flex;
         flex-direction: column;
-        margin-left: 5.3125em;
+        margin-left: 8.4em;
         width: 40%;
 
         &__logoFooter {
@@ -84,9 +84,8 @@ footer {
       .packLogos {
         display: absolute;
         top: 0;
-        left: -20.8em;
+        left: -8.75em;
         position: relative;
-        width: 4.6875em;
         width: 7em;
         justify-content: space-around;
         // margin-right: 2.5em;
