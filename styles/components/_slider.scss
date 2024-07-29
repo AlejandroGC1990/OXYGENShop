@@ -1,0 +1,77 @@
+@import "../variables";
+@import "../mixin";
+// @import "../section4";
+
+.slider {
+  margin: 1em auto;
+  padding: 0;
+  display: block;
+  position: relative;
+  width: 20em;
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    z-index: 2;
+    background-color: $color-secondary;
+    border-radius: 1em;
+    padding: 0.5em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+  &__screen {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  &__indicatorsContainer {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    &__indicator {
+      background-color: $color-secondary;
+      display: inline-block;
+      border-radius: 50%;
+      padding: 0.5em;
+      margin: 0.5em;
+      cursor: pointer;
+
+      &.active {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .slider {
+    @include limit;
+    display: block;
+    width: 24em;
+    margin-top: 2em;
+  }
+}
